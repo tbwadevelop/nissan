@@ -1,0 +1,18 @@
+name = Nissan
+description = Theme for project Nissan.
+core = 7.x
+base theme = bootstrap
+	
+;stylesheets[all][] = css/style.css
+scripts[] = js/nissan.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[content]        = 'Content'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
