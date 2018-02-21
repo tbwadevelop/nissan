@@ -1,12 +1,3 @@
-// Default variables.
-@import 'default-variables';
-
-// Bootstrap Framework.
-@import '../bootstrap/assets/stylesheets/bootstrap';
-
-// Base-theme overrides.
-@import 'overrides';
-
 body{padding-top:20px;}
 .carousel {
     margin-bottom: 0;

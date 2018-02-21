@@ -1,0 +1,13 @@
+name = Nissan
+description = Nissan Galeria
+core = 7.x
+
+dependencies[] = entity
+dependencies[] = ctools
+package = tbwa
+
+; Information added by Drupal.org packaging script on 2016-08-08
+version = "7.x-1.11"
+core = "7.x"
+project = "tbwa"
+datestamp = "1470638340"

@@ -1,0 +1,92 @@
+<?php
+
+/**
+ * @file
+ * Block Entity
+ */
+
+
+/**
+ * Implements hook_block_info().
+ */
+function nissan_block_info() {
+  $blocks['galeria'] = array(
+    'info' => t('Galeria'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+  return $blocks;
+}
+
+
+/**
+ * Implements hook_block_view().
+ */
+function nissan_block_view($delta = '') {
+  $block = array();
+	 switch ($delta) {
+	    case 'galeria':
+	 $view = views_get_view('list', true); 
+	 $view->execute();
+	 
+	 
+	 module_load_include('inc', 'webform', 'includes/webform.submissions');
+
+	 $block['subject'] = t('Galeria');
+	    
+	 foreach ($view->result as $key => $value) {
+	 	$data = webform_get_submission($value->node_nid, $value->sid);
+	 	$file = file_load($data->data[21][0]);
+	 	$url = file_create_url($file->uri);
+
+		$render = theme('videojs', array(
+	      'items' => array(
+	        array(
+	          'uri' => $url,
+	          'filemime' => 'video/mp4',
+	        ),
+	      ),
+	      'player_id' => 'test-video',
+	      'posterimage_style' => 'thumbnail',
+	      'attributes' => array(
+	        'width' => 640,
+	        'height' => 360,
+	        'loop' => FALSE,
+	        'autoplay' => TRUE,
+	        'preload' => 'none',
+	        'hidecontrols' => FALSE,
+	      ),
+	    ));
+
+
+			$block['content']['ul'][] = array(
+		      '#prefix' => '<li>',
+		      '#suffix' => '</div>Hola</div>',
+		      '#markup' => l($render, '', array('html' => TRUE)),
+		    );
+
+		}
+
+	 }
+
+	  //      $block['content'] = theme('videojs', array(
+	  //     'items' => array(
+	  //       array(
+	  //         'uri' => 'http://localhost/nissan/sites/default/files/SampleVideo_1280x720_1mb.mp4',
+	  //         'filemime' => 'video/mp4',
+	  //       ),
+	  //     ),
+	  //     'player_id' => 'test-video',
+	  //     'posterimage_style' => 'thumbnail',
+	  //     'attributes' => array(
+	  //       'width' => 640,
+	  //       'height' => 360,
+	  //       'loop' => FALSE,
+	  //       'autoplay' => TRUE,
+	  //       'preload' => 'none',
+	  //       'hidecontrols' => FALSE,
+	  //     ),
+	  //   ));
+	  // }
+  return $block;
+}
+
