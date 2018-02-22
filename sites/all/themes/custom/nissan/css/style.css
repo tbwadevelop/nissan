@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Brand Bold";
+  src: url("../fonts/Nissan_Brand_Bold.otf");
+}
+
+@font-face {
+  font-family: "Brand Italic";
+  src: url("../fonts/Nissan_Brand_Italic.otf");
+}
+
+@font-face {
+  font-family: "Brand Light";
+  src: url("../fonts/Nissan_Brand_Light.otf");
+}
+
+@font-face {
+  font-family: "Brand Regular";
+  src: url("../fonts/Nissan_Brand_Regular.otf");
+}
+
+body {
+  background: url(../img/fondo.png);
+  background-size: contain;
+}
+
+body header#navbar {
+  margin-top: 0px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+body header#navbar a.logo {
+  margin: 0px;
+}
+
+body header#navbar a.logo + a {
+  display: none;
+}
+
+body header#navbar .navbar-collapse {
+  background: transparent;
+  border-color: transparent;
+  display: none !important;
+}
+
+body .main-container .row section h1 {
+  display: none;
+}
+
+body .main-container .row section section#block-bean-mecanica h2 {
+  text-align: center;
+  font-family: Brand Italic;
+  font-size: 60px;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset {
+  position: relative;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0px;
+  padding: 0px;
+  box-shadow: 0 1px 1px transparent;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset legend {
+  display: none;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset div.collapse.in {
+  padding: 15px;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset div.collapse.in img {
+  z-index: 1;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) div.collapse.in {
+  background: url(../img/marco_video_home.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) div.collapse.in div.field-name-field-imagen {
+  padding: 17px 17px 17px 17px;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in {
+  background: url(../img/marco_home_mecanica.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-subtitulo div.field-item.even {
+  font-size: 24px;
+  font-family: Brand Bold;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-resumen iv.field-item.even {
+  font-family: Brand Regular;
+  color: black;
+  font-size: 14px;
+  text-align: left;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-link {
+  text-align: center;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-link div.field-item.even {
+  display: flex;
+  justify-content: center;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-link div.field-item.even p {
+  width: 210px;
+  height: 47px;
+  padding: 14px 0px;
+  background: #c61633;
+  -webkit-transform: skewX(-34deg);
+  -ms-transform: skewX(-34deg);
+  transform: skewX(-34deg);
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-link div.field-item.even p a {
+  color: white;
+  text-decoration: none;
+  -webkit-transform: skewX(34deg);
+  -ms-transform: skewX(34deg);
+  transform: skewX(34deg);
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Brand Bold";
+  font-weight: bold;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-link div.field-item.even p:before {
+  content: "";
+  background: #c61633;
+  position: absolute;
+  top: 0px;
+  left: -7%;
+  width: 11px;
+  height: 47px;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-link div.field-item.even p:after {
+  content: "";
+  background: #c61633;
+  position: absolute;
+  top: 0px;
+  right: -5%;
+  width: 6px;
+  height: 47px;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(3) div.field-item.even p a {
+  background: url(../img/scroll.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
