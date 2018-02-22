@@ -338,7 +338,23 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   padding: 9px 15px 0px;
 }
 
-#modalContent .modal-content .modal-body fieldset div.panel-body input {
+#modalContent .modal-content .modal-body fieldset div.panel-body div {
+  position: relative;
+}
+
+#modalContent .modal-content .modal-body fieldset div.panel-body div.webform-component-select::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 28px;
+  background-image: url(../img/formulario_flecha.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+#modalContent .modal-content .modal-body fieldset div.panel-body div input {
   border-radius: 0px;
   border: 0px solid #ccc;
   background-color: #cbd0d7;
@@ -350,25 +366,35 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   color: black;
 }
 
-#modalContent .modal-content .modal-body fieldset div.panel-body select {
+#modalContent .modal-content .modal-body fieldset div.panel-body div select {
   -webkit-appearance: button;
-  position: relative;
   border-radius: 0px;
   border: 0px solid #ccc;
+  color: #9B9B9B;
   background-color: #cbd0d7;
   -webkit-box-shadow: inset 0 0px 0px transparent;
   box-shadow: inset 0 0px 0px transparent;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
 }
 
-#modalContent .modal-content .modal-body fieldset div.panel-body select::before {
-  content: "";
+#modalContent .modal-content .modal-body div.form-actions {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+}
+
+#modalContent .modal-content .modal-body div.form-actions button {
   position: absolute;
-  top: 5px;
-  right: 10px;
-  background-image: url(../img/formulario_flecha.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
+  bottom: -32px;
+  z-index: 1007;
+  background: #c61633;
+  transform: skewX(-20deg);
+  border-radius: 0px;
+  border-color: transparent;
+  color: white;
+  padding: 1em 2em;
 }

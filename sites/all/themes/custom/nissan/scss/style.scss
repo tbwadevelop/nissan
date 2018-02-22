@@ -325,39 +325,64 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres {
 				}
 				div.panel-body {
 					padding: 9px 15px 0px;
-					input {
-						border-radius: 0px;
-						border: 0px solid #ccc;
-						background-color: rgb(203, 208, 215);
-						background-image: none !important;
-						-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
-						        box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
-						font-size: 12px;
-						font-family: "Brand Regular";
-						color: $negro;
-					}
-					select {
-						-webkit-appearance: button;
+					div {
 						position: relative;
-						border-radius: 0px;
-						border: 0px solid #ccc;
-						background-color: rgb(203, 208, 215);
-						-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
-						        box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
-						outline: none;
-						&::before {
+						&.webform-component-select::before {
 							content: "";
 							position: absolute;
-							top:5px;
-							right: 10px;
+							top: 10px;
+    						right: 28px;
 							background-image: url(../img/formulario_flecha.png);
 							background-size: contain;
 							background-repeat: no-repeat;
 							width: 25px;
 							height: 25px;
 						}
+						input {
+							border-radius: 0px;
+							border: 0px solid #ccc;
+							background-color: rgb(203, 208, 215);
+							background-image: none !important;
+							-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+							        box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+							font-size: 12px;
+							font-family: "Brand Regular";
+							color: $negro;
+						}
+						select {
+							-webkit-appearance: button;
+							
+							border-radius: 0px;
+							border: 0px solid #ccc;
+							color: #9B9B9B;
+							background-color: rgb(203, 208, 215);
+							-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+							        box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+							outline: none;
+							-webkit-appearance: none;
+							    -moz-appearance: none;
+							    appearance: none;
+							outline: none;
+							
+						}
 					}
 				}
+			}
+			div.form-actions {
+				text-align: center;
+			    position: relative;
+			    margin-top: 50px;
+			    button {
+					position: absolute;
+					bottom: -32px;
+					z-index: 1007;
+					background: $rojo;
+					transform: skewX(-20deg);
+					border-radius: 0px;
+					border-color: transparent;
+					color: white;
+					padding: 1em 2em;
+			    }
 			}
 		}
 	}
