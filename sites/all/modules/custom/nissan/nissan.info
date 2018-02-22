@@ -1,13 +1,16 @@
 name = Nissan
-description = Nissan Galeria
+description = Nissan module
 core = 7.x
+base theme = bootstrap
 
-dependencies[] = entity
-dependencies[] = ctools
-package = tbwa
+stylesheets[all][] = css/style.css
 
-; Information added by Drupal.org packaging script on 2016-08-08
-version = "7.x-1.11"
-core = "7.x"
-project = "tbwa"
-datestamp = "1470638340"
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[header]         = 'Top Bar'
+regions[content]        = 'Content'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
