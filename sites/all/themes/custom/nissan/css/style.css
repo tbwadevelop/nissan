@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Brand Bold";
   src: url("../fonts/Nissan_Brand_Bold.otf");
@@ -20,7 +21,9 @@
 
 body {
   background: url(../img/fondo.png);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 0px;
 }
 
 body header#navbar {
@@ -41,6 +44,11 @@ body header#navbar .navbar-collapse {
   background: transparent;
   border-color: transparent;
   display: none !important;
+}
+
+body .main-container .row section {
+  /*___________—*_*.. Hecho de emocion ..*_*..___________*/
+  /*___________—*_*.. Galeria ..*_*..___________*/
 }
 
 body .main-container .row section h1 {
@@ -75,7 +83,7 @@ body .main-container .row section section#block-bean-mecanica fieldset div.colla
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) div.collapse.in {
-  background: url(../img/marco_video_home.png);
+  background: url(../img/marco_home_video.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -104,11 +112,25 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
   text-align: center;
 }
 
-body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-resumen iv.field-item.even {
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-resumen div.field-item.even {
   font-family: Brand Regular;
   color: black;
   font-size: 14px;
   text-align: left;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-resumen div.field-item.even li {
+  list-style: url(../img/marco-home-punto.png);
+  list-style-position: outside;
+  padding-left: 10px;
+  padding-bottom: 24px;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-resumen div.field-item.even li a {
+  text-decoration: none;
+  border-bottom: 2px solid #939394;
+  outline: none;
+  color: black;
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-link {
@@ -142,6 +164,10 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
   font-weight: bold;
 }
 
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-link div.field-item.even p a div {
+  display: none;
+}
+
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-link div.field-item.even p:before {
   content: "";
   background: #c61633;
@@ -166,7 +192,23 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
   background: url(../img/scroll.png);
   background-size: contain;
   background-repeat: no-repeat;
+  text-indent: -999%;
   width: 60px;
   height: 60px;
   display: inline-block;
+}
+
+body .main-container .row section section#block-nissan-galeria h2 {
+  font-size: 26px;
+  font-family: "Brand bold";
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border: 2px solid #c61633;
+}
+
+div#modalBackdrop {
+  background-color: black !important;
 }

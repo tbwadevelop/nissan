@@ -15,10 +15,16 @@
     src: url('../fonts/Nissan_Brand_Regular.otf');
 }
 
-
+$rojo :rgb(198, 22, 51);
+$negro :rgb(0, 0, 0);
+//------------------------------------------------------------------------------
+//  home 
+//------------------------------------------------------------------------------ 
 body {
 	background: url(../img/fondo.png);
-	background-size: contain;
+	background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
 	header#navbar{
 		margin-top: 0px; 
 		background-color: transparent;
@@ -41,6 +47,7 @@ body {
 				h1 {
 					display: none;
 				}
+				/*___________—*_*.. Hecho de emocion ..*_*..___________*/
 				section#block-bean-mecanica {
 					h2 {
 						text-align: center;
@@ -67,7 +74,7 @@ body {
 					}
 					fieldset:nth-child(1) {
 						div.collapse.in {
-							background:	url(../img/marco_video_home.png);
+							background:	url(../img/marco_home_video.png);
 							background-size: 100% 100%;
 							background-repeat: no-repeat;
 							width: 100%;
@@ -90,17 +97,29 @@ body {
 								div.field-item.even {
 									font-size: 24px;
 									font-family: Brand Bold;
-									color: rgb(0, 0, 0);
+									color: $negro;
 									font-weight: bold;
 									text-align: center;
 								}
 							}
 							div.field-name-field-resumen{
-								iv.field-item.even {
+								div.field-item.even {
 									font-family: Brand Regular;
-									color: rgb(0, 0, 0);
+									color: $negro;
 									font-size: 14px;
 									text-align: left;
+									li {
+										list-style: url(../img/marco-home-punto.png);
+										list-style-position: outside;
+										padding-left: 10px;
+    									padding-bottom: 24px;
+    									a {
+    										text-decoration: none;
+    										border-bottom: 2px solid #939394;
+    										outline: none;
+    										color: $negro;
+    									}
+									}
 								}
 							}
 							div.field-name-field-link {
@@ -112,7 +131,7 @@ body {
 								    	width: 210px;
 										height: 47px;
 										padding: 14px 0px;
-										background: #c61633;
+										background: $rojo;
 										-webkit-transform: skewX(-34deg);
 										-ms-transform: skewX(-34deg);
 										transform: skewX(-34deg);
@@ -127,10 +146,15 @@ body {
 											font-family: "Brand Bold";
 											font-weight: bold;
 										}
+										a{
+											div {
+												display: none;
+											}
+										}
 								    }
 								    p:before{
 										content: "";
-										background: rgb(198, 22, 51);
+										background: $rojo;
 										position: absolute;
 										top: 0px;
 										left: -7%;
@@ -139,7 +163,7 @@ body {
 								    }
 								    p:after{
 										content: "";
-										background: rgb(198, 22, 51);
+										background: $rojo;
 										position: absolute;
 										top: 0px;
 										right: -5%;
@@ -157,17 +181,37 @@ body {
 									background: url(../img/scroll.png);
 									background-size: contain;
 									background-repeat: no-repeat;
+									text-indent: -999%;
 									width: 60px;
 									height: 60px;
 									display: inline-block;
 								}
-							
 							}
-							
 						}
+					}
+				}
+				/*___________—*_*.. Galeria ..*_*..___________*/
+				section#block-nissan-galeria {
+					h2 {
+						font-size: 26px;
+						font-family: "Brand bold";
+						color: $negro;
+						font-weight: bold;
+						text-transform: uppercase;
+						line-height: 1.2;
+						text-align: center;
+						border: 2px solid $rojo;
+						// width: 150px;
+						// transform: skewX(-34deg);
 					}
 				}
 			}
 		}
 	}
+}
+//------------------------------------------------------------------------------
+//  Formulario de Registro 
+//------------------------------------------------------------------------------ 
+div#modalBackdrop {
+	background-color: $negro !important;
 }
