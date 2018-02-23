@@ -1,7 +1,11 @@
 (function ($) {
 	Drupal.behaviors.nissan = {
 		attach: function (context, settings) {
-			console.log("reading js nissan");
+		    // Loader Animation.	
+			$(window).load(function(){
+			    $('.loader').fadeOut(500);
+			});
+			$("#block-block-1").appendTo("#skip-link"); 
 		}
 	};
 }(jQuery));
