@@ -500,7 +500,7 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   margin-bottom: 29px;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad, #modalContent .modal-content .modal-body div.webform-component--obligatorio {
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad, #modalContent .modal-content .modal-body div.webform-component--obligatorio, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto {
   text-align: center;
 }
 
@@ -531,16 +531,19 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   margin-left: 20px;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div {
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div {
   display: inline-flex;
   justify-content: center;
   padding-left: 24px;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div {
-  display: inline-flex;
-  justify-content: center;
-  padding-left: 24px;
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input {
+  margin-left: 20px;
 }
 
 /*___________—*_*.. radio button  ..*_*..___________*/
