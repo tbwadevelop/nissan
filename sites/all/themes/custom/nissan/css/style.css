@@ -44,14 +44,9 @@ body header#navbar a.logo {
   margin: 0px;
 }
 
-body header#navbar a.logo + a {
-  display: none;
-}
-
 body header#navbar .navbar-collapse {
   background: transparent;
   border-color: transparent;
-  display: none !important;
 }
 
 body .main-container .row section {
@@ -510,6 +505,11 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   border-bottom: 2px solid #939394;
   outline: none;
   color: black;
+}
+
+#modalContent .modal-content .modal-body divwebform-component--autorizo-ser-contactado-a-traves-de div.edit-submitted-autorizo-ser-contactado-a-traves-de {
+  display: flex;
+  justify-content: center;
 }
 
 /*___________—*_*.. radio button  ..*_*..___________*/
