@@ -9,7 +9,7 @@ scripts[] = js/nissan.js
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
-
+regions[navigation]     = 'Navigation'
 regions[header]         = 'Top Bar'
 regions[content]        = 'Content'
 regions[footer]         = 'Footer'
