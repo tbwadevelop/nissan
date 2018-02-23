@@ -97,7 +97,6 @@ body .main-container .row section section#block-bean-mecanica fieldset {
   background-color: transparent;
   border-color: transparent;
   border-radius: 0px;
-  padding: 0px;
   -webkit-box-shadow: 0 1px 1px transparent;
   box-shadow: 0 1px 1px transparent;
 }
@@ -107,12 +106,17 @@ body .main-container .row section section#block-bean-mecanica fieldset legend {
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset div.collapse.in {
-  padding: 15px;
+  padding: 0px;
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset div.collapse.in img {
   /* width: 100%;*/
   z-index: 1;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) {
+  margin: 0px;
+  padding: 0px;
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) div.collapse.in {
@@ -122,10 +126,7 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
   width: 100%;
   height: 100%;
   z-index: 10;
-}
-
-body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) div.collapse.in div.field-name-field-imagen {
-  padding: 17px 17px 17px 17px;
+  padding: 30px 28px 13px;
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in {
@@ -156,7 +157,7 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
   list-style: url(../img/marco-home-punto.png);
   list-style-position: outside;
   padding-left: 10px;
-  padding-bottom: 24px;
+  padding-bottom: 17px;
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in div.field-name-field-resumen div.field-item.even li a {
@@ -221,6 +222,10 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
   right: -5%;
   width: 6px;
   height: 47px;
+}
+
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(3) {
+  margin-top: 50px;
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(3) div.field-item.even p a {
@@ -323,6 +328,9 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
 /*___________—*_*.. Paso 1 ..*_*..___________*/
 #modalContent .modal-content {
   border-radius: 0px;
+  border: 0px solid transparent;
+  -webkit-box-shadow: 0 5px 15px transparent;
+  box-shadow: 0 5px 15px transparent;
 }
 
 #modalContent .modal-content .modal-header {
