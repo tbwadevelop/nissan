@@ -423,6 +423,10 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   background-repeat: no-repeat;
 }
 
+#modalContent .modal-content .modal-body div.form-actions button div {
+  display: none;
+}
+
 #modalContent .modal-content .modal-body div.webform-component--paso2 {
   text-align: center;
 }
@@ -507,9 +511,46 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   color: black;
 }
 
-#modalContent .modal-content .modal-body divwebform-component--autorizo-ser-contactado-a-traves-de div.edit-submitted-autorizo-ser-contactado-a-traves-de {
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de {
   display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div label {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div label input {
+  margin-left: 20px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div {
+  display: inline-flex;
   justify-content: center;
+  padding-left: 24px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div {
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 24px;
 }
 
 /*___________—*_*.. radio button  ..*_*..___________*/
+/* -\* Nuevo comentario /*- */
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(http://loadinggif.com/images/image-selection/3.gif) 50% 50% no-repeat #b6b5b5;
+}
