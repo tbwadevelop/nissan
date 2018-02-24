@@ -97,7 +97,11 @@ body .main-container .row section section#block-bean-mecanica fieldset legend {
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset div.collapse.in {
+<<<<<<< HEAD
   padding: 15px;
+=======
+  padding: 0px;
+>>>>>>> parent of 98032dd... galery
 }
 
 body .main-container .row section section#block-bean-mecanica fieldset div.collapse.in img {
@@ -105,6 +109,14 @@ body .main-container .row section section#block-bean-mecanica fieldset div.colla
   z-index: 1;
 }
 
+<<<<<<< HEAD
+=======
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) {
+  margin: 0px;
+  padding: 0px;
+}
+
+>>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) div.collapse.in {
   background: url(../img/marco_home_video.png);
   background-size: 100% 100%;
@@ -114,10 +126,13 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
   z-index: 10;
 }
 
+<<<<<<< HEAD
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) div.collapse.in div.field-name-field-imagen {
   padding: 17px 17px 17px 17px;
 }
 
+=======
+>>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in {
   background: url(../img/marco_home_mecanica.png);
   background-size: 100% 100%;
@@ -213,6 +228,13 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
   height: 47px;
 }
 
+<<<<<<< HEAD
+=======
+body .main-container .row section section#block-bean-mecanica fieldset:nth-child(3) {
+  margin-top: 50px;
+}
+
+>>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(3) div.field-item.even p a {
   background: url(../img/scroll_home.png);
   background-size: contain;
@@ -223,11 +245,15 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
   display: inline-block;
 }
 
+<<<<<<< HEAD
 body .main-container .row section section#block-nissan-galeria {
   border: 2px solid greed;
 }
 
 body .main-container .row section section#block-nissan-galeria h2 {
+=======
+body .main-container .row section section#block-views-galeria-nissan-block h2 {
+>>>>>>> parent of 98032dd... galery
   font-size: 26px;
   font-family: "Brand bold";
   color: black;
@@ -240,6 +266,7 @@ body .main-container .row section section#block-nissan-galeria h2 {
   /* transform: skewX(-34deg);*/
 }
 
+<<<<<<< HEAD
 body .main-container .row section section#block-nissan-galeria div#Carousel ol li {
   background-color: #9d9d9d;
 }
@@ -304,6 +331,42 @@ body .main-container .row section section#block-nissan-galeria div#Carousel div.
 }
 
 body .main-container .row section section#block-nissan-galeria div#Carousel a.left.carousel-control {
+=======
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides {
+  border: 2px solid red;
+  width: 100% !important;
+  height: 28pc;
+}
+
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides li {
+  width: 31.33333333% !important;
+  height: 50%;
+  margin: 0px 15px;
+  border: 1px solid blue;
+  float: left !important;
+}
+
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides li div.video-js.test-video-video-dimensions {
+  width: 100% !important;
+  height: 220px !important;
+}
+
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides li div.video-js {
+  width: 100% !important;
+  height: 220px !important;
+}
+
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides li .vjs-big-play-button {
+  top: 38%;
+  left: 35%;
+}
+
+body .main-container .row section section#block-views-galeria-nissan-block ul.flex-direction-nav li.flex-nav-prev a {
+  display: block !important;
+  top: 33% !important;
+  left: -6%;
+  opacity: 1 !important;
+>>>>>>> parent of 98032dd... galery
   background: url(../img/galery_home_prev.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -319,7 +382,15 @@ body .main-container .row section section#block-nissan-galeria div#Carousel a.le
   height: 26px;
 }
 
+<<<<<<< HEAD
 body .main-container .row section section#block-nissan-galeria div#Carousel a.right.carousel-control {
+=======
+body .main-container .row section section#block-views-galeria-nissan-block ul.flex-direction-nav li.flex-nav-next a {
+  top: 33% !important;
+  right: -8%;
+  opacity: 1 !important;
+  display: block !important;
+>>>>>>> parent of 98032dd... galery
   background: url(../img/galery_home_next.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -374,6 +445,18 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   border-bottom: 6px solid #c61633;
 }
 
+<<<<<<< HEAD
+=======
+#modalContent .modal-content .modal-body {
+  /*___________—*_*.. Paso 2 ..*_*..___________*/
+}
+
+#modalContent .modal-content .modal-body div.webform-component--paso-1 p {
+  position: absolute;
+  top: 0px;
+}
+
+>>>>>>> parent of 98032dd... galery
 #modalContent .modal-content .modal-body div.webform-component--formulario-de-registro p {
   font-size: 14px;
   font-family: "Brand Regular";
@@ -462,5 +545,196 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   border-radius: 0px;
   border-color: transparent;
   color: white;
+<<<<<<< HEAD
   padding: 1em 2em;
+=======
+  padding: .4em 3em;
+}
+
+#modalContent .modal-content .modal-body div.form-actions button.webform-next, #modalContent .modal-content .modal-body div.form-actions button.webform-submit {
+  background: url(../img/terminos_button.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#modalContent .modal-content .modal-body div.form-actions button.webform-previous {
+  background: url(../img/terminal_button_negro.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#modalContent .modal-content .modal-body div.form-actions button div {
+  display: none;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--paso2 {
+  text-align: center;
+}
+
+#modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper label {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #363636;
+  font-weight: bold;
+}
+
+#modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file {
+  text-align: center;
+}
+
+#modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file button {
+  background-color: #c61633;
+  padding: .8em 6em;
+  border-radius: 20px;
+  border-color: #c61633;
+  color: #fff;
+}
+
+#modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file button span.icon.glyphicon::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/terminal_icon_updload.png) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+}
+
+#modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.help-block {
+  display: none;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--especificaciones {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--especificaciones p {
+  margin-top: 17px;
+  margin-bottom: 37px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--paso-3 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--paso-3 p {
+  font-size: 16px;
+  font-family: "HelveticaNeu Bold";
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por {
+  text-align: center;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de > label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por > label {
+  font-size: 12px;
+  font-family: "Brand Regular";
+  color: black;
+  font-weight: normal;
+  margin-bottom: 29px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad, #modalContent .modal-content .modal-body div.webform-component--obligatorio, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto {
+  text-align: center;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones label a {
+  text-decoration: none;
+  border-bottom: 2px solid #939394;
+  outline: none;
+  color: black;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div label input {
+  margin-left: 20px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 24px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input {
+  margin-left: 20px;
+}
+
+/*___________—*_*.. footer ..*_*..___________*/
+footer {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-top: 0px solid transparent;
+  background-color: #000000;
+  width: 100% !important;
+  text-align: center;
+}
+
+footer div.info-footer {
+  display: inline-flex;
+}
+
+footer div.info-footer div.nissan-colombia {
+  font-size: 20px;
+  font-family: "Brand Regular";
+  color: rgba(255, 255, 255, 0.529);
+}
+
+footer div.info-footer p a {
+  font-size: 20px;
+  font-family: "Brand Regular";
+  color: #c61633;
+  padding-left: 3px;
+>>>>>>> parent of 98032dd... galery
 }
