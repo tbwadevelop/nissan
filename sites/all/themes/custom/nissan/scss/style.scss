@@ -193,8 +193,8 @@ body {
 						}
 					}
 				}
-				/*___________—*_*.. Galeria ..*_*..___________*/
-				section#block-views-galeria-nissan-block {
+				/*___________—*_*.. Galeria ..*_*..___________*/	
+    			section#block-nissan-galeria {
 					h2 {
 						font-size: 26px;
 						font-family: "Brand bold";
@@ -207,59 +207,101 @@ body {
 						/* width: 150px;*/
 						/* transform: skewX(-34deg);*/
 					}
-					div.flex-viewport {
-						ul.slides {
-							border: 2px solid red;
-							width: 100% !important;
-							height: 28pc;
+					div#Carousel {
+						ol {
 							li {
-								width: 31.33333333% !important;
-								height: 50%;
-	    						margin: 0px 15px;
-								border: 1px solid blue;
-								float: left !important;
-								div.video-js.test-video-video-dimensions {
-									width: 100% !important;
-									height: 220px !important;
-								}
-								div.video-js {
-									width: 100% !important;
-									height: 220px !important;
-								}
-								.vjs-big-play-button {
-									top: 38%;
-	    							left: 35%;
-								}
+								background-color: #9d9d9d;
 							}
+							li.active {
+								background: $rojo;
+							}
+						}
+					
+						div.carousel-inner {
+							a.thumbnail{
+								background-color: transparent;
+	    						padding: 0px;
+	    						div.video-js {
+	    							width: 100%;
+								    height: 100%;
+								    min-height: 16pc;
+								    button {
+								    	height: 0.9em;
+									    width: 4.6em;
+									    top: 40%;
+									    left: 40%;
+									    background: #c61633;
+									    border-radius: 0px;
+									    border: none;
+									    transform: skewX(-34deg);
+									    line-height: normal;
+									    padding: 0px;
+									    text-align: center;
+									    box-shadow: 25px 22px 0px 12px rgba(0,0,0,0.44);
+									    span {
+									    	&:nth-child(2) {
+										    	font-size: 17px;
+											    line-height: normal;
+											    clip: initial;
+											    overflow: inherit;
+											    transform: skewX(34deg);
+											    color: white;
+											    display: inline-block;
+											    text-align: left;
+											    height: 0px;
+											    width: auto;
+											    position: absolute;
+											    top: 4px;
+											    left: 32px;
+											}	
+										    &.vjs-icon-placeholder {
+										    	position: absolute;
+											    top: 0px;
+											    left: 0px;
+										    	&::before {
+											    	position: absolute;
+												    top: 0px;
+												    left: 0px;
+												    transform: skewX(34deg);
+											    }
+										    }
+									    }
+								    }
+	    						}
+							}
+						}
+						a.left.carousel-control {
+							background: url(../img/galery_home_prev.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							border-radius: 0px ;
+						    border: none;
+						    opacity: inherit;
+						    margin-top: 22%;
+						    color: $rojo;
+						    text-indent: 13px;
+						    text-indent: -666em;
+    						overflow: hidden;
+    						width: 21px;
+    						height: 26px;
+						}
+						a.right.carousel-control {
+							background: url(../img/galery_home_next.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							border-radius: 0px ;
+						    border: none;
+						    opacity: inherit;
+						    margin-top: 22%;
+						    color: $rojo;
+						    text-indent: 13px;
+						    text-indent: -666em;
+    						overflow: hidden;
+    						width: 21px;
+    						height: 26px;
 						}
 					}
-					ul.flex-direction-nav {
-						li.flex-nav-prev {
-							a {
-								display: block !important;
-								top: 33% !important;
-								left: -6%;
-								opacity: 1 !important;
-								background: url(../img/galery_home_prev.png);
-   								background-size: contain;
-   								background-repeat: no-repeat;
-   								text-indent: 32%;
-							}
-						}
-						li.flex-nav-next {
-							a {
-								top: 33% !important;
-								right: -8%;
-								opacity: 1 !important;
-								display: block !important;
-								background: url(../img/galery_home_next.png);
-   								background-size: contain;
-   								background-repeat: no-repeat;
-   								text-indent: 32%;
-							}
-						}
-					}
-				}
+				}		
 			}
 		}
 	}
