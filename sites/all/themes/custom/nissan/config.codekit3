@@ -9,6 +9,19 @@
 	],
 "creatorBuild": "26268",
 "files": {
+<<<<<<< HEAD
+=======
+	"\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+>>>>>>> 6db69afe015f818590753909da516f4f5537586c
 	"\/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
