@@ -21,18 +21,25 @@ $negro :rgb(0, 0, 0);
 /*  home */
 /*------------------------------------------------------------------------------ */
 body {
-	background: url(../img/fondo_home.png);
-	background-size: cover;
+	padding-top: 0px !important;
+    background: url(../img/fondo_home.png) 0% 0% / cover no-repeat;
     background-repeat: no-repeat;
-    padding-top: 0px;
     div#skip-link {
-    	position: absolute;
-    	top: 0px;
-    	right: 0px;
     	p {
-    		    padding: 14px 0px;
+    		background: url(../img/registrarme_home.png);
+		    background-size: cover;
+		    background-repeat: no-repeat;
+		    padding: 1em 2em 1em 4em;
+		    position: absolute;
+		    right: 0px;
+    		padding: 14px 0px;
     		a {
-
+				color: white;
+				text-decoration: none;
+				font-size: 12px;
+				font-family: "Brand Bold";
+				font-weight: bold;
+				text-transform: uppercase;
     		}
     	}
     }
