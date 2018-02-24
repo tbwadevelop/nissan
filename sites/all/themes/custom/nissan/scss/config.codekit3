@@ -9,32 +9,6 @@
 	],
 "creatorBuild": "26268",
 "files": {
-	"\/_default-variables.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/_default-variables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/_overrides.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/_overrides.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/style.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -43,17 +17,10 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/Applications\/XAMPP\/xamppfiles\/htdocs\/nissan\/sites\/all\/themes\/custom\/nissan\/css\/style.css",
+		"oAP": "\/Library\/WebServer\/Documents\/nissan\/sites\/all\/themes\/custom\/nissan\/css\/style.css",
 		"oF": 6,
 		"oS": 1,
 		"uL": 1
-		},
-	"\/style.scss.ori": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/style.scss.ori",
-		"oF": 0
 		}
 	},
 "hooks": [

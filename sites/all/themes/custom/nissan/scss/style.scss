@@ -206,6 +206,7 @@ body {
 				}
 				/*___________—*_*.. Galeria ..*_*..___________*/	
     			section#block-nissan-galeria {
+    				border: 2px solid greed;
 					h2 {
 						font-size: 26px;
 						font-family: "Brand bold";
@@ -214,7 +215,7 @@ body {
 						text-transform: uppercase;
 						line-height: 1.2;
 						text-align: center;
-						border: 2px solid $rojo;
+						border: 2px solid greed;
 						/* width: 150px;*/
 						/* transform: skewX(-34deg);*/
 					}
