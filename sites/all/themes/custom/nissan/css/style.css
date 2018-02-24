@@ -98,8 +98,11 @@ body .main-container .row section section#block-bean-mecanica fieldset legend {
 
 body .main-container .row section section#block-bean-mecanica fieldset div.collapse.in {
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 15px;
 =======
+=======
+>>>>>>> parent of 98032dd... galery
   padding: 0px;
 >>>>>>> parent of 98032dd... galery
 }
@@ -110,12 +113,18 @@ body .main-container .row section section#block-bean-mecanica fieldset div.colla
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) {
   margin: 0px;
   padding: 0px;
 }
 
+<<<<<<< HEAD
+>>>>>>> parent of 98032dd... galery
+=======
 >>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) div.collapse.in {
   background: url(../img/marco_home_video.png);
@@ -127,10 +136,13 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(1) div.collapse.in div.field-name-field-imagen {
   padding: 17px 17px 17px 17px;
 }
 
+=======
+>>>>>>> parent of 98032dd... galery
 =======
 >>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(2) div.collapse.in {
@@ -229,11 +241,17 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(3) {
   margin-top: 50px;
 }
 
+<<<<<<< HEAD
+>>>>>>> parent of 98032dd... galery
+=======
 >>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-bean-mecanica fieldset:nth-child(3) div.field-item.even p a {
   background: url(../img/scroll_home.png);
@@ -246,11 +264,15 @@ body .main-container .row section section#block-bean-mecanica fieldset:nth-child
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 body .main-container .row section section#block-nissan-galeria {
   border: 2px solid greed;
 }
 
 body .main-container .row section section#block-nissan-galeria h2 {
+=======
+body .main-container .row section section#block-views-galeria-nissan-block h2 {
+>>>>>>> parent of 98032dd... galery
 =======
 body .main-container .row section section#block-views-galeria-nissan-block h2 {
 >>>>>>> parent of 98032dd... galery
@@ -266,6 +288,7 @@ body .main-container .row section section#block-views-galeria-nissan-block h2 {
   /* transform: skewX(-34deg);*/
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 body .main-container .row section section#block-nissan-galeria div#Carousel ol li {
   background-color: #9d9d9d;
@@ -361,6 +384,37 @@ body .main-container .row section section#block-views-galeria-nissan-block div.f
   left: 35%;
 }
 
+=======
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides {
+  border: 2px solid red;
+  width: 100% !important;
+  height: 28pc;
+}
+
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides li {
+  width: 31.33333333% !important;
+  height: 50%;
+  margin: 0px 15px;
+  border: 1px solid blue;
+  float: left !important;
+}
+
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides li div.video-js.test-video-video-dimensions {
+  width: 100% !important;
+  height: 220px !important;
+}
+
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides li div.video-js {
+  width: 100% !important;
+  height: 220px !important;
+}
+
+body .main-container .row section section#block-views-galeria-nissan-block div.flex-viewport ul.slides li .vjs-big-play-button {
+  top: 38%;
+  left: 35%;
+}
+
+>>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-views-galeria-nissan-block ul.flex-direction-nav li.flex-nav-prev a {
   display: block !important;
   top: 33% !important;
@@ -383,8 +437,11 @@ body .main-container .row section section#block-views-galeria-nissan-block ul.fl
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 body .main-container .row section section#block-nissan-galeria div#Carousel a.right.carousel-control {
 =======
+=======
+>>>>>>> parent of 98032dd... galery
 body .main-container .row section section#block-views-galeria-nissan-block ul.flex-direction-nav li.flex-nav-next a {
   top: 33% !important;
   right: -8%;
@@ -456,6 +513,9 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   top: 0px;
 }
 
+<<<<<<< HEAD
+>>>>>>> parent of 98032dd... galery
+=======
 >>>>>>> parent of 98032dd... galery
 #modalContent .modal-content .modal-body div.webform-component--formulario-de-registro p {
   font-size: 14px;
@@ -736,5 +796,8 @@ footer div.info-footer p a {
   font-family: "Brand Regular";
   color: #c61633;
   padding-left: 3px;
+<<<<<<< HEAD
+>>>>>>> parent of 98032dd... galery
+=======
 >>>>>>> parent of 98032dd... galery
 }
