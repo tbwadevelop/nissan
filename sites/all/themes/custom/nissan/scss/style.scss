@@ -507,8 +507,10 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres {
     display: none;
   }
 }
-section#block-system-main {
-  display: none;
+body.page-node {
+  section#block-system-main {
+    display: none;
+  }
 }
 /* -\* Nuevo comentario /*- */
 .loader {

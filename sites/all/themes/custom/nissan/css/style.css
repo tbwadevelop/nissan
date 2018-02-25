@@ -340,7 +340,7 @@ div#modalBackdrop {
 div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   display: none; }
 
-section#block-system-main {
+body.page-node section#block-system-main {
   display: none; }
 
 /* -\* Nuevo comentario /*- */
