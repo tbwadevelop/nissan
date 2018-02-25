@@ -1,66 +1,120 @@
+<!-- version estable -->
 <html>
 <link rel="stylesheet" type="text/css" href="sites/all/modules/custom/nissan/css/style.css">
-    <body>
+  <body>
     <div class="container">
         <div class="row">
-    		<div class="col-md-12">
+               <div class="col-md-12">
                     <div id="Carousel" class="carousel slide">
                      <?php $view = views_get_view('nissan_galeria', true); $view->execute(); module_load_include('inc', 'webform', 'includes/webform.submissions'); 
-                           $count =  count($view->result); ?>
+                           $count =  count($view->result);?>
                       
-                      <ol class="carousel-indicators">   
-                          <?php $numero = 6; ?>
+                       <ol class="carousel-indicators">   
+                          <?php $cantidad_group_items = 6; ?>
                           <?php for($i = 0; $i <= $count; $i++): ?>
-                              <?php if($i%$numero==0): ?>
-                                  <li data-target="#Carousel" data-slide-to="<?php print($i); ?>"></li>
+                              <?php if($i%$cantidad_group_items==0 && $i == FALSE): ?>
+                                  <li class="active" data-target="#Carousel" data-slide-to="<?php print($i); ?>"></li>
+                                  <?php $item = $i; ?>
                               <?php  endif ?>
+                              <?php if($i%$cantidad_group_items==0 && $i != FALSE): ?>
+                                  <?php $item = $item+1; ?>
+                                  <li data-target="#Carousel" data-slide-to="<?php print($item); ?>"></li>
+                              <?php  endif ?>                              
                           <?php endfor ?> 
-                      </ol>                   
+                      </ol>                
 
-                    <div class="carousel-inner">
-                    <?php $url = 'http://localhost/nissan/sites/default/files/webform/SampleVideo_1280x720_1mb_6.mp4'; ?>
-                        <div class="item active">
-                            <div class="row">
-                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                            </div><!--.row-->
-                            <div class="row">
-                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                            </div><!--.row-->                        
-                        </div><!--.item-->
+                           <div class="carousel-inner">
 
-                            <?php foreach ($view->result as $key => $value): ?>
-                                <?php $data = webform_get_submission($value->node_nid, $value->webform_submissions_serial);
-                                      $file = file_load($data->data[21][0]);    
-                                      $url = file_create_url($file->uri); 
-                                ?>
+                              <?php foreach ($view->result as $key => $value): ?>
+                                  <?php $data = webform_get_submission($value->node_nid, $value->webform_submissions_serial);
+                                        $file = file_load($data->data[21][0]);  $url = file_create_url($file->uri); ?>
+
+                                     
+                              <!-- Start 6 items sliders -->
+                                      <?php  if($key == FALSE): ?>
+                                  <div class="item active">
+                                    <div class="row">
+                                      <?php endif ?>   
+                                        <?php  if($key <= 2): ?>
+                                            <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
+                                        <?php endif ?>                                      
+                                            <?php  if($key == 3): ?>
+                                    </div>
+                                            <?php endif ?> 
+                                    
+                                         <?php  if($key == 3): ?>
+                                    <div class="row">
+                                         <?php endif ?>
+
+                                         <?php  if($key >= 3 && $key <= 5): ?>
+                                            <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
+                                         <?php endif ?>  
+
+                              <!-- End  6 items sliders -->
+
+                                     <!-- Codec Programing Slider -->      
+                                 <?php  if ($key == 6):  ?>
+                                     <?php $init =6;  $start = 6;  $top= 12;     $multiplo = 9;   $mayor_mul = 11; $menor_mul = 8; ?> 
+                                           </div>
+                                        </div> 
+                                  <?php endif; ?>
+
+
+                                 <?php  if ($key == 12):  ?>
+                                     <?php $init =12;  $start = 12;  $top= 18;     $multiplo = 15;   $mayor_mul = 17; $menor_mul = 14; ?> 
+                                           </div>
+                                        </div> 
+
+                                  <?php endif; ?>
+
+                                 <?php  if ($key == 18):  ?>
+                                     <?php $init =18;  $start = 18;  $top= 24;     $multiplo = 21;   $mayor_mul = 23; $menor_mul = 20; ?> 
+                                           </div>
+                                        </div> 
+                                  <?php endif; ?>
+
+
+                              <!-- Codec Programing Slider -->
+                                       <?php if(isset($init) && $key == $init): ?>
+                                  <div class="item">
+                                    
+                                    <div class="row">
+                                       <?php endif  ?>
+                                       <?php if(isset($start) && $key >= $start &&  $key <= $menor_mul): ?>
+                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
+                                       <?php endif ?>
+
+                                       <?php if(isset($multiplo) && $key == $multiplo): ?>
+                                    </div>
+                                    <div class="row">
+                                       <?php endif ?>
                                       
-                                 <div class="item">
-                                    <div class="row">
-                                      <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                                      <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                                      <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                                    </div><!--.row-->
-                                    <div class="row">
-                                      <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                                      <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                                      <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
-                                    </div><!--.row-->                        
-                                </div><!--.item-->                                  
-                              <?php  endforeach ?>
-                  
-                    </div><!--.carousel-inner-->
-                      <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
-                      <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
-                    </div><!--.Carousel-->
-                     
-    		</div>
-    	</div>
-    </div><!--.container-->
-    </body>
+                                       <?php if(isset($multiplo) && $key >= $multiplo &&  $key <= $mayor_mul): ?>
+                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
+                                       <?php endif ?>                                     
+                                       
+                                       <?php if(isset($top) && $key == $top): ?> 
+                                    </div>  
+                                  </div>
+                                       <?php endif ?>  
+            
+
+
+                                    
+
+
+
+                              <?php endforeach ?>
+                        </div><!--.carousel-inner-->
+             </div><!-- Carrrusel -->
+                  <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                 <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+
+        </div>  <!-- col-md-12 -->
+     </div> <!-- row -->
+  </div>
+  <!--.container-->
+</body>
 </html>
 
 <?php 
@@ -68,7 +122,7 @@ function rendervideo($url){
         $render = theme('videojs', array(
           'items' => array(
             array(
-              'uri' => "http://localhost/nissan/sites/default/files/webform/SampleVideo_1280x720_1mb_6.mp4",
+              'uri' => $url,
               'filemime' => 'video/mp4',
             ),
           ),
