@@ -22,7 +22,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/style.scss.copy.scss": {
+	"\/style.scss.copy .scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -30,7 +30,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/style.scss.copy.css",
+		"oAP": "\/style.scss.copy .css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
