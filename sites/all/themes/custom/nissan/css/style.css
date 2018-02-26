@@ -438,7 +438,9 @@ body.page-node section#block-system-main {
     border-color: transparent;
     -webkit-box-shadow: 0 1px 1px transparent;
     box-shadow: 0 1px 1px transparent;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    padding-left: 10%;
+    padding-right: 10%; }
     #modalContent .modal-content .modal-body fieldset legend {
       background-color: transparent;
       border-color: transparent;
@@ -615,6 +617,17 @@ body.page-node section#block-system-main {
       #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input {
         margin-left: 20px; }
 
+@media screen and (max-width: 768px) {
+  #modalContent .modal-content .modal-body fieldset {
+    padding: 0px; }
+  #modalContent .modal-content .modal-body legend {
+    text-align: center; }
+    #modalContent .modal-content .modal-body legend span {
+      font-size: 12px;
+      font-family: "Brand Regular";
+      color: black;
+      padding-left: 15px; } }
+
 @media screen and (max-width: 640px) {
   #modalContent .modal-content .modal-header h4 {
     font-size: 14px; }
@@ -624,7 +637,9 @@ body.page-node section#block-system-main {
       bottom: 0px;
       left: calc(45% - 1em);
       width: 69px;
-      border-bottom: 6px solid #c61633; } }
+      border-bottom: 6px solid #c61633; }
+  #modalContent .modal-content .modal-body fieldset {
+    padding: 0px; } }
 
 /*___________—*_*.. footer ..*_*..___________*/
 footer {

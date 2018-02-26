@@ -668,6 +668,8 @@ body.page-node {
         -webkit-box-shadow: 0 1px 1px transparent;
           box-shadow: 0 1px 1px transparent;
         margin-bottom: 0px;
+        padding-left: 10%;
+        padding-right: 10%;
         legend {
           background-color: transparent;
           border-color: transparent;
@@ -905,6 +907,26 @@ body.page-node {
     }
   }
 }
+@media screen and (max-width: $breakpoint-tablet) {
+  #modalContent {
+    .modal-content {
+      .modal-body {
+        fieldset { 
+          padding: 0px;
+        }
+        legend {
+          text-align: center;
+          span {
+            font-size: 12px;
+            font-family: "Brand Regular";
+            color: $negro;
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: $breakpoint-miniphone) {
   #modalContent {
     .modal-content {
@@ -919,6 +941,11 @@ body.page-node {
             width: 69px;
             border-bottom: 6px solid #c61633;
           }
+        }
+      }
+      .modal-body {
+        fieldset { 
+          padding: 0px;
         }
       }
     }
