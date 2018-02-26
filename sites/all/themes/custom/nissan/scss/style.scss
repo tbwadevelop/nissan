@@ -595,46 +595,20 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres {
     display: none;
   }
 }
-body.html.front.not-logged-in.no-sidebars.page-node {
-  div.main-container.container {
-    div.row {
-      section.col-sm-12 {
-        div.region.region-content {
-          section#block-system-main.block.block-system.clearfix{
-            background: red;
-            div#first-time  {
-              p {
-                
-                display: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-body.front.page-node { 
-  .main-container {
-    .row {
-      section {
-        h1 {
-          display: none;
-        }
-      }
-    }
-  }
+
+body.front #first-time p, body.front h1.page-header {
+ display:none;
 }
 /* -\* Nuevo comentario /*- */
-.loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(http://loadinggif.com/images/image-selection/3.gif) 50% 50% no-repeat #b6b5b5;
-}
+// .loader {
+//   position: fixed;
+//   left: 0px;
+//   top: 0px;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 9999;
+//   background: url(http://loadinggif.com/images/image-selection/3.gif) 50% 50% no-repeat #b6b5b5;
+// }
 /*___________—*_*.. Formulario Registro  ..*_*..___________*/
 #modalContent {
   .modal-content {
@@ -1212,5 +1186,16 @@ body.node-type-article {
   }
 }
 
+//modal dentro de otra modal
+.modal-backdrop.fade.in {
+  opacity: 0;
+  z-index: 0;
+}
+div.webform-component--terminos {
+  div.modal {
+    div.modal-content {
 
+    }
+  }
+}
 
