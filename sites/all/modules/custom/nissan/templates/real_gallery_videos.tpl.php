@@ -6,6 +6,8 @@
         <div class="row">
                <div class="col-md-12">
                     <div id="Carousel" class="carousel slide">
+
+                    <div class="subtitulo nissan" style="text-align: center"> <p>Aquí están algunas de las jugadas más emocionantes hasta ahora</p></div/>
                      <?php $view = views_get_view('nissan_galeria', true); $view->execute(); module_load_include('inc', 'webform', 'includes/webform.submissions'); 
                            $count =  count($view->result);?>
                       
