@@ -81,10 +81,19 @@ body {
             font-family: Brand Italic;
             font-size: 60px; 
           }
-          div.field-name-field-habilidad- {
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
+          div.field-name-field-habilidad {
+            div.conte {
+              p {
+                text-align: center;
+                font-size: 18px;
+                font-family: Brand Regular;
+                text-transform: uppercase;
+                margin-bottom: 50px;
+                &:last-child {
+                  display: none;
+                }
+              }
+            }
           }
           fieldset {
             position: relative;
@@ -134,7 +143,7 @@ body {
                   text-align: center;
                 }
               }
-              div.field-name-field-resumen{
+              div.field-name-field-resumen {
                 div.field-item.even {
                   font-family: Brand Regular;
                   color: black;
@@ -210,6 +219,8 @@ body {
           }
           fieldset.group-container-three {
             margin-top: 50px;
+            margin-bottom: 150px;
+
             div.field-item.even {
               p {
                 a {
@@ -226,7 +237,7 @@ body {
           }
         }
         /*___________—*_*.. Galeria ..*_*..___________*/  
-          section#block-nissan-galeria {
+        section#block-nissan-galeria {
           h2 {
             font-size: 26px;
             font-family: "Brand bold";
@@ -243,7 +254,26 @@ body {
             margin-left: auto;
             margin-right: auto;
           }
+
           div#Carousel {
+            div.subtitulo.nissan {
+              position: relative;
+              margin-top: 69px;
+              margin-bottom: 71px;
+              width: 100%;
+              p {
+                font-size: 18px;
+                font-family: "Brand Regular";
+                color: $negro;
+                padding: 26px 34px 17px;
+                margin: 0px;
+                width: 63%;
+                background: url(../img/margen_galery_home.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                margin: auto;    
+              }
+            }
             ol {
               li {
                 background-color: #9d9d9d;
@@ -256,54 +286,54 @@ body {
             div.carousel-inner {
               a.thumbnail{
                 background-color: transparent;
-                  padding: 0px;
-                  div.video-js {
-                    width: 100%;
-                    height: 100%;
-                    min-height: 16pc;
-                    button {
-                      height: 0.9em;
-                      width: 4.6em;
-                      top: 40%;
-                      left: 40%;
-                      background: $rojo;
-                      border-radius: 0px;
-                      border: none;
-                      transform: skewX(-34deg);
-                      line-height: normal;
-                      padding: 0px;
-                      text-align: center;
-                      box-shadow: 25px 22px 0px 12px rgba(0,0,0,0.44);
-                      span {
-                        &.group-container-second {
-                          font-size: 17px;
-                          line-height: normal;
-                          clip: initial;
-                          overflow: inherit;
-                          transform: skewX(34deg);
-                          color: white;
-                          display: inline-block;
-                          text-align: left;
-                          height: 0px;
-                          width: auto;
-                          position: absolute;
-                          top: 4px;
-                          left: 32px;
-                      } 
-                        &.vjs-icon-placeholder {
+                padding: 0px;
+                div.video-js {
+                  width: 100%;
+                  height: 100%;
+                  min-height: 16pc;
+                  button {
+                    height: 0.9em;
+                    width: 4.6em;
+                    top: 40%;
+                    left: 40%;
+                    background: $rojo;
+                    border-radius: 0px;
+                    border: none;
+                    transform: skewX(-34deg);
+                    line-height: normal;
+                    padding: 0px;
+                    text-align: center;
+                    box-shadow: 25px 22px 0px 12px rgba(0,0,0,0.44);
+                    span {
+                      &.group-container-second {
+                        font-size: 17px;
+                        line-height: normal;
+                        clip: initial;
+                        overflow: inherit;
+                        transform: skewX(34deg);
+                        color: white;
+                        display: inline-block;
+                        text-align: left;
+                        height: 0px;
+                        width: auto;
+                        position: absolute;
+                        top: 4px;
+                        left: 32px;
+                    } 
+                      &.vjs-icon-placeholder {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        &::before {
                           position: absolute;
                           top: 0px;
                           left: 0px;
-                          &::before {
-                            position: absolute;
-                            top: 0px;
-                            left: 0px;
-                            transform: skewX(34deg);
-                          }
+                          transform: skewX(34deg);
                         }
                       }
                     }
                   }
+                }
               }
             }
             a.left.carousel-control {
@@ -349,26 +379,15 @@ body {
     background-repeat: no-repeat;
     div#skip-link {
       p {
-        background: url(../img/champion_movil.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding: 0px !important;
-        position: absolute;
-        top: 3em;
-        right: -1em;
-        height: 64px;
-        a {
-          visibility: hidden;
-          pointer-events: none;
-        }
+        display: none;
       }
     }
     header#navbar {
       div.navbar-header{
-        a{
+        a.pull-left {
           width: 100%;
-          img{
-            width: 61%;
+          > img {
+            width: 100%;
           }
         }
       }
@@ -380,9 +399,50 @@ body {
             h2 {
               font-size: 60px; 
             }
+            div.field-name-field-habilidad {
+              div.conte {
+                p {
+                  margin-bottom: 17px;
+                  &:first-child {
+                    display: none;
+                  }
+                  &:last-child {
+                    display: block;
+                  }
+                }
+              }
+            }
             fieldset.group-container-first {
               div.collapse.in {
                 padding: 24px 22px 9px;
+              }
+            }
+            fieldset.group-container-second {
+              div.collapse.in {
+                div.field-name-field-resumen {
+                  div.field-item.even {
+                    li {
+                      a {
+                        border:none;
+                        pointer-events: none; 
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          section#block-nissan-galeria {
+            div#Carousel {
+              padding: 0px;
+              padding-left: 15px;
+              padding-right: 15px; 
+              div.subtitulo.nissan {
+                p {
+                  width: 100%;
+                  // font-size: 13px;
+                  padding: 16px 28px 12px;
+                }
               }
             }
           }
@@ -404,19 +464,26 @@ body {
         button.navbar-toggle {
         display: none;
         }
-        a{
-          width: 30%;
+        a.pull-left{
+          width: 200px;
+   
         }
       }
     }
     div.main-container {
-      
       .row {
         section {
           padding: 0px;
           section#block-bean-mecanica {
             h2 {
               font-size: xx-large; 
+            }
+            div.field-name-field-habilidad {
+              div.conte {
+                p {
+                  margin-bottom: 17px;
+                }
+              }
             }
             fieldset.group-container-first {
               div.collapse.in {
@@ -469,8 +536,8 @@ body {
         button.navbar-toggle {
         display: none;
         }
-        a{
-          width: 30%;
+        a.pull-left{
+          width: 104px;
         }
       }
     }
@@ -481,18 +548,34 @@ body {
             h2 {
               font-size: 2em; 
             }
+            div.field-name-field-habilidad {
+              div.conte {
+                p {
+                  font-size: 12px;
+                }
+              }
+            }
             fieldset.group-container-first {
               div.collapse.in {
                 padding: 17px 17px 5px;
               }
             }
-            div.field-name-field-resumen{
+            div.field-name-field-resumen {
               div.field-item.even {
                 ul {
                   -webkit-padding-start: 22px;
                 }
               }
-            } 
+            }
+            section#block-nissan-galeria {
+              div#Carousel {
+                div.subtitulo.nissan {
+                  p {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
           }
         }
       }

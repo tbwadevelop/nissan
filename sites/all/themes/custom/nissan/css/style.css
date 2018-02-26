@@ -61,10 +61,14 @@ body {
       text-align: center;
       font-family: Brand Italic;
       font-size: 60px; }
-    body .main-container .row section section#block-bean-mecanica div.field-name-field-habilidad- {
+    body .main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
       text-align: center;
-      margin-top: 50px;
+      font-size: 18px;
+      font-family: Brand Regular;
+      text-transform: uppercase;
       margin-bottom: 50px; }
+      body .main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p:last-child {
+        display: none; }
     body .main-container .row section section#block-bean-mecanica fieldset {
       position: relative;
       background-color: transparent;
@@ -162,7 +166,8 @@ body {
             width: 6px;
             height: 47px; }
     body .main-container .row section section#block-bean-mecanica fieldset.group-container-three {
-      margin-top: 50px; }
+      margin-top: 50px;
+      margin-bottom: 150px; }
       body .main-container .row section section#block-bean-mecanica fieldset.group-container-three div.field-item.even p a {
         background: url(../img/scroll_home.png);
         background-size: contain;
@@ -186,6 +191,22 @@ body {
       padding: 10px 46px;
       margin-left: auto;
       margin-right: auto; }
+    body .main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan {
+      position: relative;
+      margin-top: 69px;
+      margin-bottom: 71px;
+      width: 100%; }
+      body .main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan p {
+        font-size: 18px;
+        font-family: "Brand Regular";
+        color: black;
+        padding: 26px 34px 17px;
+        margin: 0px;
+        width: 63%;
+        background: url(../img/margen_galery_home.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: auto; }
     body .main-container .row section section#block-nissan-galeria div#Carousel ol li {
       background-color: #9d9d9d; }
     body .main-container .row section section#block-nissan-galeria div#Carousel ol li.active {
@@ -268,25 +289,31 @@ body {
     background-size: cover;
     background-repeat: no-repeat; }
     body div#skip-link p {
-      background: url(../img/champion_movil.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      padding: 0px !important;
-      position: absolute;
-      top: 3em;
-      right: -1em;
-      height: 64px; }
-      body div#skip-link p a {
-        visibility: hidden;
-        pointer-events: none; }
-    body header#navbar div.navbar-header a {
+      display: none; }
+    body header#navbar div.navbar-header a.pull-left {
       width: 100%; }
-      body header#navbar div.navbar-header a img {
-        width: 61%; }
+      body header#navbar div.navbar-header a.pull-left > img {
+        width: 100%; }
     body div.main-container .row section section#block-bean-mecanica h2 {
       font-size: 60px; }
+    body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
+      margin-bottom: 17px; }
+      body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p:first-child {
+        display: none; }
+      body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p:last-child {
+        display: block; }
     body div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
-      padding: 24px 22px 9px; } }
+      padding: 24px 22px 9px; }
+    body div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even li a {
+      border: none;
+      pointer-events: none; }
+    body div.main-container .row section section#block-nissan-galeria div#Carousel {
+      padding: 0px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      body div.main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan p {
+        width: 100%;
+        padding: 16px 28px 12px; } }
 
 @media screen and (max-width: 768px) {
   body div#skip-link p {
@@ -294,12 +321,14 @@ body {
     right: -7px; }
   body header#navbar div.navbar-header button.navbar-toggle {
     display: none; }
-  body header#navbar div.navbar-header a {
-    width: 30%; }
+  body header#navbar div.navbar-header a.pull-left {
+    width: 200px; }
   body div.main-container .row section {
     padding: 0px; }
     body div.main-container .row section section#block-bean-mecanica h2 {
       font-size: xx-large; }
+    body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
+      margin-bottom: 17px; }
     body div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
       padding: 38px 33px 11px; }
     body div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in {
@@ -325,14 +354,18 @@ body {
 @media screen and (max-width: 640px) {
   body header#navbar div.navbar-header button.navbar-toggle {
     display: none; }
-  body header#navbar div.navbar-header a {
-    width: 30%; }
+  body header#navbar div.navbar-header a.pull-left {
+    width: 104px; }
   body div.main-container .row section section#block-bean-mecanica h2 {
     font-size: 2em; }
+  body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
+    font-size: 12px; }
   body div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
     padding: 17px 17px 5px; }
   body div.main-container .row section section#block-bean-mecanica div.field-name-field-resumen div.field-item.even ul {
-    -webkit-padding-start: 22px; } }
+    -webkit-padding-start: 22px; }
+  body div.main-container .row section section#block-bean-mecanica section#block-nissan-galeria div#Carousel div.subtitulo.nissan p {
+    font-size: 13px; } }
 
 /*------------------------------------------------------------------------------*/
 /*  Formulario de Registro */
