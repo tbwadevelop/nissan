@@ -19,74 +19,72 @@
 /*------------------------------------------------------------------------------*/
 /*  home */
 /*------------------------------------------------------------------------------ */
-body {
+body.front.page-node {
   background: url(../img/fondo_home.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 0px !important; }
-  body div#skip-link {
+  body.front.page-node div#skip-link {
     position: relative; }
-    body div#skip-link p {
+    body.front.page-node div#skip-link p {
       background: url(../img/registrarme_home.png);
       background-size: cover;
       background-repeat: no-repeat;
       padding: 1em 2em 1em 4em;
       position: absolute;
       right: 0px; }
-      body div#skip-link p a {
+      body.front.page-node div#skip-link p a {
         color: white;
         text-decoration: none;
         font-size: 12px;
         font-family: "Brand Bold";
         font-weight: bold;
         text-transform: uppercase; }
-  body header#navbar {
+  body.front.page-node header#navbar {
     margin-top: 0px;
     background-color: transparent;
     border-color: transparent; }
-    body header#navbar a.logo {
+    body.front.page-node header#navbar a.logo {
       margin: 0px; }
-    body header#navbar a.logo + a {
+    body.front.page-node header#navbar a.logo + a {
       display: none; }
-    body header#navbar .navbar-collapse {
+    body.front.page-node header#navbar .navbar-collapse {
       background: transparent;
       border-color: transparent;
       display: none !important; }
-  body .main-container .row section {
+  body.front.page-node div.main-container .row section {
     /*___________—*_*.. Hecho de emocion ..*_*..___________*/
     /*___________—*_*.. Galeria ..*_*..___________*/ }
-    body .main-container .row section h1 {
-      display: none; }
-    body .main-container .row section section#block-bean-mecanica h2 {
+    body.front.page-node div.main-container .row section section#block-bean-mecanica h2 {
       text-align: center;
       font-family: Brand Italic;
       font-size: 60px; }
-    body .main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
+    body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
       text-align: center;
       font-size: 18px;
       font-family: Brand Regular;
       text-transform: uppercase;
       margin-bottom: 50px; }
-      body .main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p:last-child {
+      body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p:last-child {
         display: none; }
-    body .main-container .row section section#block-bean-mecanica fieldset {
+    body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset {
       position: relative;
       background-color: transparent;
       border-color: transparent;
       border-radius: 0px;
       -webkit-box-shadow: 0 1px 1px transparent;
       box-shadow: 0 1px 1px transparent; }
-      body .main-container .row section section#block-bean-mecanica fieldset legend {
+      body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset legend {
         display: none; }
-      body .main-container .row section section#block-bean-mecanica fieldset div.collapse.in {
+      body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset div.collapse.in {
         padding: 0px; }
-        body .main-container .row section section#block-bean-mecanica fieldset div.collapse.in img {
+        body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset div.collapse.in img {
           /* width: 100%;*/
           z-index: 1; }
-    body .main-container .row section section#block-bean-mecanica fieldset.group-container-first {
+    body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-first {
       margin: 0px;
       padding: 0px; }
-      body .main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
+      body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
         background: url(../img/marco_home_video.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -94,51 +92,51 @@ body {
         height: 100%;
         z-index: 10;
         padding: 30px 28px 13px; }
-    body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in {
+    body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in {
       background: url(../img/marco_home_mecanica.png);
       background-size: 100% 100%;
       background-repeat: no-repeat;
       width: 100%;
       height: 100%;
       z-index: 10; }
-      body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-subtitulo div.field-item.even {
+      body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-subtitulo div.field-item.even {
         font-size: 24px;
         font-family: Brand Bold;
         color: black;
         font-weight: bold;
         text-align: center; }
-      body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even {
+      body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even {
         font-family: Brand Regular;
         color: black;
         font-size: 14px;
         text-align: left; }
-        body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even li {
+        body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even li {
           list-style: url(../img/marco-home-punto.png);
           list-style-position: outside;
           padding-left: 10px;
           padding-bottom: 17px; }
-          body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even li a {
+          body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even li a {
             text-decoration: none;
             border-bottom: 2px solid #939394;
             outline: none;
             color: black; }
-      body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link {
+      body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link {
         text-align: center; }
-        body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even {
+        body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center; }
-          body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p {
+          body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p {
             width: 210px;
             height: 47px;
             padding: 14px 0px;
             background: #c61633;
             -webkit-transform: skewX(-34deg);
             transform: skewX(-34deg); }
-            body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p a {
+            body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p a {
               color: white;
               text-decoration: none;
               -webkit-transform: skewX(34deg);
@@ -147,9 +145,9 @@ body {
               font-size: 12px;
               font-family: "Brand Bold";
               font-weight: bold; }
-            body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p a div {
+            body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p a div {
               display: none; }
-          body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p:before {
+          body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p:before {
             content: "";
             background: #c61633;
             position: absolute;
@@ -157,7 +155,7 @@ body {
             left: -7%;
             width: 11px;
             height: 47px; }
-          body .main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p:after {
+          body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p:after {
             content: "";
             background: #c61633;
             position: absolute;
@@ -165,10 +163,10 @@ body {
             right: -5%;
             width: 6px;
             height: 47px; }
-    body .main-container .row section section#block-bean-mecanica fieldset.group-container-three {
+    body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-three {
       margin-top: 50px;
       margin-bottom: 150px; }
-      body .main-container .row section section#block-bean-mecanica fieldset.group-container-three div.field-item.even p a {
+      body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-three div.field-item.even p a {
         background: url(../img/scroll_home.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -176,7 +174,7 @@ body {
         width: 60px;
         height: 60px;
         display: inline-block; }
-    body .main-container .row section section#block-nissan-galeria h2 {
+    body.front.page-node div.main-container .row section section#block-nissan-galeria h2 {
       font-size: 26px;
       font-family: "Brand bold";
       color: black;
@@ -191,12 +189,12 @@ body {
       padding: 10px 46px;
       margin-left: auto;
       margin-right: auto; }
-    body .main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan {
+    body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan {
       position: relative;
       margin-top: 69px;
       margin-bottom: 71px;
       width: 100%; }
-      body .main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan p {
+      body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan p {
         font-size: 18px;
         font-family: "Brand Regular";
         color: black;
@@ -207,18 +205,18 @@ body {
         background-size: 100% 100%;
         background-repeat: no-repeat;
         margin: auto; }
-    body .main-container .row section section#block-nissan-galeria div#Carousel ol li {
+    body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel ol li {
       background-color: #9d9d9d; }
-    body .main-container .row section section#block-nissan-galeria div#Carousel ol li.active {
+    body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel ol li.active {
       background: #c61633; }
-    body .main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail {
+    body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail {
       background-color: transparent;
       padding: 0px; }
-      body .main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js {
+      body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js {
         width: 100%;
         height: 100%;
         min-height: 16pc; }
-        body .main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js button {
+        body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js button {
           height: 0.9em;
           width: 4.6em;
           top: 40%;
@@ -231,7 +229,7 @@ body {
           padding: 0px;
           text-align: center;
           box-shadow: 25px 22px 0px 12px rgba(0, 0, 0, 0.44); }
-          body .main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js button span.group-container-second {
+          body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js button span.group-container-second {
             font-size: 17px;
             line-height: normal;
             clip: initial;
@@ -245,16 +243,16 @@ body {
             position: absolute;
             top: 4px;
             left: 32px; }
-          body .main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js button span.vjs-icon-placeholder {
+          body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js button span.vjs-icon-placeholder {
             position: absolute;
             top: 0px;
             left: 0px; }
-            body .main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js button span.vjs-icon-placeholder::before {
+            body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.video-js button span.vjs-icon-placeholder::before {
               position: absolute;
               top: 0px;
               left: 0px;
               transform: skewX(34deg); }
-    body .main-container .row section section#block-nissan-galeria div#Carousel a.left.carousel-control {
+    body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel a.left.carousel-control {
       background: url(../img/galery_home_prev.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -268,7 +266,7 @@ body {
       overflow: hidden;
       width: 21px;
       height: 26px; }
-    body .main-container .row section section#block-nissan-galeria div#Carousel a.right.carousel-control {
+    body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel a.right.carousel-control {
       background: url(../img/galery_home_next.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -377,7 +375,12 @@ div#modalBackdrop {
 div#__lpform_edit-submitted-fielset-acudiente-nombres img {
   display: none; }
 
-body.page-node section#block-system-main {
+body.html.front.not-logged-in.no-sidebars.page-node div.main-container.container div.row section.col-sm-12 div.region.region-content section#block-system-main.block.block-system.clearfix {
+  background: red; }
+  body.html.front.not-logged-in.no-sidebars.page-node div.main-container.container div.row section.col-sm-12 div.region.region-content section#block-system-main.block.block-system.clearfix div#first-time p {
+    display: none; }
+
+body.front.page-node .main-container .row section h1 {
   display: none; }
 
 /* -\* Nuevo comentario /*- */
@@ -669,3 +672,108 @@ footer {
       font-size: 14px; }
     footer div.info-footer p a {
       font-size: 14px; } }
+
+/*___________—*_*..  Gracias ..*_*..___________*/
+body.node-type-article {
+  background: url(../img/Gracias.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  body.node-type-article header#navbar {
+    margin-top: 0px;
+    background-color: transparent;
+    border-color: transparent; }
+    body.node-type-article header#navbar a.logo {
+      margin: 0px; }
+    body.node-type-article header#navbar a.logo + a {
+      display: none; }
+    body.node-type-article header#navbar .navbar-collapse {
+      background: transparent;
+      border-color: transparent;
+      display: none !important; }
+  body.node-type-article div.main-container .row section h1 {
+    font-size: 60px;
+    font-family: "Brand Italic";
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    margin-top: 16%;
+    margin-bottom: 5px; }
+  body.node-type-article div.main-container .row section div.region-content header {
+    display: none; }
+  body.node-type-article div.main-container .row section div.region-content div.field-name-body {
+    text-align: center; }
+    body.node-type-article div.main-container .row section div.region-content div.field-name-body p {
+      font-size: 24px;
+      font-family: "Brand Regular";
+      color: black;
+      text-transform: uppercase;
+      font-weight: normal; }
+  body.node-type-article div.main-container .row section div.region-content div.field-name-field-volver {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 20%; }
+    body.node-type-article div.main-container .row section div.region-content div.field-name-field-volver a {
+      background: url(../img/button_guardar.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 1em 6em; }
+
+@media screen and (max-width: 1024px) {
+  body.node-type-article {
+    background: url(../img/Gracias_movil.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    body.node-type-article header#navbar div.navbar-header a.pull-left {
+      width: 100%; }
+      body.node-type-article header#navbar div.navbar-header a.pull-left > img {
+        width: 100%; }
+    body.node-type-article div.main-container .row section div.region-content div.field-name-body {
+      width: 50%;
+      margin: auto; }
+    body.node-type-article div.main-container .row section div.region-content div.field-name-field-volver {
+      width: 100%;
+      margin-top: 20%;
+      margin-bottom: 0%; }
+      body.node-type-article div.main-container .row section div.region-content div.field-name-field-volver div.field-item {
+        background-color: #c61633;
+        padding: 1em 0em;
+        margin-right: 15px;
+        margin-left: 15px; }
+        body.node-type-article div.main-container .row section div.region-content div.field-name-field-volver div.field-item a {
+          background: none; }
+    body.node-type-article footer {
+      margin-top: 10px; } }
+
+@media screen and (max-width: 768px) {
+  body.node-type-article header#navbar div.navbar-header a.pull-left {
+    width: 200px; }
+  body.node-type-article div.main-container .row section div.region-content div.field-name-body {
+    width: 60%; }
+  body.node-type-article div.main-container .row section div.region-content div.field-name-field-volver {
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 0%; }
+    body.node-type-article div.main-container .row section div.region-content div.field-name-field-volver div.field-item {
+      background-color: #c61633;
+      padding: 1em 0em;
+      margin-right: 15px;
+      margin-left: 15px; }
+      body.node-type-article div.main-container .row section div.region-content div.field-name-field-volver div.field-item a {
+        background: none; } }
+
+@media screen and (max-width: 640px) {
+  body.node-type-article {
+    background: url(../img/Gracias_movil.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+    body.node-type-article header#navbar div.navbar-header a.pull-left {
+      width: 104px; }
+    body.node-type-article div.main-container .row section h1 {
+      font-size: 32px;
+      margin-top: 55%; }
+    body.node-type-article div.main-container .row section div.region-content div.field-name-body p {
+      font-size: 14px; }
+    body.node-type-article div.main-container .row section div.region-content div.field-name-field-volver {
+      margin-top: 44%; } }

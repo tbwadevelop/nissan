@@ -28,7 +28,7 @@ $breakpoint-miniphone: 640px;
 /*------------------------------------------------------------------------------*/
 /*  home */
 /*------------------------------------------------------------------------------ */
-body {
+body.front.page-node {
   background: url(../img/fondo_home.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,12 +68,12 @@ body {
       display: none !important;
     }
   }
-  .main-container {
+  div.main-container {
     .row {
       section {
-        h1 {
-          display: none;
-        }
+        // h1.page-header {
+        //   display: none;
+        // }
         /*___________—*_*.. Hecho de emocion ..*_*..___________*/
         section#block-bean-mecanica {
           h2 {
@@ -595,9 +595,34 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres {
     display: none;
   }
 }
-body.page-node {
-  section#block-system-main {
-    display: none;
+body.html.front.not-logged-in.no-sidebars.page-node {
+  div.main-container.container {
+    div.row {
+      section.col-sm-12 {
+        div.region.region-content {
+          section#block-system-main.block.block-system.clearfix{
+            background: red;
+            div#first-time  {
+              p {
+                
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+body.front.page-node { 
+  .main-container {
+    .row {
+      section {
+        h1 {
+          display: none;
+        }
+      }
+    }
   }
 }
 /* -\* Nuevo comentario /*- */
@@ -992,3 +1017,200 @@ footer {
     }
   }
 }
+
+/*___________—*_*..  Gracias ..*_*..___________*/
+body.node-type-article {
+  background: url(../img/Gracias.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  header#navbar{
+    margin-top: 0px; 
+    background-color: transparent;
+    border-color: transparent;
+    a.logo{
+      margin: 0px;
+    }
+    a.logo + a{ 
+      display: none;
+    }
+    .navbar-collapse {
+      background: transparent;
+      border-color: transparent;
+      display: none !important;
+    }
+  }
+  div.main-container {
+    .row {
+      section {
+        h1 {
+          font-size: 60px;
+          font-family: "Brand Italic";
+          color: $negro;
+          text-transform: uppercase;
+          border: none;
+          text-align: center;
+          margin-top: 16%;
+          margin-bottom: 5px;
+        }
+        div.region-content {
+          header {
+            display: none;
+          }
+          div.field-name-body {
+            text-align: center;
+            p {
+              font-size: 24px;
+              font-family: "Brand Regular";
+              color: $negro;
+              text-transform: uppercase;
+              font-weight: normal;
+            }
+          }
+          div.field-name-field-volver {
+            text-align: center;
+            margin-top: 6%;
+            margin-bottom: 20%;
+            a {
+              background: url(../img/button_guardar.png);
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+              color: white;
+              padding: 1em 6em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $breakpoint-Laptop) { 
+  body.node-type-article {
+    background: url(../img/Gracias_movil.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    header#navbar {
+      div.navbar-header{
+        a.pull-left {
+          width: 100%;
+          > img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    div.main-container {
+      .row {
+        section {
+          h1 {
+
+          }
+          div.region-content {
+            header {
+       
+            }
+            div.field-name-body {
+                  width: 50%;
+                  margin: auto;
+              p {
+             
+              }
+            }
+            div.field-name-field-volver {
+            width: 100%;
+              margin-top: 20%;
+              margin-bottom: 0%;
+              div.field-item{
+                background-color: $rojo;
+                padding: 1em 0em;
+                margin-right: 15px;
+                margin-left: 15px;
+                a {
+                  background: none;
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+  footer {
+    margin-top: 10px;
+  }  
+  }
+}
+@media screen and (max-width: $breakpoint-tablet) { 
+  body.node-type-article {
+    header#navbar {
+      div.navbar-header{
+        a.pull-left {
+          width: 200px;
+        }
+      }
+    }
+    div.main-container {
+      .row {
+        section {
+          div.region-content {
+            div.field-name-body {
+              width: 60%;
+            }
+            div.field-name-field-volver {
+            width: 100%;
+              margin-top: 20%;
+              margin-bottom: 0%;
+              div.field-item{
+                background-color: $rojo;
+                padding: 1em 0em;
+                margin-right: 15px;
+                margin-left: 15px;
+                a {
+                  background: none;
+                }
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $breakpoint-miniphone) { 
+  body.node-type-article {
+    background: url(../img/Gracias_movil.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    header#navbar {
+      div.navbar-header{
+        a.pull-left {
+          width: 104px;
+        }
+      }
+    }
+    div.main-container {
+      .row {
+        section {
+          h1 {
+            font-size: 32px;
+            margin-top: 55%;
+          }
+          div.region-content {
+            div.field-name-body {
+              p {
+                font-size: 14px;
+              }
+            }
+            div.field-name-field-volver {
+              margin-top: 44%;
+              div.field-item {
+        
+              } 
+            }
+          }
+        }
+      }
+    } 
+  }
+}
+
+
+
