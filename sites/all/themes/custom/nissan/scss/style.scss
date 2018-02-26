@@ -81,6 +81,11 @@ body {
             font-family: Brand Italic;
             font-size: 60px; 
           }
+          div.field-name-field-habilidad- {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
           fieldset {
             position: relative;
             background-color: transparent;
@@ -99,7 +104,7 @@ body {
               }
             }
           }
-          fieldset:nth-child(1) {
+          fieldset.group-container-first {
             margin: 0px;
               padding: 0px;
             div.collapse.in {
@@ -112,7 +117,7 @@ body {
               padding: 30px 28px 13px;
             }
           }
-          fieldset:nth-child(2) {
+          fieldset.group-container-second {
             div.collapse.in {
             background: url(../img/marco_home_mecanica.png);
             background-size: 100% 100%;
@@ -203,7 +208,7 @@ body {
               }
             }
           }
-          fieldset:nth-child(3) {
+          fieldset.group-container-three {
             margin-top: 50px;
             div.field-item.even {
               p {
@@ -270,7 +275,7 @@ body {
                       text-align: center;
                       box-shadow: 25px 22px 0px 12px rgba(0,0,0,0.44);
                       span {
-                        &:nth-child(2) {
+                        &.group-container-second {
                           font-size: 17px;
                           line-height: normal;
                           clip: initial;
@@ -375,7 +380,7 @@ body {
             h2 {
               font-size: 60px; 
             }
-            fieldset:nth-child(1) {
+            fieldset.group-container-first {
               div.collapse.in {
                 padding: 24px 22px 9px;
               }
@@ -413,12 +418,12 @@ body {
             h2 {
               font-size: xx-large; 
             }
-            fieldset:nth-child(1) {
+            fieldset.group-container-first {
               div.collapse.in {
                 padding: 38px 33px 11px;
               }
             }
-            fieldset:nth-child(2) {
+            fieldset.group-container-second {
               div.collapse.in {
                 background: none;
                 div.field-name-field-subtitulo {
@@ -448,7 +453,7 @@ body {
                 }
               }
             }
-            fieldset:nth-child(3) {
+            fieldset.group-container-three {
               display: none;
             }
           }
@@ -476,7 +481,7 @@ body {
             h2 {
               font-size: 2em; 
             }
-            fieldset:nth-child(1) {
+            fieldset.group-container-first {
               div.collapse.in {
                 padding: 17px 17px 5px;
               }
