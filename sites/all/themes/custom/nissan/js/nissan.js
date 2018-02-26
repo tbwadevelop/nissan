@@ -1,21 +1,23 @@
 (function ($) {
 	Drupal.behaviors.nissan = {
 		attach: function (context, settings) {
-					
-		 $(window).on('load',function(){
-		     $('#myModal').modal('show');
-		  });
+			$(document ).ajaxSuccess(function( event, xhr, settings ) {
+			   if ( $(".webform-client-form-1 .form-actions .webform-submit").length > 0 && $(".webform-client-form-1 .form-managed-file .file").length > 0) {
+			   	      console.log(event);
+			   	      console.log(xhr);
+			   	      console.log(settings.url);
 
-		$(window).load(function(){
-		    $('.loader').fadeOut(500);
-		});
-		
-			$( document ).ready(function() {
-			    //	launchWindow('#startodal');
-						$("#block-block-1").appendTo("#skip-link"); 
-					    // Loader Animation.	
 
-			});		
+			   	      var pathname = window.location.pathname; // Returns path only
+					  console.log(pathname);
+
+					  var url      = window.location.href; 
+					  console.log(url);
+			   	   //   if (xhr.status == false) {
+			   		  // //	window.location.href = 'gracias';
+			   		  // }	
+			   	}
+			});			
 		}
 	};
 }(jQuery));

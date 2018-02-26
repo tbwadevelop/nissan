@@ -47,3 +47,14 @@ function nissan_block_view($delta = '') {
 	 }
   return $block;
 }
+
+
+/**
+ * Implements hook_init().
+ */
+
+function nissan_init() {
+   Global $base_url;
+   drupal_add_js(array('nissan' => array('dominio' => $base_url)), array('type' => 'setting'));
+   drupal_add_js(drupal_get_path('module', 'nissan') . '/js/redirect.js');
+}
