@@ -29,9 +29,10 @@
 
                               <?php foreach ($view->result as $key => $value): ?>
                                   <?php $data = webform_get_submission($value->node_nid, $value->webform_submissions_serial);
-                                        $file = file_load($data->data[21][0]);  $url = file_create_url($file->uri); ?>
-
-                                     
+                                   if (isset($data->data[21][0])) {
+                                       $file = file_load($data->data[21][0]);  $url = file_create_url($file->uri);
+                                   }
+                              ?>
                               <!-- Start 6 items sliders -->
                                       <?php  if($key == FALSE): ?>
                                   <div class="item active">
