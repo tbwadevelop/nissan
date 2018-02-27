@@ -801,12 +801,22 @@ body.front #first-time p, body.front h1.page-header {
             margin-bottom: 37px;  
         }
       }
+      @media screen and (max-width: $breakpoint-tablet) {
+        div.webform-component--especificaciones {
+          p {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+
       div.webform-component--paso-3 {
         text-align: center;
           margin-bottom: 0px;
         p{
           font-size: 16px;
-          font-family: "HelveticaNeu Bold";
+          font-family: "Brand Bold";
           color: black;
           font-weight: bold;
           margin-bottom: 10px;
@@ -942,17 +952,38 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
-      div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones {
-        div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones {
+      div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones,div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
+        div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones,div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad {
           div {
+            display: inline-flex;
             label {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-                justify-content: center;
-                  flex-direction: row-reverse;
+              margin-right: 20px;
+              display: inline-flex;
+              flex-direction: row-reverse;
               padding-right: 20px;
               input {
+                margin: 3px 0px 0px 25px;
+                display: flex;
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: $breakpoint-tablet) {
+        div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones,div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
+          div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones,div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad {
+            text-align: left;
+            margin: 0px;
+            width: 100%;
+            div {
+              display: block;
+              padding-left: 24px;
+              label {
+                display: block;
+                padding: 0px;
+                input {
+                right: 0px;
+                }
               }
             }
           }

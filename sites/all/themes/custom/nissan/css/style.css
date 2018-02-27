@@ -739,6 +739,14 @@ body.front #first-time p, body.front h1.page-header {
   margin-bottom: 37px;
 }
 
+@media screen and (max-width: 768px) {
+  #modalContent .modal-content .modal-body div.webform-component--especificaciones p {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 #modalContent .modal-content .modal-body div.webform-component--paso-3 {
   text-align: center;
   margin-bottom: 0px;
@@ -746,7 +754,7 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body div.webform-component--paso-3 p {
   font-size: 16px;
-  font-family: "HelveticaNeu Bold";
+  font-family: "Brand Bold";
   color: black;
   font-weight: bold;
   margin-bottom: 10px;
@@ -869,13 +877,39 @@ body.front #first-time p, body.front h1.page-header {
   }
 }
 
-#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div {
+  display: inline-flex;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label {
+  margin-right: 20px;
+  display: inline-flex;
   flex-direction: row-reverse;
   padding-right: 20px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label input, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label input, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label input, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label input {
+  margin: 3px 0px 0px 25px;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad {
+    text-align: left;
+    margin: 0px;
+    width: 100%;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div {
+    display: block;
+    padding-left: 24px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label {
+    display: block;
+    padding: 0px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label input, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label input, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label input, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label input {
+    right: 0px;
+  }
 }
 
 @media screen and (max-width: 768px) {
