@@ -879,6 +879,24 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
+      @media screen and (max-width: $breakpoint-tablet) {
+        div.webform-component--autorizo-ser-contactado-a-traves-de {
+          div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+            display: block;
+            text-align: left;
+            margin: 0px;
+            width: 100%;
+            div {
+              label {
+                display: block;
+                input {
+                  right: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
       div.webform-component--autorizo-ser-contactado-por, div.webform-component--autorizo-ser-contactado-por, div.webform-component--acuerdo-ser-contacto, div.webform-component--acuerdo-ser-contacto {
         div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto, div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto {
           div {
@@ -900,6 +918,41 @@ body.front #first-time p, body.front h1.page-header {
               padding-right: 20px;
               input {
                 margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: $breakpoint-tablet) {
+        div.webform-component--autorizo-ser-contactado-por, div.webform-component--autorizo-ser-contactado-por, div.webform-component--acuerdo-ser-contacto, div.webform-component--acuerdo-ser-contacto {
+          div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto, div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto {
+            text-align: left;
+            margin: 0px;
+            width: 100%;
+            div {
+              display: block;
+              label {
+                display: block;
+                padding: 0px;
+                input {
+                  right: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+      div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones {
+        div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones {
+          div {
+            label {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+                justify-content: center;
+                  flex-direction: row-reverse;
+              padding-right: 20px;
+              input {
               }
             }
           }
@@ -1201,13 +1254,22 @@ div.webform-component--terminos {
     }
   }
 }
+
+
 .radio input[type="radio"] {
-  -webkit-appearance: button;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   border: 1px solid black;
-  width: 20px;
-  height: 20px;
-  margin: 1px 30px 0px
+  -webkit-transition: border-color .2s;
+  transition: border-color .2s;
+  -webkit-appearance: button;
+  margin: 3px 0px 0px -25px;
 }
 .radio input[type="radio"]:checked {
-  background: #26ca28;
+  background: url(../img/chulo.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
