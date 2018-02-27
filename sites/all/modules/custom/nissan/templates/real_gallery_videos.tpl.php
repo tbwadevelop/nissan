@@ -1,4 +1,3 @@
-<!-- version estable -->
 <html>
 <link rel="stylesheet" type="text/css" href="sites/all/modules/custom/nissan/css/style.css">
   <body>
@@ -7,9 +6,8 @@
                <div class="col-md-12">
                     <div class="subtitulo nissan" style="text-align: center"> <p>Aquí están algunas de las jugadas más emocionantes hasta ahora</p></div/>
                     <div id="Carousel" class="carousel slide">
-                     <?php $view = views_get_view('nissan_galeria', true); $view->execute(); module_load_include('inc', 'webform', 'includes/webform.submissions'); 
-                           $count =  count($view->result);?>
-                      
+                     <?php $view = views_get_view('nissan_galeria', true); $view->execute(); 
+                            module_load_include('inc', 'webform', 'includes/webform.submissions');$count =  count($view->result); ?>
                        <ol class="carousel-indicators">   
                           <?php $cantidad_group_items = 6; ?>
                           <?php for($i = 0; $i <= $count; $i++): ?>
@@ -23,9 +21,7 @@
                               <?php  endif ?>                              
                           <?php endfor ?> 
                       </ol>                
-
                            <div class="carousel-inner">
-
                               <?php foreach ($view->result as $key => $value): ?>
                                   <?php $data = webform_get_submission($value->node_nid, $value->webform_submissions_serial);
                                    if (isset($data->data[21][0])) {
@@ -51,35 +47,19 @@
                                          <?php  if($key >= 3 && $key <= 5): ?>
                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
                                          <?php endif ?>  
-
                               <!-- End  6 items sliders -->
 
-                                     <!-- Codec Programing Slider -->      
-                                 <?php  if ($key == 6):  ?>
-                                     <?php $init =6;  $start = 6;  $top= 12;     $multiplo = 9;   $mayor_mul = 11; $menor_mul = 8; ?> 
-                                           </div>
-                                        </div> 
+                                <!-- Star Logica Multiplos 6 -->
+                                 <?php $total = count($view->result);?>         
+                                <?php  if ($key%6==0 && $key != FALSE): ?>
+                                   <?php $init=$key;  $start = $key;  $top= $key+6; $multiplo = $key+3;  $mayor_mul = $multiplo+2; $menor_mul = $multiplo-1; ?> 
+                                      </div></div> 
                                   <?php endif; ?>
-
-
-                                 <?php  if ($key == 12):  ?>
-                                     <?php $init =12;  $start = 12;  $top= 18;     $multiplo = 15;   $mayor_mul = 17; $menor_mul = 14; ?> 
-                                           </div>
-                                        </div> 
-
-                                  <?php endif; ?>
-
-                                 <?php  if ($key == 18):  ?>
-                                     <?php $init =18;  $start = 18;  $top= 24;     $multiplo = 21;   $mayor_mul = 23; $menor_mul = 20; ?> 
-                                           </div>
-                                        </div> 
-                                  <?php endif; ?>
-
+                                <!-- End Logica Multiplos 6 -->   
 
                               <!-- Codec Programing Slider -->
                                        <?php if(isset($init) && $key == $init): ?>
                                   <div class="item">
-                                    
                                     <div class="row">
                                        <?php endif  ?>
                                        <?php if(isset($start) && $key >= $start &&  $key <= $menor_mul): ?>
@@ -98,8 +78,10 @@
                                        <?php if(isset($top) && $key == $top): ?> 
                                     </div>  
                                   </div>
-                                       <?php endif ?>  
-
+                                       <?php endif ?>
+                                   <?php if($key == $total-1): ?>
+                                     </div></div>
+                                   <?php endif ?>    
                               <?php endforeach ?>
                         </div><!--.carousel-inner-->
                   <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
@@ -111,28 +93,26 @@
   <!--.container-->
 </body>
 </html>
-
 <?php 
 function rendervideo($url){
-        $render = theme('videojs', array(
-          'items' => array(
-            array(
-              'uri' => $url,
-              'filemime' => 'video/mp4',
-            ),
-          ),
-          'player_id' => 'test-video',
-          'posterimage_style' => 'thumbnail',
-          'attributes' => array(
-            'width' => '100',
-            'height' => '100',
-            'loop' => FALSE,
-            'autoplay' => FALSE,
-            'preload' => 'none',
-            'hidecontrols' => FALSE,
-          ),
-        ));
+    $render = theme('videojs', array(
+      'items' => array(
+        array(
+          'uri' => $url,
+          'filemime' => 'video/mp4',
+        ),
+      ),
+      'player_id' => 'test-video',
+      'posterimage_style' => 'thumbnail',
+      'attributes' => array(
+        'width' => '100',
+        'height' => '100',
+        'loop' => FALSE,
+        'autoplay' => FALSE,
+        'hidecontrols' => FALSE,
+      ),
+    ));
 
-        return $render;
+  return $render;
 }
 ?>
