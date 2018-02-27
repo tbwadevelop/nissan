@@ -233,13 +233,14 @@ body.front.page-node div.main-container .row section section#block-bean-mecanica
 }
 
 body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-three div.field-item.even p a {
-  background: url(../img/scroll_home.png);
+  background: url(../img/scroll_home.gif);
   background-size: contain;
   background-repeat: no-repeat;
   text-indent: -999%;
   width: 60px;
   height: 60px;
   display: inline-block;
+  pointer-events: none;
 }
 
 body.front.page-node div.main-container .row section section#block-nissan-galeria h2 {
@@ -1217,4 +1218,45 @@ div.webform-component--terminos div.modal div.modal-content {
 
 #webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
   display: none;
+}
+
+/*___________—*_*..  Pre Home  ..*_*..___________*/
+div#modalBackdrop + div#modalContent div.modal-content {
+  background: none;
+  border: 1px solid white;
+}
+
+div#modalBackdrop + div#modalContent div.modal-content div.modal-header button {
+  font-size: 16px;
+  font-family: "Brand Regular";
+  font-weight: normal;
+  padding: 10px;
+  text-indent: 1px;
+}
+
+div#modalBackdrop + div#modalContent div.modal-content div.modal-header button::before {
+  content: "Skip";
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #969696;
+}
+
+div#modalBackdrop + div#modalContent div.modal-content div.modal-header h4 {
+  display: none;
+}
+
+div#modalBackdrop + div#modalContent div.modal-content div#modal-content {
+  padding: 0px;
+}
+
+div#modalBackdrop + div#modalContent div.modal-content div#modal-content div.webform-component--image-modal {
+  margin: 0px;
+}
+
+div#modalBackdrop + div#modalContent div.modal-content div#modal-content div.webform-component--image-modal div.row {
+  margin: 0px;
+}
+
+div#modalBackdrop + div#modalContent div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] {
+  padding: 0px;
 }
