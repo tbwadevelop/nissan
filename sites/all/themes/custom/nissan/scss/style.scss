@@ -877,7 +877,6 @@ body.front #first-time p, body.front h1.page-header {
       div.webform-component--autorizo-ser-contactado-a-traves-de, div.webform-component--autorizo-ser-contactado-por {
         text-align: center;
         > label {
-          font-size: 12px;
           font-family: "Brand Regular";
           color: black;
           font-weight: normal;
@@ -889,6 +888,7 @@ body.front #first-time p, body.front h1.page-header {
       }
       div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones  {
         label {
+          font-family: "Brand Regular";
           a {
             text-decoration: none;
             border-bottom: 2px solid #939394;
@@ -922,6 +922,15 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
+      @media screen and (max-width: $breakpoint-Laptop) {
+        div.webform-component--autorizo-ser-contactado-a-traves-de  {
+          div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+            div {
+              margin-bottom: 13px;
+            }
+          }
+        }
+      }
       div.webform-component--autorizo-ser-contactado-a-traves-de {
         div#edit-submitted-autorizo-ser-contactado-a-traves-de {
           div {
@@ -934,6 +943,7 @@ body.front #first-time p, body.front h1.page-header {
               -ms-flex-direction: row-reverse;
               flex-direction: row-reverse;
               padding-right: 20px;
+              font-family: "Brand Regular";
               input {
                 margin-left: 20px;
               }
@@ -941,7 +951,7 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
-      @media screen and (max-width: $breakpoint-tablet) {
+      @media screen and (max-width: $breakpoint-Laptop) {
         div.webform-component--autorizo-ser-contactado-a-traves-de {
           div#edit-submitted-autorizo-ser-contactado-a-traves-de {
             display: block;
@@ -978,6 +988,7 @@ body.front #first-time p, body.front h1.page-header {
               -ms-flex-direction: row-reverse;
               flex-direction: row-reverse;
               padding-right: 20px;
+              font-family: "Brand Regular";
               input {
                 margin-left: 20px;
               }
@@ -985,7 +996,7 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
-      @media screen and (max-width: $breakpoint-tablet) {
+      @media screen and (max-width: $breakpoint-Laptop) {
         div.webform-component--autorizo-ser-contactado-por, div.webform-component--autorizo-ser-contactado-por, div.webform-component--acuerdo-ser-contacto, div.webform-component--acuerdo-ser-contacto {
           div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto, div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto {
             text-align: left;
@@ -1004,8 +1015,38 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
-      div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones,div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
-        div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones,div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad {
+      div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones {
+        div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones {
+          div {
+            display: inline-flex;
+            label {
+              margin-right: 20px;
+              display: inline-flex;
+              padding-right: 20px;
+              font-family: "Brand Regular";
+              input {
+                margin: 3px 18px 0px 0px;
+                position: absolute;
+                right: 0px;
+              }
+              button {
+                padding: 0px;
+                background: none;
+                border: none;
+                border-radius: 0px;
+                color: black;
+                font-size: 14px;
+                font-family: "Brand Regular";
+                line-height: 1.42857143;
+                padding-left: 5px;
+                border-bottom: 2px solid #939394;
+              }
+            }
+          }
+        }
+      }
+      div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
+        div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad {
           div {
             display: inline-flex;
             label {
@@ -1013,6 +1054,7 @@ body.front #first-time p, body.front h1.page-header {
               display: inline-flex;
               flex-direction: row-reverse;
               padding-right: 20px;
+              font-family: "Brand Regular";
               input {
                 margin: 3px 0px 0px 25px;
                 display: flex;
@@ -1021,7 +1063,7 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
-      @media screen and (max-width: $breakpoint-tablet) {
+      @media screen and (max-width: $breakpoint-Laptop) {
         div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones,div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
           div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones,div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad {
             text-align: left;
@@ -1035,6 +1077,7 @@ body.front #first-time p, body.front h1.page-header {
                 padding: 0px;
                 input {
                 right: 0px;
+                margin: 0px;
                 }
               }
             }
@@ -1339,7 +1382,7 @@ div.webform-component--terminos {
 }
 
 
-.radio input[type="radio"] {
+.radio input[type="radio"],input[type="checkbox"] {
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -1351,71 +1394,73 @@ div.webform-component--terminos {
   -webkit-appearance: button;
   margin: 3px 0px 0px -25px;
 }
-.radio input[type="radio"]:checked {
+.radio input[type="radio"]:checked,input[type="checkbox"]:checked {
   background: url(../img/chulo.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-
+@media screen and (max-width: $breakpoint-Laptop) {
+  .radio input[type="radio"],input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #aeaeb2;
+  }
+}
 #webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
     display: none;
 }
 
 /*___________—*_*..  Pre Home  ..*_*..___________*/
 
-div#modalBackdrop + div#modalContent {
-  div.modal-content {
-    background: none;
-    border: 1px solid white;
-    div.modal-header {
-      button {
-        font-size: 16px;
-        font-family: "Brand Regular";
-        font-weight: normal;
-        padding: 10px;
-        text-indent: 1px;
-        &::before {
-          content: "Skip";
-          display: inline-block;
-          padding-bottom: 3px;
-          border-bottom: 2px solid #969696;
-        }
-      }
-      h4 {
-        display: none;
-      }
-    }
-    div#modal-content {
-      padding: 0px;
-      bottom: auto;
-      clear: none;
-      cursor: default;
-      float: none;
-    /* height: auto; */
-    /* left: auto; */
-    /* letter-spacing: normal; */
-    /* line-height: normal; */
-    max-height: none !important;
-    max-width: none;
-    min-height: 0;
-    min-width: 0;
-      div.webform-component--image-modal {
-        margin: 0px;
-        div.row {
-          margin: 0px;
-          div[class*="col-"] {
-            padding: 0px;
-            img {
-              width: 100%;
-              // max-height: 41pc;
-              padding: 8px
-            }
-          }
-        }   
-      }
-    }
-  }
-}
+// div#modalBackdrop + div#modalContent {
+//   div.modal-content {
+//     background: none;
+//     border: 1px solid white;
+//     div.modal-header {
+//       button {
+//         font-size: 16px;
+//         font-family: "Brand Regular";
+//         font-weight: normal;
+//         padding: 10px;
+//         text-indent: 1px;
+//         &::before {
+//           content: "Skip";
+//           display: inline-block;
+//           padding-bottom: 3px;
+//           border-bottom: 2px solid #969696;
+//         }
+//       }
+//       h4 {
+//         display: none;
+//       }
+//     }
+//     div#modal-content {
+//       padding: 0px;
+//       bottom: auto;
+//       clear: none;
+//       cursor: default;
+//       float: none;
+//       max-height: none !important;
+//       max-width: none;
+//       min-height: 0;
+//       min-width: 0;
+//       div.webform-component--image-modal {
+//         margin: 0px;
+//         div.row {
+//           margin: 0px;
+//           div[class*="col-"] {
+//             padding: 0px;
+//             img {
+//               width: 100%;
+//               // max-height: 41pc;
+//               padding: 8px
+//             }
+//           }
+//         }   
+//       }
+//     }
+//   }
+// }
 
 
 
