@@ -34,6 +34,10 @@ DirectoryIndex index.php index.html index.htm
   php_flag mbstring.encoding_translation    off
 </IfModule>
 
+php_value memory_limit 70M
+php_value post_max_size 100M
+php_value upload_max_filesize 70M
+
 # Requires mod_expires to be enabled.
 <IfModule mod_expires.c>
   # Enable expirations.
