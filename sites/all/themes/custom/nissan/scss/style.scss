@@ -1387,14 +1387,31 @@ div#modalBackdrop + div#modalContent {
     }
     div#modal-content {
       padding: 0px;
+      bottom: auto;
+      clear: none;
+      cursor: default;
+      float: none;
+    /* height: auto; */
+    /* left: auto; */
+    /* letter-spacing: normal; */
+    /* line-height: normal; */
+    max-height: none !important;
+    max-width: none;
+    min-height: 0;
+    min-width: 0;
       div.webform-component--image-modal {
         margin: 0px;
         div.row {
           margin: 0px;
           div[class*="col-"] {
             padding: 0px;
+            img {
+              width: 100%;
+              // max-height: 41pc;
+              padding: 8px
+            }
           }
-        }
+        }   
       }
     }
   }

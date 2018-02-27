@@ -1247,6 +1247,18 @@ div#modalBackdrop + div#modalContent div.modal-content div.modal-header h4 {
 
 div#modalBackdrop + div#modalContent div.modal-content div#modal-content {
   padding: 0px;
+  bottom: auto;
+  clear: none;
+  cursor: default;
+  float: none;
+  /* height: auto; */
+  /* left: auto; */
+  /* letter-spacing: normal; */
+  /* line-height: normal; */
+  max-height: none !important;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
 }
 
 div#modalBackdrop + div#modalContent div.modal-content div#modal-content div.webform-component--image-modal {
@@ -1259,4 +1271,9 @@ div#modalBackdrop + div#modalContent div.modal-content div#modal-content div.web
 
 div#modalBackdrop + div#modalContent div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] {
   padding: 0px;
+}
+
+div#modalBackdrop + div#modalContent div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] img {
+  width: 100%;
+  padding: 8px;
 }
