@@ -1302,3 +1302,7 @@ div.webform-component--terminos {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
+#webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
+    display: none;
+}
