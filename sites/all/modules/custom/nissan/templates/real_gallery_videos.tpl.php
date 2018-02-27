@@ -5,9 +5,8 @@
     <div class="container">
         <div class="row">
                <div class="col-md-12">
-                    <div id="Carousel" class="carousel slide">
-
                     <div class="subtitulo nissan" style="text-align: center"> <p>Aquí están algunas de las jugadas más emocionantes hasta ahora</p></div/>
+                    <div id="Carousel" class="carousel slide">
                      <?php $view = views_get_view('nissan_galeria', true); $view->execute(); module_load_include('inc', 'webform', 'includes/webform.submissions'); 
                            $count =  count($view->result);?>
                       
@@ -100,19 +99,12 @@
                                     </div>  
                                   </div>
                                        <?php endif ?>  
-            
-
-
-                                    
-
-
 
                               <?php endforeach ?>
                         </div><!--.carousel-inner-->
-             </div><!-- Carrrusel -->
                   <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
                  <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
-
+             </div><!-- Carrrusel -->
         </div>  <!-- col-md-12 -->
      </div> <!-- row -->
   </div>
