@@ -759,7 +759,6 @@ body.front #first-time p, body.front h1.page-header {
   background: url(../img/terminal_button_negro.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  display: none;
 }
 
 #modalContent .modal-content .modal-body div.form-actions button div {
