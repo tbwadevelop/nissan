@@ -19,13 +19,14 @@
                                $sids .= $value->sid . "+";
                             }
                           }
+                      
                           $cadena = $sids;
                           if (substr($cadena, -1) == '+') {
-                            $sids = substr($cadena, -1);
+                            $sids = substr($cadena, 0, -1);
                           }
                           $view = views_get_view('nissan_galeria');
                           $view->set_display("page");
-                          $view->set_arguments(array("71+70+69"));
+                          $view->set_arguments(array($sids));
                           $view->pre_execute();
                           $view->execute(); 
                           module_load_include('inc', 'webform', 'includes/webform.submissions'); 
