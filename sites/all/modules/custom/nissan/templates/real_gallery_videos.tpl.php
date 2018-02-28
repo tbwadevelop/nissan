@@ -12,16 +12,20 @@
                                  ->condition('cid', 41, '=') 
                                  ->fields('c') 
                                  ->execute()
-                                 ->fetchAll();     
-                          $sids = '';
+                                 ->fetchAll();
+                          $sids  = '';     
                           foreach ($result as $key => $value) {
                             if ($value->data == true) {
-                               $sids = $value->sid."+". +$sids;
+                               $sids .= $value->sid . "+";
                             }
-                          }        
+                          }
+                          $cadena = $sids;
+                          if (substr($cadena, -1) == '+') {
+                            $sids = substr($cadena, -1);
+                          }
                           $view = views_get_view('nissan_galeria');
                           $view->set_display("page");
-                          $view->set_arguments(array($sids));
+                          $view->set_arguments(array("71+70+69"));
                           $view->pre_execute();
                           $view->execute(); 
                           module_load_include('inc', 'webform', 'includes/webform.submissions'); 
@@ -114,13 +118,17 @@
 </html>
 <?php 
 function rendervideo($url){
-  
+
     $render = theme('videojs', array(
       'items' => array(
         array(
           'uri' => $url,
           'filemime' => 'video/mp4',
         ),
+        array(
+          'uri' => $url,
+          'filemime' => 'video/webm',
+        ),        
       ),
       'player_id' => 'test-video',
       'posterimage_style' => 'thumbnail',
