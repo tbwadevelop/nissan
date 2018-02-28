@@ -136,7 +136,7 @@ body.front.page-node {
             height: 100%;
             z-index: 10;
               div.field-name-field-subtitulo {
-                div.field-item.even {
+                 div.field-item.even {
                   font-size: 24px;
                   font-family: Brand Bold;
                   color: $negro;
@@ -360,13 +360,14 @@ body.front.page-node {
               border-radius: 0px ;
               border: none;
               opacity: inherit;
-              margin-top: 22%;
               color: $rojo;
               text-indent: 13px;
               text-indent: -666em;
               overflow: hidden;
               width: 21px;
               height: 26px;
+              top:40%;
+              margin: 0px;
             }
             a.right.carousel-control {
               background: url(../img/galery_home_next.png);
@@ -375,13 +376,15 @@ body.front.page-node {
               border-radius: 0px ;
               border: none;
               opacity: inherit;
-              margin-top: 22%;
+              top:50%;
               color: $rojo;
               text-indent: 13px;
               text-indent: -666em;
               overflow: hidden;
               width: 21px;
               height: 26px;
+              top:40%;
+              margin: 0px;
             }
           }
         }   
@@ -625,7 +628,7 @@ body.front.page-node {
 /*------------------------------------------------------------------------------*/
 /*  Formulario de Registro */
 /*------------------------------------------------------------------------------ */
-/*___________—*_*.. Fondo modal ..*_*..___________*/
+/*___________—*_*.. Fondo modal ..*_*..___________*/ 
 div#modalBackdrop {
   background-color: $negro !important;
 }
@@ -1468,55 +1471,57 @@ div.webform-component--terminos {
 
 /*___________—*_*..  Pre Home  ..*_*..___________*/
 
-/* div#modalBackdrop + div#modalContent {*/
-/*   div.modal-content {*/
-/*     background: none;*/
-/*     border: 1px solid white;*/
-/*     div.modal-header {*/
-/*       button {*/
-/*         font-size: 16px;*/
-/*         font-family: "Brand Regular";*/
-/*         font-weight: normal;*/
-/*         padding: 10px;*/
-/*         text-indent: 1px;*/
-/*         &::before {*/
-/*           content: "Skip";*/
-/*           display: inline-block;*/
-/*           padding-bottom: 3px;*/
-/*           border-bottom: 2px solid #969696;*/
-/*         }*/
-/*       }*/
-/*       h4 {*/
-/*         display: none;*/
-/*       }*/
-/*     }*/
-/*     div#modal-content {*/
-/*       padding: 0px;*/
-/*       bottom: auto;*/
-/*       clear: none;*/
-/*       cursor: default;*/
-/*       float: none;*/
-/*       max-height: none !important;*/
-/*       max-width: none;*/
-/*       min-height: 0;*/
-/*       min-width: 0;*/
-/*       div.webform-component--image-modal {*/
-/*         margin: 0px;*/
-/*         div.row {*/
-/*           margin: 0px;*/
-/*           div[class*="col-"] {*/
-/*             padding: 0px;*/
-/*             img {*/
-/*               width: 100%;*/
-/*               // max-height: 41pc;*/
-/*               padding: 8px*/
-/*             }*/
-/*           }*/
-/*         }   */
-/*       }*/
-/*     }*/
-/*   }*/
-/* }*/
+div#modalBackdrop + div#modalpre-home {
+  div.modal-content {
+    background: none;
+    border: 1px solid white;
+    div.modal-header {
+      padding-left: 0px;
+      border: none;
+      button {
+        font-size: 16px;
+        font-family: "Brand Regular";
+        font-weight: normal;
+        padding: 10px;
+        text-indent: 1px;
+        &::before {
+          content: "Skip";
+          display: inline-block;
+          padding-bottom: 3px;
+          border-bottom: 2px solid #969696;
+        }
+      }
+      h4 {
+        display: none;
+      }
+    }
+    div#modal-content {
+      // padding: 0px;
+      // bottom: auto;
+      // clear: none;
+      // cursor: default;
+      // float: none;
+      // max-height: none !important;
+      // max-width: none;
+      // min-height: 0;
+      // min-width: 0;
+      div.webform-component--image-modal {
+        margin: 0px;
+        div.row {
+          margin: 0px;
+          div[class*="col-"] {
+            padding: 0px;
+            img {
+              width: 100%;
+              // max-height: 41pc;
+              padding: 8px
+            }
+          }
+        }   
+      }
+    }
+  }
+}
 
 
 

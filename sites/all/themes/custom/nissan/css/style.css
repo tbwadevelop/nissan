@@ -372,13 +372,14 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   border-radius: 0px;
   border: none;
   opacity: inherit;
-  margin-top: 22%;
   color: #c61633;
   text-indent: 13px;
   text-indent: -666em;
   overflow: hidden;
   width: 21px;
   height: 26px;
+  top: 40%;
+  margin: 0px;
 }
 
 body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel a.right.carousel-control {
@@ -388,13 +389,15 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   border-radius: 0px;
   border: none;
   opacity: inherit;
-  margin-top: 22%;
+  top: 50%;
   color: #c61633;
   text-indent: 13px;
   text-indent: -666em;
   overflow: hidden;
   width: 21px;
   height: 26px;
+  top: 40%;
+  margin: 0px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1333,52 +1336,48 @@ div.webform-component--terminos div.modal div.modal-content {
 }
 
 /*___________—*_*..  Pre Home  ..*_*..___________*/
-/* div#modalBackdrop + div#modalContent {*/
-/*   div.modal-content {*/
-/*     background: none;*/
-/*     border: 1px solid white;*/
-/*     div.modal-header {*/
-/*       button {*/
-/*         font-size: 16px;*/
-/*         font-family: "Brand Regular";*/
-/*         font-weight: normal;*/
-/*         padding: 10px;*/
-/*         text-indent: 1px;*/
-/*         &::before {*/
-/*           content: "Skip";*/
-/*           display: inline-block;*/
-/*           padding-bottom: 3px;*/
-/*           border-bottom: 2px solid #969696;*/
-/*         }*/
-/*       }*/
-/*       h4 {*/
-/*         display: none;*/
-/*       }*/
-/*     }*/
-/*     div#modal-content {*/
-/*       padding: 0px;*/
-/*       bottom: auto;*/
-/*       clear: none;*/
-/*       cursor: default;*/
-/*       float: none;*/
-/*       max-height: none !important;*/
-/*       max-width: none;*/
-/*       min-height: 0;*/
-/*       min-width: 0;*/
-/*       div.webform-component--image-modal {*/
-/*         margin: 0px;*/
-/*         div.row {*/
-/*           margin: 0px;*/
-/*           div[class*="col-"] {*/
-/*             padding: 0px;*/
-/*             img {*/
-/*               width: 100%;*/
-/*               // max-height: 41pc;*/
-/*               padding: 8px*/
-/*             }*/
-/*           }*/
-/*         }   */
-/*       }*/
-/*     }*/
-/*   }*/
-/* }*/
+div#modalBackdrop + div#modalpre-home div.modal-content {
+  background: none;
+  border: 1px solid white;
+}
+
+div#modalBackdrop + div#modalpre-home div.modal-content div.modal-header {
+  padding-left: 0px;
+  border: none;
+}
+
+div#modalBackdrop + div#modalpre-home div.modal-content div.modal-header button {
+  font-size: 16px;
+  font-family: "Brand Regular";
+  font-weight: normal;
+  padding: 10px;
+  text-indent: 1px;
+}
+
+div#modalBackdrop + div#modalpre-home div.modal-content div.modal-header button::before {
+  content: "Skip";
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #969696;
+}
+
+div#modalBackdrop + div#modalpre-home div.modal-content div.modal-header h4 {
+  display: none;
+}
+
+div#modalBackdrop + div#modalpre-home div.modal-content div#modal-content div.webform-component--image-modal {
+  margin: 0px;
+}
+
+div#modalBackdrop + div#modalpre-home div.modal-content div#modal-content div.webform-component--image-modal div.row {
+  margin: 0px;
+}
+
+div#modalBackdrop + div#modalpre-home div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] {
+  padding: 0px;
+}
+
+div#modalBackdrop + div#modalpre-home div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] img {
+  width: 100%;
+  padding: 8px;
+}
