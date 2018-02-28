@@ -752,12 +752,14 @@ body.front #first-time p, body.front h1.page-header {
   background: url(../img/terminos_button.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  text-transform: uppercase;
 }
 
 #modalContent .modal-content .modal-body div.form-actions button.webform-previous {
   background: url(../img/terminal_button_negro.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  display: none;
 }
 
 #modalContent .modal-content .modal-body div.form-actions button div {
