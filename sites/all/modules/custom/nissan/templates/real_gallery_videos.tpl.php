@@ -6,8 +6,27 @@
                <div class="col-md-12">
                     <div class="subtitulo nissan" style="text-align: center"> <p>Aquí están algunas de las jugadas más emocionantes hasta ahora</p></div/>
                     <div id="Carousel" class="carousel slide">
-                     <?php $view = views_get_view('nissan_galeria', true); $view->execute(); 
-                            module_load_include('inc', 'webform', 'includes/webform.submissions');$count =  count($view->result); ?>
+                     <?php 
+                        // Query videos Aprovados.
+                        $result = db_select('webform_submitted_data', 'c')
+                                 ->condition('cid', 41, '=') 
+                                 ->fields('c') 
+                                 ->execute()
+                                 ->fetchAll();     
+                          $sids = '';
+                          foreach ($result as $key => $value) {
+                            if ($value->data == true) {
+                               $sids = $value->sid."+". +$sids;
+                            }
+                          }        
+                          $view = views_get_view('nissan_galeria');
+                          $view->set_display("page");
+                          $view->set_arguments(array($sids));
+                          $view->pre_execute();
+                          $view->execute(); 
+                          module_load_include('inc', 'webform', 'includes/webform.submissions'); 
+                          $count = count($view->result); 
+                      ?>
                        <ol class="carousel-indicators">   
                           <?php $cantidad_group_items = 6; ?>
                           <?php for($i = 0; $i <= $count; $i++): ?>
