@@ -73,6 +73,9 @@ body.front.page-node header#navbar .navbar-collapse {
 }
 
 body.front.page-node div.main-container .row section {
+  /* h1.page-header {*/
+  /*   display: none;*/
+  /* }*/
   /*___________—*_*.. Hecho de emocion ..*_*..___________*/
   /*___________—*_*.. Galeria ..*_*..___________*/
 }
@@ -81,6 +84,7 @@ body.front.page-node div.main-container .row section section#block-bean-mecanica
   text-align: center;
   font-family: Brand Italic;
   font-size: 60px;
+  text-transform: uppercase;
 }
 
 body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
@@ -190,6 +194,7 @@ body.front.page-node div.main-container .row section section#block-bean-mecanica
   background: #c61633;
   -webkit-transform: skewX(-34deg);
   transform: skewX(-34deg);
+  outline: none;
 }
 
 body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p a {
@@ -307,11 +312,13 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   background: #c61633;
   border-radius: 0px;
   border: none;
+  -webkit-transform: skewX(-34deg);
   transform: skewX(-34deg);
   line-height: normal;
   padding: 0px;
   text-align: center;
-  box-shadow: 25px 22px 0px 12px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 4px 3px 0px 1px rgba(0, 0, 0, 0.44);
+  box-shadow: 4px 3px 0px 1px rgba(0, 0, 0, 0.44);
 }
 
 body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.vjs-controls-enabled button.vjs-big-play-button:hover {
@@ -324,6 +331,7 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   line-height: normal;
   clip: initial;
   overflow: inherit;
+  -webkit-transform: skewX(34deg);
   transform: skewX(34deg);
   color: white;
   display: inline-block;
@@ -332,7 +340,7 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   width: auto;
   position: absolute;
   top: 4px;
-  left: 32px;
+  left: 57px;
 }
 
 body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.vjs-controls-enabled button.vjs-big-play-button span.vjs-icon-placeholder {
@@ -342,10 +350,19 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
 }
 
 body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner a.thumbnail div.vjs-controls-enabled button.vjs-big-play-button span.vjs-icon-placeholder::before {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  -webkit-transform: skewX(34deg);
   transform: skewX(34deg);
+  position: absolute;
+  top: 7px;
+  left: 45px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-filter: brightness(9);
+  filter: brightness(8);
 }
 
 body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel a.left.carousel-control {
@@ -381,81 +398,56 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
 }
 
 @media screen and (max-width: 1024px) {
-  body {
+  body.front.page-node {
     background: url(../img/fondo_home_movil.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
-  body div#skip-link p {
+  body.front.page-node div#skip-link p {
     display: none;
   }
-  body header#navbar div.navbar-header a.pull-left {
+  body.front.page-node header#navbar div.navbar-header a.pull-left {
     width: 100%;
   }
-  body header#navbar div.navbar-header a.pull-left > img {
+  body.front.page-node header#navbar div.navbar-header a.pull-left > img {
     width: 100%;
   }
-  body div.main-container .row section section#block-bean-mecanica h2 {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica h2 {
     font-size: 60px;
   }
-  body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
     margin-bottom: 17px;
   }
-  body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p:first-child {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p:first-child {
     display: none;
   }
-  body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p:last-child {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p:last-child {
     display: block;
   }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
-    padding: 24px 22px 9px;
-  }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even li a {
-    border: none;
-    pointer-events: none;
-  }
-  body div.main-container .row section section#block-nissan-galeria div#Carousel {
-    padding: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  body div.main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan p {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-first {
     width: 100%;
-    padding: 16px 28px 12px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  body div#skip-link p {
-    top: 1em;
-    right: -7px;
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
+    padding: 50px 46px 18px;
   }
-  body header#navbar div.navbar-header button.navbar-toggle {
-    display: none;
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second {
+    width: 100% !important;
   }
-  body header#navbar div.navbar-header a.pull-left {
-    width: 200px;
-  }
-  body div.main-container .row section {
-    padding: 0px;
-  }
-  body div.main-container .row section section#block-bean-mecanica h2 {
-    font-size: xx-large;
-  }
-  body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
-    margin-bottom: 17px;
-  }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
-    padding: 38px 33px 11px;
-  }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in {
     background: none;
   }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-subtitulo div.field-item.even {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-subtitulo {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-subtitulo div.field-item.even {
+    font-size: 24px;
+  }
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even li a {
+    border: none;
+    pointer-events: none;
+  }
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p {
     background: #c61633;
     color: #f1f2f2;
     width: 100%;
@@ -463,38 +455,84 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
     -webkit-transform: skewX(0deg);
     transform: skewX(0deg);
   }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p::before, body div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p:after {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p::before, body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p:after {
     display: none;
   }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p a {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even p a {
     -webkit-transform: skewX(0deg);
     transform: skewX(0deg);
   }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-three {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-three {
+    display: none;
+  }
+  body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel {
+    padding: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan p {
+    width: 100%;
+    /* font-size: 13px;*/
+    padding: 16px 28px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body.front.page-node div#skip-link p {
+    top: 1em;
+    right: -7px;
+  }
+  body.front.page-node header#navbar div.navbar-header button.navbar-toggle {
+    display: none;
+  }
+  body.front.page-node header#navbar div.navbar-header a.pull-left {
+    width: 200px;
+  }
+  body.front.page-node div.main-container .row section {
+    padding: 0px;
+  }
+  body.front.page-node div.main-container .row section section#block-bean-mecanica h2 {
+    font-size: xx-large;
+  }
+  body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
+    margin-bottom: 17px;
+  }
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
+    padding: 38px 35px 15px !important;
+  }
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in {
+    background: none;
+  }
+  body.front.page-node div#Carousel div.carousel-inner a.thumbnail div.vjs-controls-enabled button.vjs-big-play-button {
+    top: 40% !important;
+    left: 40% !important;
+  }
+  body.front.page-node div#Carousel a.left.carousel-control, body.front.page-node div#Carousel a.right.carousel-control {
     display: none;
   }
 }
 
 @media screen and (max-width: 640px) {
-  body header#navbar div.navbar-header button.navbar-toggle {
+  body.front.page-node header#navbar div.navbar-header button.navbar-toggle {
     display: none;
   }
-  body header#navbar div.navbar-header a.pull-left {
+  body.front.page-node header#navbar div.navbar-header a.pull-left {
     width: 104px;
   }
-  body div.main-container .row section section#block-bean-mecanica h2 {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica h2 {
     font-size: 2em;
   }
-  body div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-habilidad div.conte p {
     font-size: 12px;
   }
-  body div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
-    padding: 17px 17px 5px;
+  body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-first div.collapse.in {
+    padding: 17px 17px 5px !important;
   }
-  body div.main-container .row section section#block-bean-mecanica div.field-name-field-resumen div.field-item.even ul {
+  body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-resumen div.field-item.even ul {
     -webkit-padding-start: 22px;
   }
-  body div.main-container .row section section#block-bean-mecanica section#block-nissan-galeria div#Carousel div.subtitulo.nissan p {
+  body.front.page-node div.main-container .row section section#block-nissan-galeria div.subtitulo.nissan p {
+    width: 100%;
     font-size: 13px;
   }
 }
@@ -742,6 +780,7 @@ body.front #first-time p, body.front h1.page-header {
 #modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file input {
   padding: 0px;
   padding-left: calc(44% - 3em);
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
   outline: none;
@@ -831,6 +870,12 @@ body.front #first-time p, body.front h1.page-header {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad, #modalContent .modal-content .modal-body div.webform-component--obligatorio, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto {
+    margin-top: -3px;
+  }
+}
+
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones label {
   font-family: "Brand Regular";
 }
@@ -846,7 +891,6 @@ body.front #first-time p, body.front h1.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-orient: horizontal;
@@ -934,6 +978,7 @@ body.front #first-time p, body.front h1.page-header {
   }
   #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div {
     display: block;
+    margin-bottom: 17px;
   }
   #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label {
     display: block;
@@ -945,11 +990,15 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label {
   margin-right: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -975,12 +1024,19 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label {
   margin-right: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -988,6 +1044,8 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label input {
   margin: 3px 0px 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1055,6 +1113,8 @@ footer {
 }
 
 footer div.info-footer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -1230,6 +1290,7 @@ body.node-type-article div.main-container .row section div.region-content div.fi
   }
 }
 
+/*modal dentro de otra modal*/
 .modal-backdrop.fade.in {
   opacity: 0;
   z-index: 0;
@@ -1254,7 +1315,7 @@ div.webform-component--terminos div.modal div.modal-content {
 }
 
 .radio input[type="radio"]:checked, input[type="checkbox"]:checked {
-  background: url(../img/chulo.jpg);
+  background: url(../img/chulo.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1272,3 +1333,52 @@ div.webform-component--terminos div.modal div.modal-content {
 }
 
 /*___________—*_*..  Pre Home  ..*_*..___________*/
+/* div#modalBackdrop + div#modalContent {*/
+/*   div.modal-content {*/
+/*     background: none;*/
+/*     border: 1px solid white;*/
+/*     div.modal-header {*/
+/*       button {*/
+/*         font-size: 16px;*/
+/*         font-family: "Brand Regular";*/
+/*         font-weight: normal;*/
+/*         padding: 10px;*/
+/*         text-indent: 1px;*/
+/*         &::before {*/
+/*           content: "Skip";*/
+/*           display: inline-block;*/
+/*           padding-bottom: 3px;*/
+/*           border-bottom: 2px solid #969696;*/
+/*         }*/
+/*       }*/
+/*       h4 {*/
+/*         display: none;*/
+/*       }*/
+/*     }*/
+/*     div#modal-content {*/
+/*       padding: 0px;*/
+/*       bottom: auto;*/
+/*       clear: none;*/
+/*       cursor: default;*/
+/*       float: none;*/
+/*       max-height: none !important;*/
+/*       max-width: none;*/
+/*       min-height: 0;*/
+/*       min-width: 0;*/
+/*       div.webform-component--image-modal {*/
+/*         margin: 0px;*/
+/*         div.row {*/
+/*           margin: 0px;*/
+/*           div[class*="col-"] {*/
+/*             padding: 0px;*/
+/*             img {*/
+/*               width: 100%;*/
+/*               // max-height: 41pc;*/
+/*               padding: 8px*/
+/*             }*/
+/*           }*/
+/*         }   */
+/*       }*/
+/*     }*/
+/*   }*/
+/* }*/
