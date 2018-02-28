@@ -114,6 +114,7 @@
 </html>
 <?php 
 function rendervideo($url){
+  
     $render = theme('videojs', array(
       'items' => array(
         array(
