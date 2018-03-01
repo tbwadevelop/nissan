@@ -1365,8 +1365,13 @@ div.webform-component--terminos div.modal div.modal-content {
   margin: 0px;
 }
 
-#modal-content .form-group {
+.modal-default.webform-client-form-7 .form-group {
   margin-bottom: 0px;
+}
+
+.modal-default.webform-client-form-7 div {
+  margin: 0px;
+  padding: 0px;
 }
 
 /*___________—*_*..  Pre Home  ..*_*..___________*/
