@@ -58,7 +58,7 @@
                                     <div class="row">
                                       <?php endif ?>   
                                         <?php  if($key <= 2): ?>
-                                            <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
+                                            <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre">Nombre del participante</p><p class="p-lugar">Lugar</p> </div>
                                         <?php endif ?>                                      
                                             <?php  if($key == 3): ?>
                                     </div>
@@ -69,7 +69,7 @@
                                          <?php endif ?>
 
                                          <?php  if($key >= 3 && $key <= 5): ?>
-                                            <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
+                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre">Nombre del participante</p><p class="p-lugar">Lugar</p> </div>
                                          <?php endif ?>  
                               <!-- End  6 items sliders -->
 
@@ -87,7 +87,7 @@
                                     <div class="row">
                                        <?php endif  ?>
                                        <?php if(isset($start) && $key >= $start &&  $key <= $menor_mul): ?>
-                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
+                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre">Nombre del participante</p><p class="p-lugar">Lugar</p> </div>
                                        <?php endif ?>
 
                                        <?php if(isset($multiplo) && $key == $multiplo): ?>
@@ -96,9 +96,8 @@
                                        <?php endif ?>
                                       
                                        <?php if(isset($multiplo) && $key >= $multiplo &&  $key <= $mayor_mul): ?>
-                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a></div>
+                                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre">Nombre del participante</p><p class="p-lugar">Lugar</p> </div>
                                        <?php endif ?>                                     
-                                       
                                        <?php if(isset($top) && $key == $top): ?> 
                                     </div>  
                                   </div>
@@ -129,6 +128,14 @@ function rendervideo($url){
         array(
           'uri' => $url,
           'filemime' => 'video/webm',
+        ), 
+        array(
+          'uri' => $url,
+          'filemime' => 'video/ogg',
+        ),
+        array(
+          'uri' => $url,
+          'filemime' => 'video/ogv',
         ),        
       ),
       'player_id' => 'test-video',
