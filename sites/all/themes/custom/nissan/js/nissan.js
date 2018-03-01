@@ -6,6 +6,11 @@
     			 if ($(".webform-previous").val() == '<none>') {
     			 	  $(".webform-previous").remove();
     			 }
+
+    			 if ($("#edit-submitted-video-upload-button").val() == 'Subir al servidor') {
+    			 	 $("#edit-submitted-video-upload-button").text('Adjuntar video');
+    			 }
+
     			$("#block-block-1").appendTo("#skip-link"); 
 				if ($(".webform-component--paso-1").length > 0) {
 					$(".webform-component--paso-1").appendTo(".modal-content .modal-header "); 
@@ -26,4 +31,3 @@
 		}
 	};
 }(jQuery));
-
