@@ -1486,6 +1486,20 @@ div.webform-component--terminos {
   z-index: 999;
 }
 
+.modal-default.webform-client-form-7 {
+  max-height: none;
+}
+
+#modal-content {
+  max-height: none !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+#modal-content .form-group {
+  margin-bottom: 0px;
+}
+
 /*___________—*_*..  Pre Home  ..*_*..___________*/
 
 div#modalBackdrop + div#modalpre-home {
