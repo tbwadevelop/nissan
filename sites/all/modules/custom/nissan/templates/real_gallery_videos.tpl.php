@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
                <div class="col-md-12">
-                    <div class="subtitulo nissan" style="text-align: center"> <p>Aquí están algunas de las jugadas más emocionantes hasta ahora</p></div/>
+                    <div class="subtitulo nissan" style="text-align: center"> <p>Aquí están algunas de las jugadas más emocionantes hasta ahora.</p></div/>
                     <div id="Carousel" class="carousel slide">
                      <?php 
                         // Query videos Aprovados.
