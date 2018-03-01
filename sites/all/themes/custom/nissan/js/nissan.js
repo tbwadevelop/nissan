@@ -2,9 +2,11 @@
 	Drupal.behaviors.nissan = {
 		attach: function (context, settings) {
 			$( document ).ready(function() {
-
     			$( "#modalContent" ).addClass($("#modal-content .webform-client-form").attr('id'));
-				$("#block-block-1").appendTo("#skip-link"); 
+    			 if ($(".webform-previous").val() == '<none>') {
+    			 	  $(".webform-previous").remove();
+    			 }
+    			$("#block-block-1").appendTo("#skip-link"); 
 				if ($(".webform-component--paso-1").length > 0) {
 					$(".webform-component--paso-1").appendTo(".modal-content .modal-header "); 
 				}
