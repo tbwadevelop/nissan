@@ -1345,6 +1345,16 @@ div.webform-component--terminos div.modal div.modal-content {
   display: none;
 }
 
+.modal-default.webform-client-form-7 .modal-header h4 {
+  display: none;
+}
+
+.modal-default.webform-client-form-7 .modal-header button {
+  position: absolute;
+  right: 0%;
+  z-index: 999;
+}
+
 /*___________—*_*..  Pre Home  ..*_*..___________*/
 div#modalBackdrop + div#modalpre-home div.modal-content {
   background: none;

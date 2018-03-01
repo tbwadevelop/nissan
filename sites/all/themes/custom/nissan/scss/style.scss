@@ -1476,6 +1476,15 @@ div.webform-component--terminos {
 #webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
     display: none;
 }
+.modal-default.webform-client-form-7 .modal-header h4{
+  display: none;
+}
+
+.modal-default.webform-client-form-7 .modal-header button{
+  position: absolute;
+  right: 0%;
+  z-index: 999;
+}
 
 /*___________—*_*..  Pre Home  ..*_*..___________*/
 
