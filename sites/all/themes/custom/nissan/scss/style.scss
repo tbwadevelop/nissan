@@ -40,7 +40,7 @@ body.front.page-node {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 1em 2em 1em 4em;
-    position: absolute;
+    position: fixed;
     right: 0px;
       a {
       color: white;
@@ -351,6 +351,13 @@ body.front.page-node {
                     }
                   }
                 }
+              }
+              .p-nombre, .p-lugar{
+                text-align: center;
+              }
+              .p-nombre{
+                margin-top: -15px;
+                font-weight: bold;
               }
             }
             a.left.carousel-control {

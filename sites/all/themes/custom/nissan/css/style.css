@@ -39,7 +39,7 @@ body.front.page-node div#skip-link p {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 1em 2em 1em 4em;
-  position: absolute;
+  position: fixed;
   right: 0px;
 }
 
@@ -363,6 +363,15 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   background-size: 100% 100%;
   -webkit-filter: brightness(9);
   filter: brightness(8);
+}
+
+body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner .p-nombre, body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner .p-lugar {
+  text-align: center;
+}
+
+body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner .p-nombre {
+  margin-top: -15px;
+  font-weight: bold;
 }
 
 body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel a.left.carousel-control {

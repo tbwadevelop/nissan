@@ -2,7 +2,7 @@
 	Drupal.behaviors.nissan = {
 		attach: function (context, settings) {
 			$( document ).ready(function() {
-
+				console.log("test");
 				$("#block-block-1").appendTo("#skip-link"); 
 				if ($(".webform-component--paso-1").length > 0) {
 					$(".webform-component--paso-1").appendTo(".modal-content .modal-header "); 
@@ -18,7 +18,8 @@
 			$(window).load(function(){
 			    $('.loader').fadeOut(500);
 			    $('.front #startodal').trigger('click');
-			});					
+			});		
+
 		}
 	};
 }(jQuery));
