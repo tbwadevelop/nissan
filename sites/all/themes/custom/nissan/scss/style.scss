@@ -138,11 +138,13 @@ body.front.page-node {
             z-index: 10;
               div.field-name-field-subtitulo {
                  div.field-item.even {
-                  font-size: 24px;
+                  font-size: 22px;
                   font-family: Brand Bold;
                   color: $negro;
                   font-weight: bold;
                   text-align: center;
+                  padding-top: 2px;
+                  padding-bottom: 2px;
                 }
               }
               div.field-name-field-resumen {
@@ -359,6 +361,10 @@ body.front.page-node {
               .p-nombre{
                 margin-top: -15px;
                 font-weight: bold;
+              }
+              .p-lugar{
+                margin-top: -15px;
+                margin-bottom: 20px;
               }
             }
             a.left.carousel-control {
@@ -1222,6 +1228,12 @@ footer {
       color: $rojo;
       padding-left: 3px;
       }
+    }
+  a {
+      font-size: 20px;
+      font-family: "Brand Regular";
+      color: $rojo;
+      padding-left: 3px;
     }
   }
 }

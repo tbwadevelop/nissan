@@ -147,11 +147,13 @@ body.front.page-node div.main-container .row section section#block-bean-mecanica
 }
 
 body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-subtitulo div.field-item.even {
-  font-size: 24px;
+  font-size: 22px;
   font-family: Brand Bold;
   color: black;
   font-weight: bold;
   text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-resumen div.field-item.even {
@@ -373,6 +375,11 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
 body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner .p-nombre {
   margin-top: -15px;
   font-weight: bold;
+}
+
+body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner .p-lugar {
+  margin-top: -15px;
+  margin-bottom: 20px;
 }
 
 body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel a.left.carousel-control {
@@ -1139,6 +1146,13 @@ footer div.info-footer div.nissan-colombia {
 }
 
 footer div.info-footer p a {
+  font-size: 20px;
+  font-family: "Brand Regular";
+  color: #c61633;
+  padding-left: 3px;
+}
+
+footer div.info-footer a {
   font-size: 20px;
   font-family: "Brand Regular";
   color: #c61633;
