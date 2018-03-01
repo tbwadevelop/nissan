@@ -13,13 +13,15 @@
                                  ->fields('c') 
                                  ->execute()
                                  ->fetchAll();
+
+
                           $sids  = '';     
                           foreach ($result as $key => $value) {
                             if ($value->data == true) {
                                $sids .= $value->sid . "+";
                             }
                           }
-                      
+                        
                           $cadena = $sids;
                           if (substr($cadena, -1) == '+') {
                             $sids = substr($cadena, 0, -1);
@@ -29,6 +31,7 @@
                           $view->set_arguments(array($sids));
                           $view->pre_execute();
                           $view->execute(); 
+
                           module_load_include('inc', 'webform', 'includes/webform.submissions'); 
                           $count = count($view->result); 
                       ?>
@@ -48,6 +51,7 @@
                            <div class="carousel-inner">
                               <?php foreach ($view->result as $key => $value): ?>
                                   <?php $data = webform_get_submission($value->node_nid, $value->webform_submissions_serial);
+                                       $nombre_participante = $data->data[15][0];
                                    if (isset($data->data[21][0])) {
                                        $file = file_load($data->data[21][0]);  $url = file_create_url($file->uri);
                                    }
@@ -58,7 +62,7 @@
                                     <div class="row">
                                       <?php endif ?>   
                                         <?php  if($key <= 2): ?>
-                                            <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre">Nombre del participante</p><p class="p-lugar">Lugar</p> </div>
+                                            <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar">Lugar</p> </div>
                                         <?php endif ?>                                      
                                             <?php  if($key == 3): ?>
                                     </div>
@@ -69,7 +73,7 @@
                                          <?php endif ?>
 
                                          <?php  if($key >= 3 && $key <= 5): ?>
-                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre">Nombre del participante</p><p class="p-lugar">Lugar</p> </div>
+                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar">Lugar</p> </div>
                                          <?php endif ?>  
                               <!-- End  6 items sliders -->
 
@@ -87,7 +91,7 @@
                                     <div class="row">
                                        <?php endif  ?>
                                        <?php if(isset($start) && $key >= $start &&  $key <= $menor_mul): ?>
-                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre">Nombre del participante</p><p class="p-lugar">Lugar</p> </div>
+                                             <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante);?></p><p class="p-lugar">Lugar</p> </div>
                                        <?php endif ?>
 
                                        <?php if(isset($multiplo) && $key == $multiplo): ?>
@@ -96,7 +100,7 @@
                                        <?php endif ?>
                                       
                                        <?php if(isset($multiplo) && $key >= $multiplo &&  $key <= $mayor_mul): ?>
-                                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre">Nombre del participante</p><p class="p-lugar">Lugar</p> </div>
+                                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante);?></p><p class="p-lugar">Lugar</p> </div>
                                        <?php endif ?>                                     
                                        <?php if(isset($top) && $key == $top): ?> 
                                     </div>  

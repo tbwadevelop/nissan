@@ -1,0 +1,51 @@
+***************
+*** 97,103 ****
+      resize();
+  
+      $('span.modal-title', Drupal.CTools.Modal.modal).html(Drupal.CTools.Modal.currentSettings.loadingText);
+-     Drupal.CTools.Modal.modalContent(Drupal.CTools.Modal.modal, settings.modalOptions, settings.animation, settings.animationSpeed);
+      $('#modalContent .modal-content').html(Drupal.theme(settings.throbberTheme));
+    };
+  
+--- 97,103 ----
+      resize();
+  
+      $('span.modal-title', Drupal.CTools.Modal.modal).html(Drupal.CTools.Modal.currentSettings.loadingText);
++     Drupal.CTools.Modal.modalContent(Drupal.CTools.Modal.modal, settings.modalOptions, settings.animation, settings.animationSpeed, choice);
+      $('#modalContent .modal-content').html(Drupal.theme(settings.throbberTheme));
+    };
+  
+***************
+*** 331,337 ****
+     * @param animation (fadeIn, slideDown, show)
+     * @param speed (valid animation speeds slow, medium, fast or # in ms)
+     */
+-   Drupal.CTools.Modal.modalContent = function(content, css, animation, speed) {
+      // If our animation isn't set, make it just show/pop
+      if (!animation) {
+        animation = 'show';
+--- 331,337 ----
+     * @param animation (fadeIn, slideDown, show)
+     * @param speed (valid animation speeds slow, medium, fast or # in ms)
+     */
++   Drupal.CTools.Modal.modalContent = function(content, css, animation, speed, choice) {
+      // If our animation isn't set, make it just show/pop
+      if (!animation) {
+        animation = 'show';
+***************
+*** 383,389 ****
+      if( docHeight < winHeight ) docHeight = winHeight;
+  
+      // Create our divs
+-     $('body').append('<div id="modalBackdrop" style="z-index: 1000; display: none;"></div><div id="modalContent" style="z-index: 1001; position: absolute;">' + $(content).html() + '</div>');
+  
+      // Keyboard and focus event handler ensures focus stays on modal elements only
+      modalEventHandler = function( event ) {
+--- 383,389 ----
+      if( docHeight < winHeight ) docHeight = winHeight;
+  
+      // Create our divs
++     $('body').append('<div id="modalBackdrop" class="' + choice + '-backdrop" style="z-index: 1000; display: none;"></div><div id="modalContent" class="' + choice + '" style="z-index: 1001; position: absolute;">' + $(content).html() + '</div>');
+  
+      // Keyboard and focus event handler ensures focus stays on modal elements only
+      modalEventHandler = function( event ) {
