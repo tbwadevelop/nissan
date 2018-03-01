@@ -41,6 +41,7 @@ body.front.page-node {
     background-repeat: no-repeat;
     padding: 1em 2em 1em 4em;
     position: fixed;
+    z-index: 9999999;
     right: 0px;
       a {
       color: white;
@@ -1491,7 +1492,6 @@ div.webform-component--terminos {
 }
 
 #modal-content {
-  max-height: none !important;
   padding: 0px;
   margin: 0px;
 }
@@ -1504,7 +1504,15 @@ div.webform-component--terminos {
   margin: 0px;
   padding: 0px;
 }
-
+.webform-client-form-1.webform-client-form-1--2 .form-control{
+  font-size: 12px;
+}
+.webform-component--campos-obligatorios{
+      font-size: 14px;
+    font-family: "Brand Regular";
+    color: black;
+    text-align: center;
+}
 /*___________—*_*..  Pre Home  ..*_*..___________*/
 
 div#modalBackdrop + div#modalpre-home {
