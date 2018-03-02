@@ -41,7 +41,7 @@ body.front.page-node {
     background-repeat: no-repeat;
     padding: 1em 2em 1em 4em;
     position: fixed;
-    z-index: 9999999;
+    // z-index: 9999999;
     right: 0px;
       a {
       color: white;
@@ -957,7 +957,7 @@ body.front #first-time p, body.front h1.page-header {
         }
       }
       div.webform-component--autorizo-ser-contactado-a-traves-de {
-        div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+        div.form-checkboxes {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -973,7 +973,7 @@ body.front #first-time p, body.front h1.page-header {
         }
       }
       div.webform-component--autorizo-ser-contactado-a-traves-de  {
-        div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+        div.form-checkboxes {
           div {
             margin-top: 0px;
             margin-bottom: 0px;
@@ -982,7 +982,7 @@ body.front #first-time p, body.front h1.page-header {
       }
       @media screen and (max-width: $breakpoint-Laptop) {
         div.webform-component--autorizo-ser-contactado-a-traves-de  {
-          div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+          di.form-checkboxes{
             div {
               margin-bottom: 13px;
             }
@@ -990,7 +990,7 @@ body.front #first-time p, body.front h1.page-header {
         }
       }
       div.webform-component--autorizo-ser-contactado-a-traves-de {
-        div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+        div.form-checkboxes {
           div {
             label {
               display: -webkit-box;
@@ -1011,7 +1011,7 @@ body.front #first-time p, body.front h1.page-header {
       }
       @media screen and (max-width: $breakpoint-Laptop) {
         div.webform-component--autorizo-ser-contactado-a-traves-de {
-          div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+          div.form-checkboxes {
             display: block;
             text-align: left;
             margin: 0px;
@@ -1027,8 +1027,35 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
-      div.webform-component--autorizo-ser-contactado-por, div.webform-component--autorizo-ser-contactado-por, div.webform-component--acuerdo-ser-contacto, div.webform-component--acuerdo-ser-contacto {
-        div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto, div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto {
+      div.webform-component--autorizo-ser-contactado-por, div.webform-component--acuerdo-ser-contacto {
+        div.form-checkboxes {
+          div {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          padding-left: 24px;
+            label {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+              padding-right: 20px;
+              font-family: "Brand Regular";
+              input {
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+      div.webform-component--acuerdo-ser-contacto {
+        div.form-radios {
           div {
           display: -webkit-inline-box;
           display: -ms-inline-flexbox;
@@ -1055,8 +1082,26 @@ body.front #first-time p, body.front h1.page-header {
         }
       }
       @media screen and (max-width: $breakpoint-Laptop) {
-        div.webform-component--autorizo-ser-contactado-por, div.webform-component--autorizo-ser-contactado-por, div.webform-component--acuerdo-ser-contacto, div.webform-component--acuerdo-ser-contacto {
-          div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto, div#edit-submitted-autorizo-ser-contactado-por, div#edit-submitted-acuerdo-ser-contacto {
+        div.webform-component--autorizo-ser-contactado-por {
+          div.form-checkboxes {
+            text-align: left;
+            margin: 0px;
+            width: 100%;
+            div {
+              display: block;
+              margin-bottom: 17px;
+              label {
+                display: block;
+                padding: 0px;
+                input {
+                  right: 0px;
+                }
+              }
+            }
+          }
+        }
+        div.webform-component--acuerdo-ser-contacto {
+          div.form-radios  {
             text-align: left;
             margin: 0px;
             width: 100%;
@@ -1075,7 +1120,7 @@ body.front #first-time p, body.front h1.page-header {
         }
       }
       div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones {
-        div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones {
+        div.form-radios {
           div {
             display: -webkit-inline-box;
             display: -ms-inline-flexbox;
@@ -1109,7 +1154,7 @@ body.front #first-time p, body.front h1.page-header {
         }
       }
       div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
-        div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad {
+        div.form-radios {
           div {
             display: -webkit-inline-box;
             display: -ms-inline-flexbox;
@@ -1136,8 +1181,27 @@ body.front #first-time p, body.front h1.page-header {
         }
       }
       @media screen and (max-width: $breakpoint-Laptop) {
-        div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones,div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
-          div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones,div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad {
+        div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
+          div.form-radios {
+            text-align: left;
+            margin: 0px;
+            width: 100%;
+            div {
+              display: block;
+              padding-left: 24px;
+              label {
+                display: block;
+                padding: 0px;
+                input {
+                right: 0px;
+                margin: 0px;
+                }
+              }
+            }
+          }
+        }
+        div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones {
+          div.form-radios{
             text-align: left;
             margin: 0px;
             width: 100%;
@@ -1489,36 +1553,17 @@ div.webform-component--terminos {
 #webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
     display: none;
 }
-.modal-default.webform-client-form-7 .modal-header h4{
-  display: none;
-}
 
-.modal-default.webform-client-form-7 .modal-header button{
-  position: absolute;
-  right: 0%;
-  z-index: 999;
-}
+// .modal-default.webform-client-form-7 .modal-header h4{
+//   display: none;
+// }
 
-.modal-default.webform-client-form-7 {
-  max-height: none;
-}
-
-#modalContent.webform-client-form-7 {
-  padding: 0px;
-  margin: 0px;
-  max-height: none !important;
-}
-#modalContent.webform-client-form-7 .modal-body{
-  max-height: none !important;
-}
 
 #modalContent {
   z-index: 999999999999999999 !important;
 }
 
-.modal-default.webform-client-form-7 .form-group {
-  margin-bottom: 0px;
-}
+
 
 .modal-default.webform-client-form-7 div{
   margin: 0px;
@@ -1528,30 +1573,38 @@ div.webform-component--terminos {
   font-size: 12px;
 }
 .webform-component--campos-obligatorios-group{
-      font-size: 14px;
+    font-size: 14px;
     font-family: "Brand Regular";
     color: black;
     text-align: center;
 }
 /*___________—*_*..  Pre Home  ..*_*..___________*/
 
-div#modalBackdrop + div#modalpre-home {
+div.webform-client-form-7 {
+  padding: 0px;
+  margin: 0px;
+  max-height: none !important;
+  left: 10% !important;
   div.modal-content {
     background: none;
-    border: 1px solid white;
+    border: 1px solid white !important;
     div.modal-header {
       padding-left: 0px;
       border: none;
       button {
-        font-size: 16px;
+        font-size: 16px !important;
         font-family: "Brand Regular";
-        font-weight: normal;
-        padding: 10px;
-        text-indent: 1px;
+        font-weight: normal !important;
+        margin: 8px !important;
+        padding: 10px !important;
+        position: absolute;
+        right: 0%;
+        z-index: 999;
         &::before {
-          content: "Skip";
-          display: inline-block;
-          padding-bottom: 3px;
+          content: "";
+          position: absolute;
+          bottom: 5px;
+          width: 60%;
           border-bottom: 2px solid #969696;
         }
       }
@@ -1560,15 +1613,7 @@ div#modalBackdrop + div#modalpre-home {
       }
     }
     div#modal-content {
-      // padding: 0px;
-      // bottom: auto;
-      // clear: none;
-      // cursor: default;
-      // float: none;
-      // max-height: none !important;
-      // max-width: none;
-      // min-height: 0;
-      // min-width: 0;
+      max-height: none !important;
       div.webform-component--image-modal {
         margin: 0px;
         div.row {
@@ -1582,6 +1627,18 @@ div#modalBackdrop + div#modalpre-home {
             }
           }
         }   
+      }
+    }
+  }
+}
+@media screen and (max-width: $breakpoint-Laptop){
+  div.webform-client-form-7 {
+    div.modal-content {
+      div.modal-header {
+        button {
+          font-size: 14px !important;
+          padding: 7px !important;
+        }
       }
     }
   }

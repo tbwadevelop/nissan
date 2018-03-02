@@ -40,7 +40,6 @@ body.front.page-node div#skip-link p {
   background-repeat: no-repeat;
   padding: 1em 2em 1em 4em;
   position: fixed;
-  z-index: 9999999;
   right: 0px;
 }
 
@@ -908,7 +907,7 @@ body.front #first-time p, body.front h1.page-header {
   color: black;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -923,18 +922,18 @@ body.front #first-time p, body.front h1.page-header {
   margin-right: auto;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div {
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 @media screen and (max-width: 1024px) {
-  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de di.form-checkboxes div {
     margin-bottom: 13px;
   }
 }
 
-#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div label {
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -946,26 +945,26 @@ body.front #first-time p, body.front h1.page-header {
   font-family: "Brand Regular";
 }
 
-#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div label input {
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label input {
   margin-left: 20px;
 }
 
 @media screen and (max-width: 1024px) {
-  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes {
     display: block;
     text-align: left;
     margin: 0px;
     width: 100%;
   }
-  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div label {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label {
     display: block;
   }
-  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div#edit-submitted-autorizo-ser-contactado-a-traves-de div label input {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label input {
     right: 0px;
   }
 }
 
-#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div {
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-checkboxes div {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -975,7 +974,7 @@ body.front #first-time p, body.front h1.page-header {
   padding-left: 24px;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label {
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-checkboxes div label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -987,36 +986,78 @@ body.front #first-time p, body.front h1.page-header {
   font-family: "Brand Regular";
 }
 
-#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input {
+#modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-checkboxes div label input {
+  margin-left: 20px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 24px;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  padding-right: 20px;
+  font-family: "Brand Regular";
+}
+
+#modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label input {
   margin-left: 20px;
 }
 
 @media screen and (max-width: 1024px) {
-  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes {
     text-align: left;
     margin: 0px;
     width: 100%;
   }
-  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div {
     display: block;
     margin-bottom: 17px;
   }
-  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label {
     display: block;
     padding: 0px;
   }
-  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-autorizo-ser-contactado-por div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div#edit-submitted-acuerdo-ser-contacto div label input {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label input {
+    right: 0px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios {
+    text-align: left;
+    margin: 0px;
+    width: 100%;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div {
+    display: block;
+    margin-bottom: 17px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label {
+    display: block;
+    padding: 0px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label input {
     right: 0px;
   }
 }
 
-#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div {
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label {
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label {
   margin-right: 20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1025,13 +1066,13 @@ body.front #first-time p, body.front h1.page-header {
   font-family: "Brand Regular";
 }
 
-#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label input {
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label input {
   margin: 3px 18px 0px 0px;
   position: absolute;
   right: 0px;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label button {
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label button {
   padding: 0px;
   background: none;
   border: none;
@@ -1044,13 +1085,13 @@ body.front #first-time p, body.front h1.page-header {
   border-bottom: 2px solid #939394;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div {
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label {
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label {
   margin-right: 20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1063,7 +1104,7 @@ body.front #first-time p, body.front h1.page-header {
   font-family: "Brand Regular";
 }
 
-#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label input {
+#modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label input {
   margin: 3px 0px 0px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,20 +1112,37 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 @media screen and (max-width: 1024px) {
-  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad {
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios {
     text-align: left;
     margin: 0px;
     width: 100%;
   }
-  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div {
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div {
     display: block;
     padding-left: 24px;
   }
-  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label {
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label {
     display: block;
     padding: 0px;
   }
-  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label input, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label input, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-los-terminos-y-condiciones div label input, #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div#edit-submitted-he-leido-y-acepto-el-aviso-de-privacidad div label input {
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label input {
+    right: 0px;
+    margin: 0px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios {
+    text-align: left;
+    margin: 0px;
+    width: 100%;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div {
+    display: block;
+    padding-left: 24px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label {
+    display: block;
+    padding: 0px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label input {
     right: 0px;
     margin: 0px;
   }
@@ -1360,36 +1418,8 @@ div.webform-component--terminos div.modal div.modal-content {
   display: none;
 }
 
-.modal-default.webform-client-form-7 .modal-header h4 {
-  display: none;
-}
-
-.modal-default.webform-client-form-7 .modal-header button {
-  position: absolute;
-  right: 0%;
-  z-index: 999;
-}
-
-.modal-default.webform-client-form-7 {
-  max-height: none;
-}
-
-#modalContent.webform-client-form-7 {
-  padding: 0px;
-  margin: 0px;
-  max-height: none !important;
-}
-
-#modalContent.webform-client-form-7 .modal-body {
-  max-height: none !important;
-}
-
 #modalContent {
   z-index: 999999999999999999 !important;
-}
-
-.modal-default.webform-client-form-7 .form-group {
-  margin-bottom: 0px;
 }
 
 .modal-default.webform-client-form-7 div {
@@ -1409,48 +1439,70 @@ div.webform-component--terminos div.modal div.modal-content {
 }
 
 /*___________—*_*..  Pre Home  ..*_*..___________*/
-div#modalBackdrop + div#modalpre-home div.modal-content {
-  background: none;
-  border: 1px solid white;
+div.webform-client-form-7 {
+  padding: 0px;
+  margin: 0px;
+  max-height: none !important;
+  left: 10% !important;
 }
 
-div#modalBackdrop + div#modalpre-home div.modal-content div.modal-header {
+div.webform-client-form-7 div.modal-content {
+  background: none;
+  border: 1px solid white !important;
+}
+
+div.webform-client-form-7 div.modal-content div.modal-header {
   padding-left: 0px;
   border: none;
 }
 
-div#modalBackdrop + div#modalpre-home div.modal-content div.modal-header button {
-  font-size: 16px;
+div.webform-client-form-7 div.modal-content div.modal-header button {
+  font-size: 16px !important;
   font-family: "Brand Regular";
-  font-weight: normal;
-  padding: 10px;
-  text-indent: 1px;
+  font-weight: normal !important;
+  margin: 8px !important;
+  padding: 10px !important;
+  position: absolute;
+  right: 0%;
+  z-index: 999;
 }
 
-div#modalBackdrop + div#modalpre-home div.modal-content div.modal-header button::before {
-  content: "Skip";
-  display: inline-block;
-  padding-bottom: 3px;
+div.webform-client-form-7 div.modal-content div.modal-header button::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 60%;
   border-bottom: 2px solid #969696;
 }
 
-div#modalBackdrop + div#modalpre-home div.modal-content div.modal-header h4 {
+div.webform-client-form-7 div.modal-content div.modal-header h4 {
   display: none;
 }
 
-div#modalBackdrop + div#modalpre-home div.modal-content div#modal-content div.webform-component--image-modal {
+div.webform-client-form-7 div.modal-content div#modal-content {
+  max-height: none !important;
+}
+
+div.webform-client-form-7 div.modal-content div#modal-content div.webform-component--image-modal {
   margin: 0px;
 }
 
-div#modalBackdrop + div#modalpre-home div.modal-content div#modal-content div.webform-component--image-modal div.row {
+div.webform-client-form-7 div.modal-content div#modal-content div.webform-component--image-modal div.row {
   margin: 0px;
 }
 
-div#modalBackdrop + div#modalpre-home div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] {
+div.webform-client-form-7 div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] {
   padding: 0px;
 }
 
-div#modalBackdrop + div#modalpre-home div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] img {
+div.webform-client-form-7 div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] img {
   width: 100%;
   padding: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  div.webform-client-form-7 div.modal-content div.modal-header button {
+    font-size: 14px !important;
+    padding: 7px !important;
+  }
 }
