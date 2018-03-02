@@ -1374,9 +1374,14 @@ div.webform-component--terminos div.modal div.modal-content {
   max-height: none;
 }
 
-#modal-content {
+#modalContent.webform-client-form-7 {
   padding: 0px;
   margin: 0px;
+  max-height: none !important;
+}
+
+#modalContent.webform-client-form-7 .modal-body {
+  max-height: none !important;
 }
 
 .modal-default.webform-client-form-7 .form-group {
