@@ -1,4 +1,5 @@
 # Ignore configuration files that may contain sensitive information.
+.htaccess
 sites/*/*settings*.php
 /sites/default/**/files
 /sites/default/**/private
