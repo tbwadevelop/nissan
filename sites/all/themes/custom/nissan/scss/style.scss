@@ -630,6 +630,10 @@ body.front.page-node {
             }
           }
           section#block-nissan-galeria {
+            h2 {
+              font-size: 23px;
+              padding: 11px 0px;
+            }
             div.subtitulo.nissan {
               p {
                 width: 100%;
@@ -925,7 +929,6 @@ body.front #first-time p, body.front h1.page-header {
       @media screen and (max-width: $breakpoint-tablet) {
         div.webform-component--especificaciones {
           p {
-            width: 40%;
             margin-left: auto;
             margin-right: auto;
           }
@@ -971,38 +974,30 @@ body.front #first-time p, body.front h1.page-header {
           }     
         }
       }
-      div.webform-component--autorizo-ser-contactado-a-traves-de {
+      div.webform-component--autorizo-ser-contactado-a-traves-de  {
         div.form-checkboxes {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -ms-flex-pack: distribute;
           justify-content: space-around;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
           width: 50%;
           margin-left: auto;
           margin-right: auto;
-        }
-      }
-      div.webform-component--autorizo-ser-contactado-a-traves-de  {
-        div.form-checkboxes {
           div {
             margin-top: 0px;
-            margin-bottom: 0px;
-          }
-        }
-      }
-      @media screen and (max-width: $breakpoint-Laptop) {
-        div.webform-component--autorizo-ser-contactado-a-traves-de  {
-          di.form-checkboxes{
-            div {
-              margin-bottom: 13px;
-            }
-          }
-        }
-      }
-      div.webform-component--autorizo-ser-contactado-a-traves-de {
-        div.form-checkboxes {
-          div {
+            margin-bottom: 10px;
             label {
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
               flex-direction: row-reverse;
               padding-right: 20px;
               font-family: "Brand Regular";
@@ -1021,11 +1016,25 @@ body.front #first-time p, body.front h1.page-header {
             margin: 0px;
             width: 100%;
             div {
+              margin-bottom: 13px;
               label {
                 display: block;
+                padding-left: 0px;
                 input {
                   right: 0px;
+                  margin-left: 20px;
                 }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: $breakpoint-tablet) {
+        div.webform-component--autorizo-ser-contactado-a-traves-de {
+          div.form-checkboxes {
+            div {
+              label {
+                font-size: 12px;
               }
             }
           }
@@ -1076,6 +1085,7 @@ body.front #first-time p, body.front h1.page-header {
             div {
               display: block;
               margin-bottom: 17px;
+              padding-left: 0px;
               label {
                 display: block;
                 padding: 0px;
@@ -1094,6 +1104,7 @@ body.front #first-time p, body.front h1.page-header {
             div {
               display: block;
               margin-bottom: 17px;
+              padding-left: 0px;
               label {
                 display: block;
                 padding: 0px;
@@ -1105,10 +1116,31 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
+       @media screen and (max-width: $breakpoint-tablet) {
+        div.webform-component--autorizo-ser-contactado-por {
+          div.form-checkboxes {
+            div {
+              label {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        div.webform-component--acuerdo-ser-contacto {
+          div.form-radios  {
+            div {
+              label {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
       div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones {
         div.form-radios {
           div {
             display: inline-flex;
+            padding-left: 0px;
             label {
               margin-right: 20px;
               display: inline-flex;
@@ -1161,7 +1193,7 @@ body.front #first-time p, body.front h1.page-header {
             width: 100%;
             div {
               display: block;
-              padding-left: 24px;
+              padding-left: 0px;
               label {
                 display: block;
                 padding: 0px;
@@ -1180,13 +1212,36 @@ body.front #first-time p, body.front h1.page-header {
             width: 100%;
             div {
               display: block;
-              padding-left: 24px;
+              padding-left: 0px;
               label {
                 display: block;
                 padding: 0px;
                 input {
                 right: 0px;
                 margin: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: $breakpoint-tablet) {
+        div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
+          div.form-radios {
+            div {
+              label {
+                font-size: 12px;  
+              }
+            }
+          }
+        }
+        div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones {
+          div.form-radios{
+            div {
+              label {
+                font-size: 12px;
+                button {
+                  font-size: 12px;
                 }
               }
             }

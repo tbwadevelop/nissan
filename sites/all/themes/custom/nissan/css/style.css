@@ -555,6 +555,10 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   body.front.page-node div.main-container .row section section#block-bean-mecanica div.field-name-field-resumen div.field-item.even ul {
     -webkit-padding-start: 22px;
   }
+  body.front.page-node div.main-container .row section section#block-nissan-galeria h2 {
+    font-size: 23px;
+    padding: 11px 0px;
+  }
   body.front.page-node div.main-container .row section section#block-nissan-galeria div.subtitulo.nissan p {
     width: 100%;
     font-size: 13px;
@@ -866,7 +870,6 @@ body.front #first-time p, body.front h1.page-header {
 
 @media screen and (max-width: 768px) {
   #modalContent .modal-content .modal-body div.webform-component--especificaciones p {
-    width: 40%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -918,8 +921,14 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   width: 50%;
   margin-left: auto;
@@ -928,17 +937,16 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div {
   margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-@media screen and (max-width: 1024px) {
-  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de di.form-checkboxes div {
-    margin-bottom: 13px;
-  }
+  margin-bottom: 10px;
 }
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -955,11 +963,22 @@ body.front #first-time p, body.front h1.page-header {
     margin: 0px;
     width: 100%;
   }
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div {
+    margin-bottom: 13px;
+  }
   #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label {
     display: block;
+    padding-left: 0px;
   }
   #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label input {
     right: 0px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label {
+    font-size: 12px;
   }
 }
 
@@ -1006,6 +1025,7 @@ body.front #first-time p, body.front h1.page-header {
   #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div {
     display: block;
     margin-bottom: 17px;
+    padding-left: 0px;
   }
   #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label {
     display: block;
@@ -1022,6 +1042,7 @@ body.front #first-time p, body.front h1.page-header {
   #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div {
     display: block;
     margin-bottom: 17px;
+    padding-left: 0px;
   }
   #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label {
     display: block;
@@ -1032,8 +1053,18 @@ body.front #first-time p, body.front h1.page-header {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label {
+    font-size: 12px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label {
+    font-size: 12px;
+  }
+}
+
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div {
   display: inline-flex;
+  padding-left: 0px;
 }
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label {
@@ -1087,7 +1118,7 @@ body.front #first-time p, body.front h1.page-header {
   }
   #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div {
     display: block;
-    padding-left: 24px;
+    padding-left: 0px;
   }
   #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label {
     display: block;
@@ -1104,7 +1135,7 @@ body.front #first-time p, body.front h1.page-header {
   }
   #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div {
     display: block;
-    padding-left: 24px;
+    padding-left: 0px;
   }
   #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label {
     display: block;
@@ -1113,6 +1144,18 @@ body.front #first-time p, body.front h1.page-header {
   #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label input {
     right: 0px;
     margin: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label {
+    font-size: 12px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label {
+    font-size: 12px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label button {
+    font-size: 12px;
   }
 }
 
