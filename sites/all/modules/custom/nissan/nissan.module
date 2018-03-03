@@ -63,10 +63,9 @@ function nissan_init() {
 /**
  * Implements hook_webform().
  */
-
 function nissan_webform_submission_presave($node, &$submission) {
   if (isset($submission->file_usage['added_fids'][0])) {
-       $file      = file_load($submission->file_usage['added_fids'][0]);
+       $file = file_load($submission->file_usage['added_fids'][0]);
        $ext = pathinfo($file->filename, PATHINFO_EXTENSION);
        if ($ext != 'mp4') {
               file_save($file);
@@ -79,4 +78,10 @@ function nissan_webform_submission_presave($node, &$submission) {
               file_save($file);
         } 
   }
+     if (empty($submission->data[2][0])) {
+         ctools_include('ajax'); ctools_add_js('ajax-responder');
+         $commands[] = ctools_ajax_command_redirect('gracias');
+         print ajax_render($commands);
+         exit;
+     }
 }
