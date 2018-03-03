@@ -41,7 +41,7 @@ body.front.page-node {
     background-repeat: no-repeat;
     padding: 1em 2em 1em 4em;
     position: fixed;
-    // z-index: 9999999;
+    /* z-index: 9999999;*/
     right: 0px;
       a {
       color: white;
@@ -102,7 +102,6 @@ body.front.page-node {
             background-color: transparent;
             border-color: transparent;
             border-radius: 0px;
-            -webkit-box-shadow: 0 1px 1px transparent;
             box-shadow: 0 1px 1px transparent;
             legend {
               display: none;
@@ -170,12 +169,8 @@ body.front.page-node {
               div.field-name-field-link {
                 text-align: center;
                 div.field-item.even {
-                  display: -webkit-box;
-                  display: -ms-flexbox;
                   display: flex;
-                    -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                            justify-content: center;
+                    justify-content: center;
                     p {
                       width: 210px;
                       height: 47px;
@@ -295,7 +290,7 @@ body.front.page-node {
                   width: 100%;
                   height: 100%;
                   min-height: 16pc;
-                  button.vjs-big-play-button{
+                  button.vjs-big-play-button {
                     height: 0.9em;
                     width: 4.6em;
                     top: 40%;
@@ -308,8 +303,7 @@ body.front.page-node {
                     line-height: normal;
                     padding: 0px;
                     text-align: center;
-                    -webkit-box-shadow: 4px 3px 0px 1px rgba(0, 0, 0, 0.44);
-                            box-shadow: 4px 3px 0px 1px rgba(0, 0, 0, 0.44);
+                    box-shadow: 4px 3px 0px 1px rgba(0, 0, 0, 0.44);
                     &:hover {
                       background-color: $negro;
                       color: white;
@@ -502,11 +496,22 @@ body.front.page-node {
             div#Carousel {
               padding: 0px;
               padding-left: 15px;
-              padding-right: 15px; 
+              padding-right: 15px;
+              ol {
+                bottom: -32px;
+                li {
+                  width: 15px;
+                  height: 15px;
+                  margin: 0px 5px;
+                }
+                li.active {
+                  width: 15px;
+                  height: 15px;
+                }
+              } 
               div.subtitulo.nissan {
                 p {
                   width: 100%;
-                  /* font-size: 13px;*/
                   padding: 16px 28px 12px;
                 }
               }
@@ -574,7 +579,6 @@ body.front.page-node {
         a.thumbnail{
           div.vjs-controls-enabled {
             button.vjs-big-play-button{
-              top: 40% !important;
               left: 40% !important;
             }
           }
@@ -636,6 +640,17 @@ body.front.page-node {
         }
       }
     }
+    div#Carousel {
+      div.carousel-inner {
+        a.thumbnail{
+          div.vjs-controls-enabled {
+            button.vjs-big-play-button{
+              left: 30% !important;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -651,7 +666,6 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres,div#__lpform_edit-submitte
     display: none;
   }
 }
-
 body.front #first-time p, body.front h1.page-header {
  display:none;
 }
@@ -670,8 +684,7 @@ body.front #first-time p, body.front h1.page-header {
   .modal-content {
     border-radius: 0px;
     border: 0px solid transparent;
-    -webkit-box-shadow: 0 5px 15px transparent;
-      box-shadow: 0 5px 15px transparent;
+    box-shadow: 0 5px 15px transparent;
     .modal-header {
       border-bottom: 0px solid transparent;
       position: relative;
@@ -750,8 +763,7 @@ body.front #first-time p, body.front h1.page-header {
       }
       fieldset {
         border-color: transparent;
-        -webkit-box-shadow: 0 1px 1px transparent;
-          box-shadow: 0 1px 1px transparent;
+        box-shadow: 0 1px 1px transparent;
         margin-bottom: 0px;
         padding-left: 10%;
         padding-right: 10%;
@@ -786,8 +798,7 @@ body.front #first-time p, body.front h1.page-header {
               border: 0px solid #ccc;
               background-color: #cbd0d7;
               background-image: none !important;
-              -webkit-box-shadow: inset 0 0px 0px transparent;
-                box-shadow: inset 0 0px 0px transparent;
+              box-shadow: inset 0 0px 0px transparent;
               font-size: 12px;
               font-family: "Brand Regular";
               color: $negro;
@@ -798,8 +809,7 @@ body.front #first-time p, body.front h1.page-header {
               border: 0px solid #ccc;
               color: #9B9B9B;
               background-color: #cbd0d7;
-              -webkit-box-shadow: inset 0 0px 0px transparent;
-                      box-shadow: inset 0 0px 0px transparent;
+              box-shadow: inset 0 0px 0px transparent;
               outline: none;
               -webkit-appearance: none;
                   -moz-appearance: none;
@@ -855,8 +865,7 @@ body.front #first-time p, body.front h1.page-header {
           input {
             padding: 0px;
             padding-left: calc(44% - 3em);
-            -webkit-box-shadow: none;
-                    box-shadow: none;
+            box-shadow: none;
             border: none;
             outline: none;
           }
@@ -866,14 +875,20 @@ body.front #first-time p, body.front h1.page-header {
             border-radius: 20px;
             border-color: $rojo;
             color: #fff;
-            span.icon.glyphicon::before {
-              content: "";
-              display: inline-block;
-              background-image: url(../img/terminal_icon_updload.png) !important;
-              background-size: 100% 100%;
-              background-repeat: no-repeat;
-              width: 17px;
-              height: 17px;
+            background-image: url(../img/terminal_icon_updload.png) !important;
+            background-size: 20px;
+            background-position: 23%;
+            background-repeat: no-repeat;
+            span.icon.glyphicon {
+              display: none;
+              /* background-image: url(../img/terminal_icon_updload.png) !important;*/
+              /* background-size: 100% 100%;*/
+              /* background-repeat: no-repeat;*/
+              /* width: 17px;*/
+              /* height: 17px;*/
+            }
+            div {
+              display: none;
             }
           }
         }
@@ -958,14 +973,8 @@ body.front #first-time p, body.front h1.page-header {
       }
       div.webform-component--autorizo-ser-contactado-a-traves-de {
         div.form-checkboxes {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -ms-flex-pack: distribute;
           justify-content: space-around;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
           width: 50%;
           margin-left: auto;
@@ -993,12 +1002,7 @@ body.front #first-time p, body.front h1.page-header {
         div.form-checkboxes {
           div {
             label {
-              display: -webkit-box;
-              display: -ms-flexbox;
               display: flex;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: reverse;
-              -ms-flex-direction: row-reverse;
               flex-direction: row-reverse;
               padding-right: 20px;
               font-family: "Brand Regular";
@@ -1030,20 +1034,11 @@ body.front #first-time p, body.front h1.page-header {
       div.webform-component--autorizo-ser-contactado-por, div.webform-component--acuerdo-ser-contacto {
         div.form-checkboxes {
           div {
-          display: -webkit-inline-box;
-          display: -ms-inline-flexbox;
           display: inline-flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
           justify-content: center;
           padding-left: 24px;
             label {
-              display: -webkit-box;
-              display: -ms-flexbox;
               display: flex;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: reverse;
-              -ms-flex-direction: row-reverse;
               flex-direction: row-reverse;
               padding-right: 20px;
               font-family: "Brand Regular";
@@ -1057,20 +1052,11 @@ body.front #first-time p, body.front h1.page-header {
       div.webform-component--acuerdo-ser-contacto {
         div.form-radios {
           div {
-          display: -webkit-inline-box;
-          display: -ms-inline-flexbox;
           display: inline-flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
           justify-content: center;
           padding-left: 24px;
             label {
-              display: -webkit-box;
-              display: -ms-flexbox;
               display: flex;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: reverse;
-              -ms-flex-direction: row-reverse;
               flex-direction: row-reverse;
               padding-right: 20px;
               font-family: "Brand Regular";
@@ -1122,13 +1108,9 @@ body.front #first-time p, body.front h1.page-header {
       div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones {
         div.form-radios {
           div {
-            display: -webkit-inline-box;
-            display: -ms-inline-flexbox;
             display: inline-flex;
             label {
               margin-right: 20px;
-              display: -webkit-inline-box;
-              display: -ms-inline-flexbox;
               display: inline-flex;
               padding-right: 20px;
               font-family: "Brand Regular";
@@ -1156,24 +1138,15 @@ body.front #first-time p, body.front h1.page-header {
       div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad {
         div.form-radios {
           div {
-            display: -webkit-inline-box;
-            display: -ms-inline-flexbox;
             display: inline-flex;
             label {
               margin-right: 20px;
-              display: -webkit-inline-box;
-              display: -ms-inline-flexbox;
               display: inline-flex;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: reverse;
-                  -ms-flex-direction: row-reverse;
-                      flex-direction: row-reverse;
+              flex-direction: row-reverse;
               padding-right: 20px;
               font-family: "Brand Regular";
               input {
                 margin: 3px 0px 0px 25px;
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
               }
             }
@@ -1277,46 +1250,144 @@ footer {
   width: 100% !important;
   text-align: center;
   div.info-footer {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  div.nissan-colombia {
-    font-size: 20px;
-    font-family: "Brand Regular";
-    color: rgba(255, 255, 255, 0.529);
-  }
-  p {
-    a {
-      font-size: 20px;
-      font-family: "Brand Regular";
-      color: $rojo;
-      padding-left: 3px;
-      }
-    }
-  a {
-      font-size: 20px;
-      font-family: "Brand Regular";
-      color: $rojo;
-      padding-left: 3px;
-    }
-  }
-}
-@media screen and (max-width: $breakpoint-Laptop) {
-  footer {
-    div.info-footer {
-      display: inherit;
-      div.nissan-colombia {
-        font-size: 14px;
-      }
+    display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+    div.nissan-colombia {
+      display: flex;
+      -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+      width: 80%;
+      padding-bottom: 15px;
       p {
+        font-size: 20px;
+        font-family: "Brand Regular";
+        color: white;
+        border-right: 1px solid white;
+        padding: 0px 10px;
+        margin: 0px;
+        position: relative;
         a {
-          font-size: 14px; 
+          font-size: 20px;
+          font-family: "Brand Regular";
+          color: $rojo;
+          text-decoration: none;
+        }
+        &:nth-child(2) {
+          a::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 95%;  
+            border-bottom: 1px solid $rojo;
+          }
+        }
+        &:nth-child(3){
+          border-right: 0px;
+          a::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 95%;  
+            border-bottom: 1px solid $rojo;
+          }
+        }
+      } 
+    }
+    div.redes_sociales {
+      width: 20%;
+      p {
+        text-align: left;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: "Brand Regular";
+        color: white;
+        margin: 0px;
+      }
+      div.red {
+        display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          display: flex;
+        -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+        span {
+            display: none;
+          }
+        a.facebook {
+          background: url(../img/facebook.svg);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          width: 50px;
+          height: 50px;
+
+        }
+        a.twitter {
+          background: url(../img/Twitter.svg);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          width: 50px;
+          height: 50px;
+        }
+        a.youtube {
+          background: url(../img/youtube.svg);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          width: 50px;
+          height: 50px;
+        }
+        a.instagram {
+          background: url(../img/instagram.svg);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          width: 50px;
+          height: 50px;
         }
       }
     }
   }
 }
-
+@media screen and (max-width: $breakpoint-Laptop) { 
+  footer {
+    div.info-footer {
+      display: initial;
+      div.nissan-colombia {
+        display: initial;
+        width: 100%;
+        p {
+          border-right: none;
+          a::before {
+            display: none;
+          }
+        }
+      } 
+    }
+    div.redes_sociales {
+      width: 100% !important;  
+      div.red {
+      -webkit-justify-content: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: $breakpoint-miniphone) { 
+  footer {
+    div.info-footer {
+      div.nissan-colombia {
+        p {
+          font-size: 12px;
+          a {
+            font-size: 12px;
+          }
+        }
+      } 
+    }
+  }
+}
 /*___________—*_*..  Gracias ..*_*..___________*/
 body.node-type-article {
   background: url(../img/Gracias.png);
@@ -1519,8 +1590,7 @@ body.node-type-article {
 div.webform-component--terminos {
   div.modal {
     div.modal-content {
-      -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
-        box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
     }
   }
 }
@@ -1530,10 +1600,8 @@ div.webform-component--terminos {
   width: 15px;
   height: 15px;
   background-color: #fff;
-  -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid black;
-  -webkit-transition: border-color .2s;
   transition: border-color .2s;
   -webkit-appearance: button;
   margin: 3px 0px 0px -25px;
@@ -1554,17 +1622,9 @@ div.webform-component--terminos {
     display: none;
 }
 
-// .modal-default.webform-client-form-7 .modal-header h4{
-//   display: none;
-// }
-
-
 #modalContent {
   z-index: 999999999999999999 !important;
 }
-
-
-
 .modal-default.webform-client-form-7 div{
   margin: 0px;
   padding: 0px;
@@ -1622,7 +1682,7 @@ div.webform-client-form-7 {
             padding: 0px;
             img {
               width: 100%;
-              // max-height: 41pc;
+              /* max-height: 41pc;*/
               padding: 8px
             }
           }

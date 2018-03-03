@@ -40,6 +40,7 @@ body.front.page-node div#skip-link p {
   background-repeat: no-repeat;
   padding: 1em 2em 1em 4em;
   position: fixed;
+  /* z-index: 9999999;*/
   right: 0px;
 }
 
@@ -104,7 +105,6 @@ body.front.page-node div.main-container .row section section#block-bean-mecanica
   background-color: transparent;
   border-color: transparent;
   border-radius: 0px;
-  -webkit-box-shadow: 0 1px 1px transparent;
   box-shadow: 0 1px 1px transparent;
 }
 
@@ -181,11 +181,7 @@ body.front.page-node div.main-container .row section section#block-bean-mecanica
 }
 
 body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-second div.collapse.in div.field-name-field-link div.field-item.even {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -319,7 +315,6 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   line-height: normal;
   padding: 0px;
   text-align: center;
-  -webkit-box-shadow: 4px 3px 0px 1px rgba(0, 0, 0, 0.44);
   box-shadow: 4px 3px 0px 1px rgba(0, 0, 0, 0.44);
 }
 
@@ -489,9 +484,20 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
     padding-left: 15px;
     padding-right: 15px;
   }
+  body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel ol {
+    bottom: -32px;
+  }
+  body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel ol li {
+    width: 15px;
+    height: 15px;
+    margin: 0px 5px;
+  }
+  body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel ol li.active {
+    width: 15px;
+    height: 15px;
+  }
   body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.subtitulo.nissan p {
     width: 100%;
-    /* font-size: 13px;*/
     padding: 16px 28px 12px;
   }
 }
@@ -523,7 +529,6 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
     background: none;
   }
   body.front.page-node div#Carousel div.carousel-inner a.thumbnail div.vjs-controls-enabled button.vjs-big-play-button {
-    top: 40% !important;
     left: 40% !important;
   }
   body.front.page-node div#Carousel a.left.carousel-control, body.front.page-node div#Carousel a.right.carousel-control {
@@ -553,6 +558,9 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   body.front.page-node div.main-container .row section section#block-nissan-galeria div.subtitulo.nissan p {
     width: 100%;
     font-size: 13px;
+  }
+  body.front.page-node div#Carousel div.carousel-inner a.thumbnail div.vjs-controls-enabled button.vjs-big-play-button {
+    left: 30% !important;
   }
 }
 
@@ -587,7 +595,6 @@ body.front #first-time p, body.front h1.page-header {
 #modalContent .modal-content {
   border-radius: 0px;
   border: 0px solid transparent;
-  -webkit-box-shadow: 0 5px 15px transparent;
   box-shadow: 0 5px 15px transparent;
 }
 
@@ -679,7 +686,6 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body fieldset {
   border-color: transparent;
-  -webkit-box-shadow: 0 1px 1px transparent;
   box-shadow: 0 1px 1px transparent;
   margin-bottom: 0px;
   padding-left: 10%;
@@ -724,7 +730,6 @@ body.front #first-time p, body.front h1.page-header {
   border: 0px solid #ccc;
   background-color: #cbd0d7;
   background-image: none !important;
-  -webkit-box-shadow: inset 0 0px 0px transparent;
   box-shadow: inset 0 0px 0px transparent;
   font-size: 12px;
   font-family: "Brand Regular";
@@ -737,7 +742,6 @@ body.front #first-time p, body.front h1.page-header {
   border: 0px solid #ccc;
   color: #9B9B9B;
   background-color: #cbd0d7;
-  -webkit-box-shadow: inset 0 0px 0px transparent;
   box-shadow: inset 0 0px 0px transparent;
   outline: none;
   -webkit-appearance: none;
@@ -800,7 +804,6 @@ body.front #first-time p, body.front h1.page-header {
 #modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file input {
   padding: 0px;
   padding-left: calc(44% - 3em);
-  -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
   outline: none;
@@ -812,16 +815,23 @@ body.front #first-time p, body.front h1.page-header {
   border-radius: 20px;
   border-color: #c61633;
   color: #fff;
+  background-image: url(../img/terminal_icon_updload.png) !important;
+  background-size: 20px;
+  background-position: 23%;
+  background-repeat: no-repeat;
 }
 
-#modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file button span.icon.glyphicon::before {
-  content: "";
-  display: inline-block;
-  background-image: url(../img/terminal_icon_updload.png) !important;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 17px;
+#modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file button span.icon.glyphicon {
+  display: none;
+  /* background-image: url(../img/terminal_icon_updload.png) !important;*/
+  /* background-size: 100% 100%;*/
+  /* background-repeat: no-repeat;*/
+  /* width: 17px;*/
+  /* height: 17px;*/
+}
+
+#modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file button div {
+  display: none;
 }
 
 #modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.help-block {
@@ -908,14 +918,8 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   width: 50%;
   margin-left: auto;
@@ -934,12 +938,7 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -965,22 +964,13 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-checkboxes div {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 24px;
 }
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-checkboxes div label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -991,22 +981,13 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 24px;
 }
 
 #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -1052,15 +1033,11 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios div label {
   margin-right: 20px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -1086,19 +1063,12 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label {
   margin-right: 20px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -1106,8 +1076,6 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label input {
   margin: 3px 0px 0px 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1192,40 +1160,146 @@ footer {
 }
 
 footer div.info-footer {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 footer div.info-footer div.nissan-colombia {
-  font-size: 20px;
-  font-family: "Brand Regular";
-  color: rgba(255, 255, 255, 0.529);
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 80%;
+  padding-bottom: 15px;
 }
 
-footer div.info-footer p a {
+footer div.info-footer div.nissan-colombia p {
+  font-size: 20px;
+  font-family: "Brand Regular";
+  color: white;
+  border-right: 1px solid white;
+  padding: 0px 10px;
+  margin: 0px;
+  position: relative;
+}
+
+footer div.info-footer div.nissan-colombia p a {
   font-size: 20px;
   font-family: "Brand Regular";
   color: #c61633;
-  padding-left: 3px;
+  text-decoration: none;
 }
 
-footer div.info-footer a {
+footer div.info-footer div.nissan-colombia p:nth-child(2) a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
+  border-bottom: 1px solid #c61633;
+}
+
+footer div.info-footer div.nissan-colombia p:nth-child(3) {
+  border-right: 0px;
+}
+
+footer div.info-footer div.nissan-colombia p:nth-child(3) a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
+  border-bottom: 1px solid #c61633;
+}
+
+footer div.info-footer div.redes_sociales {
+  width: 20%;
+}
+
+footer div.info-footer div.redes_sociales p {
+  text-align: left;
+  padding-left: 10px;
   font-size: 20px;
   font-family: "Brand Regular";
-  color: #c61633;
-  padding-left: 3px;
+  color: white;
+  margin: 0px;
+}
+
+footer div.info-footer div.redes_sociales div.red {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+footer div.info-footer div.redes_sociales div.red span {
+  display: none;
+}
+
+footer div.info-footer div.redes_sociales div.red a.facebook {
+  background: url(../img/facebook.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+footer div.info-footer div.redes_sociales div.red a.twitter {
+  background: url(../img/Twitter.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+footer div.info-footer div.redes_sociales div.red a.youtube {
+  background: url(../img/youtube.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+footer div.info-footer div.redes_sociales div.red a.instagram {
+  background: url(../img/instagram.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 1024px) {
   footer div.info-footer {
-    display: inherit;
+    display: initial;
   }
   footer div.info-footer div.nissan-colombia {
-    font-size: 14px;
+    display: initial;
+    width: 100%;
   }
-  footer div.info-footer p a {
-    font-size: 14px;
+  footer div.info-footer div.nissan-colombia p {
+    border-right: none;
+  }
+  footer div.info-footer div.nissan-colombia p a::before {
+    display: none;
+  }
+  footer div.redes_sociales {
+    width: 100% !important;
+  }
+  footer div.redes_sociales div.red {
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  footer div.info-footer div.nissan-colombia p {
+    font-size: 12px;
+  }
+  footer div.info-footer div.nissan-colombia p a {
+    font-size: 12px;
   }
 }
 
@@ -1383,7 +1457,6 @@ body.node-type-article div.main-container .row section div.region-content div.fi
 }
 
 div.webform-component--terminos div.modal div.modal-content {
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5) !important;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -1391,10 +1464,8 @@ div.webform-component--terminos div.modal div.modal-content {
   width: 15px;
   height: 15px;
   background-color: #fff;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid black;
-  -webkit-transition: border-color .2s;
   transition: border-color .2s;
   -webkit-appearance: button;
   margin: 3px 0px 0px -25px;
@@ -1497,6 +1568,7 @@ div.webform-client-form-7 div.modal-content div#modal-content div.webform-compon
 
 div.webform-client-form-7 div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] img {
   width: 100%;
+  /* max-height: 41pc;*/
   padding: 8px;
 }
 
