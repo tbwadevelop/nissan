@@ -166,16 +166,17 @@ function rendervideo($url){
           'description' => 'Frysk',
         ),                
       ),
-      'player_id' => 'test-video',
+     'player_id' => 'test-video',
       'posterimage_style' => 'thumbnail',
       'attributes' => array(
         'width' => '100',
         'height' => '100',
-        'loop' => FALSE,
+        'loop' => TRUE,
+        'preload' => "auto",
         'autoplay' => FALSE,
         'hidecontrols' => FALSE,
       ),
-    ));
+));
 
   return $render;
 }
