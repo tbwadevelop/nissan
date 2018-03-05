@@ -34,6 +34,7 @@ body.front.page-node {
   background-repeat: no-repeat;
   padding-top: 0px !important;
   div#skip-link {
+    z-index: 99 !important;
     position: relative;
     div.field-items {
       p {
@@ -675,7 +676,7 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres,div#__lpform_edit-submitte
 body.front #first-time p, body.front h1.page-header {
  display:none;
 }
-//ocultar el button de sudmin en modal
+/*ocultar el button de sudmin en modal*/
 #webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
     display: none;
 }
@@ -1152,14 +1153,14 @@ body.front #first-time p, body.front h1.page-header {
         }
       }
       @media screen and (max-width: $breakpoint-miniphone) {
-        // div.webform-component--autorizo-ser-contactado-por {
-        //   div.form-checkboxes {
-        //     div {
-        //       label {
-        //       }
-        //     }
-        //   }
-        // }
+        /* div.webform-component--autorizo-ser-contactado-por {*/
+        /*   div.form-checkboxes {*/
+        /*     div {*/
+        /*       label {*/
+        /*       }*/
+        /*     }*/
+        /*   }*/
+        /* }*/
         div.webform-component--acuerdo-ser-contacto {
           div.form-radios  {
             div {
@@ -1349,7 +1350,7 @@ footer {
       width: 80%;
       padding-bottom: 15px;
       p {
-        font-size: 20px;
+        font-size: 14px;
         font-family: "Brand Regular";
         color: white;
         border-right: 1px solid white;
@@ -1357,7 +1358,7 @@ footer {
         margin: 0px;
         position: relative;
         a {
-          font-size: 20px;
+          font-size: 14px;
           font-family: "Brand Regular";
           color: $rojo;
           text-decoration: none;
@@ -1668,35 +1669,40 @@ div.webform-component--terminos {
   }
 }
 
-/* .radio input[type="radio"],input[type="checkbox"] {*/
-/*   display: none;*/
-/* }*/
-.radio input[type="radio"],input[type="checkbox"] {
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+   display: none;
+}
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+
   width: 15px;
   height: 15px;
+  display: inline-block;
   background-color: #fff;
   box-sizing: border-box;
   border: 1px solid black;
+  border-radius: 0px;
   transition: border-color .2s;
-  -webkit-appearance: button !important;
   margin: 3px 0px 0px -25px;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
 }
-.radio input[type="radio"]:checked,input[type="checkbox"]:checked {
+.radio input[type="radio"]:checked,.checkbox input[type="checkbox"]:checked {
   background: url(../img/chulo.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: $breakpoint-Laptop) {
-  .radio input[type="radio"],input[type="checkbox"] {
+  .radio input[type="radio"],.checkbox input[type="checkbox"] {
     width: 25px;
     height: 25px;
     border: 1px solid #aeaeb2;
   }
 }
 
-// #modalContent {
-//   z-index: 999999999999999999 !important;
-// }
+/* #modalContent {*/
+/*   z-index: 999999999999999999 !important;*/
+/* }*/
 .modal-default.webform-client-form-7 div{
   margin: 0px;
   padding: 0px;
@@ -1776,53 +1782,57 @@ div.webform-client-form-7 {
 }
 /*___________—*_*.. Termos modal dentro de modal   ..*_*..___________*/
 div#myModal {
-  .modal-header {
-    border-bottom: none;
-    position: relative;
-    padding: 0px;
-    button {
-        background: #000000;
-        opacity: initial;
-        color: white;
-        margin: 0px;
-        padding: 1px 7px 2px;
-        font-size: 32px;
-        font-weight: normal;
-        border-color: transparent;
-        outline: none;
-    }
-    h4 {
-      padding: 31px 0px 10px;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 18px;
-      font-family: "Brand Bold";
-      color: $negro;
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 47%;
-        width: 5%;
-        border-bottom: 6px solid #c61633;
+  .modal-content {
+    z-index: 9999 !important;
+    .modal-header {
+      border-bottom: none;
+      position: relative;
+      padding: 0px;
+      button {
+          background: #000000;
+          opacity: initial;
+          color: white;
+          margin: 0px;
+          padding: 1px 7px 2px;
+          font-size: 32px;
+          font-weight: normal;
+          border-color: transparent;
+          outline: none;
       }
-    }
-    > div {
-      display: none;
-     
-      &+ div {
+      h4 {
+        padding: 31px 0px 10px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Brand Bold";
+        color: $negro;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 47%;
+          width: 5%;
+          border-bottom: 6px solid #c61633;
+        }
+      }
+      > div {
         display: none;
+       
+        &+ div {
+          display: none;
+        }
       }
     }
-  }
-  .modal-body {
-    p {
-      // background: snow !important;
+    .modal-body {
+      p {
+        /* background: snow !important;*/
+      }
     }
+    .modal-footer {
+      display: none;
+    }    
   }
-  .modal-footer {
-    display: none;
-  }
+
 }
 
 
