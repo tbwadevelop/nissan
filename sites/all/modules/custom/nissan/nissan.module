@@ -72,7 +72,11 @@ function nissan_webform_submission_presave($node, &$submission) {
               file_load($submission->file_usage['added_fids'][0]);
               $path = drupal_realpath($file->uri);
               $convert    = $path.'.mp4';
+<<<<<<< HEAD
               shell_exec("/usr/bin/ffmpeg  -i ".$path." -strict -2 ".$convert."");
+=======
+              shell_exec("/usr/local/bin/ffmpeg  -i ".$path." -strict -2 ".$convert."");
+>>>>>>> 91695b82f9829fe20fc079e65ba220eafd50df9f
               $file->filename = $file->filename . '.mp4';
               $file->uri =  $file->uri.'.mp4';
               file_save($file);
@@ -84,4 +88,8 @@ function nissan_webform_submission_presave($node, &$submission) {
          print ajax_render($commands);
          exit;
      }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 91695b82f9829fe20fc079e65ba220eafd50df9f
