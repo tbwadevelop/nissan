@@ -35,21 +35,23 @@ body.front.page-node {
   padding-top: 0px !important;
   div#skip-link {
     position: relative;
-    p {
-    background: url(../img/registrarme_home.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 1em 2em 1em 4em;
-    position: fixed;
-    /* z-index: 9999999;*/
-    right: 0px;
-      a {
-      color: white;
-      text-decoration: none;
-      font-size: 12px;
-      font-family: "Brand Bold";
-      font-weight: bold;
-      text-transform: uppercase;
+    div.field-items {
+      p {
+      background: url(../img/registrarme_home.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 1em 2em 1em 4em;
+      position: fixed;
+      /* z-index: 9999999;*/
+      right: 0px;
+        a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: "Brand Bold";
+        font-weight: bold;
+        text-transform: uppercase;
+        }
       }
     }
   }
@@ -673,6 +675,11 @@ div#__lpform_edit-submitted-fielset-acudiente-nombres,div#__lpform_edit-submitte
 body.front #first-time p, body.front h1.page-header {
  display:none;
 }
+//ocultar el button de sudmin en modal
+#webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
+    display: none;
+}
+
 /* -\* Nuevo comentario /*- */
 .loader {
   position: fixed;
@@ -684,6 +691,7 @@ body.front #first-time p, body.front h1.page-header {
   background: url(http://loadinggif.com/images/image-selection/3.gif) 50% 50% no-repeat #b6b5b5;
 }
 /*___________—*_*.. Formulario Registro  ..*_*..___________*/
+
 #modalContent {
   .modal-content {
     border-radius: 0px;
@@ -873,6 +881,10 @@ body.front #first-time p, body.front h1.page-header {
             border: none;
             outline: none;
           }
+          span.file {
+            width: 100%;
+            display: block;
+          }
           button {
             background-color: $rojo;
             padding: .8em 6em;
@@ -899,6 +911,16 @@ body.front #first-time p, body.front h1.page-header {
         div.help-block {
           display: none;  
         }
+      }
+      @media screen and (max-width: $breakpoint-miniphone) {
+        div#edit-submitted-video-ajax-wrapper {
+          div.form-managed-file {
+            button {
+              padding: 0.5em 4em;
+              background-position: 14%;
+            }
+          }
+        } 
       }
       div.webform-component--sudtitulo-informacion {
         p {
@@ -976,14 +998,8 @@ body.front #first-time p, body.front h1.page-header {
       }
       div.webform-component--autorizo-ser-contactado-a-traves-de  {
         div.form-checkboxes {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -ms-flex-pack: distribute;
           justify-content: space-around;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
           width: 50%;
           margin-left: auto;
@@ -992,12 +1008,7 @@ body.front #first-time p, body.front h1.page-header {
             margin-top: 0px;
             margin-bottom: 10px;
             label {
-              display: -webkit-box;
-              display: -ms-flexbox;
               display: flex;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: reverse;
-              -ms-flex-direction: row-reverse;
               flex-direction: row-reverse;
               padding-right: 20px;
               font-family: "Brand Regular";
@@ -1116,10 +1127,11 @@ body.front #first-time p, body.front h1.page-header {
           }
         }
       }
-       @media screen and (max-width: $breakpoint-tablet) {
+      @media screen and (max-width: $breakpoint-tablet) {
         div.webform-component--autorizo-ser-contactado-por {
           div.form-checkboxes {
             div {
+            
               label {
                 font-size: 12px;
               }
@@ -1130,7 +1142,32 @@ body.front #first-time p, body.front h1.page-header {
           div.form-radios  {
             div {
               label {
+                padding-right: 9%;
+                input {
+                  
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: $breakpoint-miniphone) {
+        // div.webform-component--autorizo-ser-contactado-por {
+        //   div.form-checkboxes {
+        //     div {
+        //       label {
+        //       }
+        //     }
+        //   }
+        // }
+        div.webform-component--acuerdo-ser-contacto {
+          div.form-radios  {
+            div {
+              label {
                 font-size: 12px;
+                input {
+                  margin: 4% 0px 6px 8px;
+                }
               }
             }
           }
@@ -1305,14 +1342,10 @@ footer {
   width: 100% !important;
   text-align: center;
   div.info-footer {
-    display: -ms-flexbox;
-      display: -webkit-flex;
       display: flex;
     div.nissan-colombia {
       display: flex;
-      -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-        align-items: flex-end;
+      align-items: flex-end;
       width: 80%;
       padding-bottom: 15px;
       p {
@@ -1361,13 +1394,9 @@ footer {
         margin: 0px;
       }
       div.red {
-        display: -ms-flexbox;
-          display: -webkit-flex;
           display: flex;
           display: flex;
-        -webkit-justify-content: flex-end;
-          -ms-flex-pack: end;
-          justify-content: flex-end;
+        justify-content: flex-end;
         span {
             display: none;
           }
@@ -1422,9 +1451,7 @@ footer {
     div.redes_sociales {
       width: 100% !important;  
       div.red {
-      -webkit-justify-content: center !important;
-        -ms-flex-pack: center !important;
-        justify-content: center !important;
+      justify-content: center !important;
       }
     }
   }
@@ -1526,19 +1553,10 @@ body.node-type-article {
     div.main-container {
       .row {
         section {
-          h1 {
-
-          }
           div.region-content {
-            header {
-       
-            }
             div.field-name-body {
-                  width: 50%;
-                  margin: auto;
-              p {
-             
-              }
+              width: 50%;
+              margin: auto;
             }
             div.field-name-field-volver {
             width: 100%;
@@ -1650,7 +1668,9 @@ div.webform-component--terminos {
   }
 }
 
-
+/* .radio input[type="radio"],input[type="checkbox"] {*/
+/*   display: none;*/
+/* }*/
 .radio input[type="radio"],input[type="checkbox"] {
   width: 15px;
   height: 15px;
@@ -1658,7 +1678,7 @@ div.webform-component--terminos {
   box-sizing: border-box;
   border: 1px solid black;
   transition: border-color .2s;
-  -webkit-appearance: button;
+  -webkit-appearance: button !important;
   margin: 3px 0px 0px -25px;
 }
 .radio input[type="radio"]:checked,input[type="checkbox"]:checked {
@@ -1673,13 +1693,10 @@ div.webform-component--terminos {
     border: 1px solid #aeaeb2;
   }
 }
-#webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
-    display: none;
-}
 
-#modalContent {
-  z-index: 999999999999999999 !important;
-}
+// #modalContent {
+//   z-index: 999999999999999999 !important;
+// }
 .modal-default.webform-client-form-7 div{
   margin: 0px;
   padding: 0px;
@@ -1737,7 +1754,6 @@ div.webform-client-form-7 {
             padding: 0px;
             img {
               width: 100%;
-              /* max-height: 41pc;*/
               padding: 8px
             }
           }
@@ -1758,8 +1774,56 @@ div.webform-client-form-7 {
     }
   }
 }
-
-
+/*___________—*_*.. Termos modal dentro de modal   ..*_*..___________*/
+div#myModal {
+  .modal-header {
+    border-bottom: none;
+    position: relative;
+    padding: 0px;
+    button {
+        background: #000000;
+        opacity: initial;
+        color: white;
+        margin: 0px;
+        padding: 1px 7px 2px;
+        font-size: 32px;
+        font-weight: normal;
+        border-color: transparent;
+        outline: none;
+    }
+    h4 {
+      padding: 31px 0px 10px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Brand Bold";
+      color: $negro;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 47%;
+        width: 5%;
+        border-bottom: 6px solid #c61633;
+      }
+    }
+    > div {
+      display: none;
+     
+      &+ div {
+        display: none;
+      }
+    }
+  }
+  .modal-body {
+    p {
+      // background: snow !important;
+    }
+  }
+  .modal-footer {
+    display: none;
+  }
+}
 
 
 

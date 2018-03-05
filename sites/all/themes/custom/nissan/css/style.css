@@ -34,7 +34,7 @@ body.front.page-node div#skip-link {
   position: relative;
 }
 
-body.front.page-node div#skip-link p {
+body.front.page-node div#skip-link div.field-items p {
   background: url(../img/registrarme_home.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@ body.front.page-node div#skip-link p {
   right: 0px;
 }
 
-body.front.page-node div#skip-link p a {
+body.front.page-node div#skip-link div.field-items p a {
   color: white;
   text-decoration: none;
   font-size: 12px;
@@ -584,6 +584,10 @@ body.front #first-time p, body.front h1.page-header {
   display: none;
 }
 
+#webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
+  display: none;
+}
+
 /* -\* Nuevo comentario /*- */
 .loader {
   position: fixed;
@@ -813,6 +817,11 @@ body.front #first-time p, body.front h1.page-header {
   outline: none;
 }
 
+#modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file span.file {
+  width: 100%;
+  display: block;
+}
+
 #modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file button {
   background-color: #c61633;
   padding: .8em 6em;
@@ -840,6 +849,13 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.help-block {
   display: none;
+}
+
+@media screen and (max-width: 640px) {
+  #modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file button {
+    padding: 0.5em 4em;
+    background-position: 14%;
+  }
 }
 
 #modalContent .modal-content .modal-body div.webform-component--sudtitulo-informacion p {
@@ -921,14 +937,8 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   width: 50%;
   margin-left: auto;
@@ -941,12 +951,7 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -1058,7 +1063,16 @@ body.front #first-time p, body.front h1.page-header {
     font-size: 12px;
   }
   #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label {
+    padding-right: 9%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label {
     font-size: 12px;
+  }
+  #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label input {
+    margin: 4% 0px 6px 8px;
   }
 }
 
@@ -1203,15 +1217,11 @@ footer {
 }
 
 footer div.info-footer {
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
 }
 
 footer div.info-footer div.nissan-colombia {
   display: flex;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
   align-items: flex-end;
   width: 80%;
   padding-bottom: 15px;
@@ -1268,12 +1278,8 @@ footer div.info-footer div.redes_sociales p {
 }
 
 footer div.info-footer div.redes_sociales div.red {
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   display: flex;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -1331,8 +1337,6 @@ footer div.info-footer div.redes_sociales div.red a.instagram {
     width: 100% !important;
   }
   footer div.redes_sociales div.red {
-    -webkit-justify-content: center !important;
-    -ms-flex-pack: center !important;
     justify-content: center !important;
   }
 }
@@ -1503,6 +1507,9 @@ div.webform-component--terminos div.modal div.modal-content {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5) !important;
 }
 
+/* .radio input[type="radio"],input[type="checkbox"] {*/
+/*   display: none;*/
+/* }*/
 .radio input[type="radio"], input[type="checkbox"] {
   width: 15px;
   height: 15px;
@@ -1510,7 +1517,7 @@ div.webform-component--terminos div.modal div.modal-content {
   box-sizing: border-box;
   border: 1px solid black;
   transition: border-color .2s;
-  -webkit-appearance: button;
+  -webkit-appearance: button !important;
   margin: 3px 0px 0px -25px;
 }
 
@@ -1526,14 +1533,6 @@ div.webform-component--terminos div.modal div.modal-content {
     height: 25px;
     border: 1px solid #aeaeb2;
   }
-}
-
-#webform-client-form-3 button.webform-submit, #webform-client-form-7 button.webform-submit {
-  display: none;
-}
-
-#modalContent {
-  z-index: 999999999999999999 !important;
 }
 
 .modal-default.webform-client-form-7 div {
@@ -1611,7 +1610,6 @@ div.webform-client-form-7 div.modal-content div#modal-content div.webform-compon
 
 div.webform-client-form-7 div.modal-content div#modal-content div.webform-component--image-modal div.row div[class*="col-"] img {
   width: 100%;
-  /* max-height: 41pc;*/
   padding: 8px;
 }
 
@@ -1620,4 +1618,53 @@ div.webform-client-form-7 div.modal-content div#modal-content div.webform-compon
     font-size: 14px !important;
     padding: 7px !important;
   }
+}
+
+/*___________—*_*.. Termos modal dentro de modal   ..*_*..___________*/
+div#myModal .modal-header {
+  border-bottom: none;
+  position: relative;
+  padding: 0px;
+}
+
+div#myModal .modal-header button {
+  background: #000000;
+  opacity: initial;
+  color: white;
+  margin: 0px;
+  padding: 1px 7px 2px;
+  font-size: 32px;
+  font-weight: normal;
+  border-color: transparent;
+  outline: none;
+}
+
+div#myModal .modal-header h4 {
+  padding: 31px 0px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Brand Bold";
+  color: black;
+}
+
+div#myModal .modal-header h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 47%;
+  width: 5%;
+  border-bottom: 6px solid #c61633;
+}
+
+div#myModal .modal-header > div {
+  display: none;
+}
+
+div#myModal .modal-header > div + div {
+  display: none;
+}
+
+div#myModal .modal-footer {
+  display: none;
 }
