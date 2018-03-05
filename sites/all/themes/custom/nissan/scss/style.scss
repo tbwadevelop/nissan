@@ -173,7 +173,7 @@ body.front.page-node {
                 text-align: center;
                 div.field-item.even {
                   display: flex;
-                    justify-content: center;
+                  justify-content: center;
                     p {
                       width: 210px;
                       height: 47px;
@@ -972,6 +972,7 @@ body.front #first-time p, body.front h1.page-header {
       div.webform-component--autorizo-ser-contactado-a-traves-de, div.webform-component--autorizo-ser-contactado-por {
         text-align: center;
         > label {
+          width: 100%;
           font-family: "Brand Regular";
           color: black;
           font-weight: normal;
@@ -1000,6 +1001,7 @@ body.front #first-time p, body.front h1.page-header {
       div.webform-component--autorizo-ser-contactado-a-traves-de  {
         div.form-checkboxes {
           display: flex;
+          align-items: center;
           justify-content: space-around;
           flex-direction: row-reverse;
           width: 50%;
@@ -1010,6 +1012,7 @@ body.front #first-time p, body.front h1.page-header {
             margin-bottom: 10px;
             label {
               display: flex;
+              align-items: center;      
               flex-direction: row-reverse;
               padding-right: 20px;
               font-family: "Brand Regular";
@@ -1395,8 +1398,8 @@ footer {
         margin: 0px;
       }
       div.red {
-          display: flex;
-          display: flex;
+        display: flex;
+        align-items: flex-end;
         justify-content: flex-end;
         span {
             display: none;

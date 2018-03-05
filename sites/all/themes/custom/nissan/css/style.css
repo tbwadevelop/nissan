@@ -911,6 +911,7 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de > label, #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por > label {
+  width: 100%;
   font-family: "Brand Regular";
   color: black;
   font-weight: normal;
@@ -940,6 +941,7 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   flex-direction: row-reverse;
   width: 50%;
@@ -954,6 +956,7 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label {
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
   padding-right: 20px;
   font-family: "Brand Regular";
@@ -1291,7 +1294,7 @@ footer div.info-footer div.redes_sociales p {
 
 footer div.info-footer div.redes_sociales div.red {
   display: flex;
-  display: flex;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 
