@@ -31,7 +31,6 @@ body.front.page-node {
 }
 
 body.front.page-node div#skip-link {
-  z-index: 99 !important;
   position: relative;
 }
 
@@ -41,7 +40,7 @@ body.front.page-node div#skip-link div.field-items p {
   background-repeat: no-repeat;
   padding: 1em 2em 1em 4em;
   position: fixed;
-  /* z-index: 9999999;*/
+  z-index: 99 !important;
   right: 0px;
 }
 

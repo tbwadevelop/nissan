@@ -34,7 +34,7 @@ body.front.page-node {
   background-repeat: no-repeat;
   padding-top: 0px !important;
   div#skip-link {
-    z-index: 99 !important;
+    // z-index: 99 !important;
     position: relative;
     div.field-items {
       p {
@@ -43,7 +43,7 @@ body.front.page-node {
       background-repeat: no-repeat;
       padding: 1em 2em 1em 4em;
       position: fixed;
-      /* z-index: 9999999;*/
+      z-index: 99 !important;
       right: 0px;
         a {
         color: white;
