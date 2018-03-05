@@ -3,6 +3,8 @@
 		attach: function (context, settings) {
 			$( document ).ready(function() {
     			$( "#modalContent" ).addClass($("#modal-content .webform-client-form").attr('id'));
+    			if($("·modalContent").find('#webform-client-form-7'))
+    				$(this).css('max-height',"none !important");
     			 if ($(".webform-previous").val() == '<none>') {
     			 	  $(".webform-previous").remove();
     			 }
@@ -22,6 +24,7 @@
 				$(".webform-component--terminos").appendTo("#skip-link"); 
 				
 				jQuery('.webform-component--terminos p button').appendTo('.form-item-submitted-he-leido-y-acepto-los-terminos-y-condiciones label');
+				jQuery( ".webform-client-form-7 .modal-header button" ).text("Skip");
 			});	
 			$(window).load(function(){
 			    $('.loader').fadeOut(500);

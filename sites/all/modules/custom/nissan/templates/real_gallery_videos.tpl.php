@@ -141,7 +141,30 @@ function rendervideo($url){
         array(
           'uri' => $url,
           'filemime' => 'video/ogv',
-        ),        
+        ),
+        array(
+          'uri' => $url,
+          'filemime' => 'image/jpeg',
+        ),
+        array(
+          'uri' => $url,
+          'filemime' => 'text/vtt',
+          'langcode' => 'en',
+          'description' => 'English',
+          'default' => TRUE,
+        ),
+        array(
+          'uri' => $url,
+          'filemime' => 'text/vtt',
+          'langcode' => 'nl',
+          'description' => 'Nederlands',
+        ),
+        array(
+          'uri' => $url,
+          'filemime' => 'text/vtt',
+          'langcode' => 'fy',
+          'description' => 'Frysk',
+        ),                
       ),
       'player_id' => 'test-video',
       'posterimage_style' => 'thumbnail',

@@ -34,9 +34,13 @@ DirectoryIndex index.php index.html index.htm
   php_flag mbstring.encoding_translation    off
 </IfModule>
 
+
+<IfModule mod_php5.c>
 php_value memory_limit 70M
 php_value post_max_size 100M
 php_value upload_max_filesize 70M
+</IfModule>
+
 
 # Requires mod_expires to be enabled.
 <IfModule mod_expires.c>
@@ -149,5 +153,5 @@ php_value upload_max_filesize 70M
 # Add headers to all responses.
 <IfModule mod_headers.c>
   # Disable content sniffing, since it's an attack vector.
-  Header set X-XSS-Protection "1; mode=block"
+  Header always set X-Content-Type-Options nosniff
 </IfModule>
