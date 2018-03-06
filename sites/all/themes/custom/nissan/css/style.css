@@ -74,9 +74,6 @@ body.front.page-node header#navbar .navbar-collapse {
 }
 
 body.front.page-node div.main-container .row section {
-  /* h1.page-header {*/
-  /*   display: none;*/
-  /* }*/
   /*___________—*_*.. Hecho de emocion ..*_*..___________*/
   /*___________—*_*.. Galeria ..*_*..___________*/
 }
@@ -117,7 +114,6 @@ body.front.page-node div.main-container .row section section#block-bean-mecanica
 }
 
 body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset div.collapse.in img {
-  /* width: 100%;*/
   z-index: 1;
 }
 
@@ -232,7 +228,7 @@ body.front.page-node div.main-container .row section section#block-bean-mecanica
 
 body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-three {
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 body.front.page-node div.main-container .row section section#block-bean-mecanica fieldset.group-container-three div.field-item.even p a {
@@ -837,11 +833,6 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file button span.icon.glyphicon {
   display: none;
-  /* background-image: url(../img/terminal_icon_updload.png) !important;*/
-  /* background-size: 100% 100%;*/
-  /* background-repeat: no-repeat;*/
-  /* width: 17px;*/
-  /* height: 17px;*/
 }
 
 #modalContent .modal-content .modal-body div#edit-submitted-video-ajax-wrapper div.form-managed-file button div {
@@ -1105,16 +1096,6 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 @media screen and (max-width: 640px) {
-  #modalContent .modal-content .modal-body {
-    /* div.webform-component--autorizo-ser-contactado-por {*/
-    /*   div.form-checkboxes {*/
-    /*     div {*/
-    /*       label {*/
-    /*       }*/
-    /*     }*/
-    /*   }*/
-    /* }*/
-  }
   #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label {
     font-size: 12px;
   }
@@ -1687,7 +1668,7 @@ div.webform-client-form-7 div.modal-content div#modal-content div.webform-compon
   }
 }
 
-/*___________—*_*.. Termos modal dentro de modal   ..*_*..___________*/
+/*___________—*_*.. Terminos condiciones modal dentro de modal   ..*_*..___________*/
 div#myModal .modal-content {
   z-index: 9999 !important;
 }
@@ -1736,10 +1717,24 @@ div#myModal .modal-content .modal-header > div + div {
   display: none;
 }
 
-div#myModal .modal-content .modal-body p {
-  /* background: snow !important;*/
-}
-
 div#myModal .modal-content .modal-footer {
   display: none;
+}
+
+/*___________—*_*.. Loading ..*_*..___________*/
+div#load_screen {
+  background: #000;
+  opacity: 1;
+  position: fixed;
+  z-index: 99999999999999 !important;
+  top: 0px;
+  width: 100%;
+  height: 1600px;
+}
+
+div#load_screen > div#loading {
+  color: #FFF;
+  width: 120px;
+  height: 24px;
+  margin: 300px auto;
 }

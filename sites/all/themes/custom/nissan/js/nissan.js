@@ -1,6 +1,12 @@
 (function ($) {
 	Drupal.behaviors.nissan = {
 		attach: function (context, settings) {
+			$(window).load(function() {
+			    $("#load_screen").fadeOut(600, function() {
+			        $("body").fadeIn(10);  
+			        $("body").remove("#load_screen");      
+			    });
+			});	
 			$( document ).ready(function() {
     			$( "#modalContent" ).addClass($("#modal-content .webform-client-form").attr('id'));
     			if($("·modalContent").find('#webform-client-form-7'))
@@ -25,12 +31,13 @@
 				
 				jQuery('.webform-component--terminos p button').appendTo('.form-item-submitted-he-leido-y-acepto-los-terminos-y-condiciones label');
 				jQuery( ".webform-client-form-7 .modal-header button" ).text("Skip");
+
+				
 			});	
 			$(window).load(function(){
-			    $('.loader').fadeOut(500);
+			    $('.loader').fadeOut(0);
 			    $('.front #startodal').trigger('click');
-			});		
-
+			});	
 		}
 	};
 }(jQuery));

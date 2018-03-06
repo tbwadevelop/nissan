@@ -75,9 +75,6 @@ body.front.page-node {
   div.main-container {
     .row {
       section {
-        /* h1.page-header {*/
-        /*   display: none;*/
-        /* }*/
         /*___________—*_*.. Hecho de emocion ..*_*..___________*/
         section#block-bean-mecanica {
           h2 {
@@ -112,7 +109,6 @@ body.front.page-node {
             div.collapse.in {
               padding: 0px;
               img {
-                /* width: 100%;*/
                 z-index: 1;
               }
             }
@@ -222,7 +218,7 @@ body.front.page-node {
           }
           fieldset.group-container-three {
             margin-top: 50px;
-            margin-bottom: 150px;
+            margin-bottom: 80px;
 
             div.field-item.even {
               p {
@@ -666,6 +662,7 @@ body.front.page-node {
 /*------------------------------------------------------------------------------ */
 /*___________—*_*.. Fondo modal ..*_*..___________*/ 
 div#modalBackdrop {
+  // opacity: 5 !important;
   background-color: $negro !important;
 }
 div#__lpform_edit-submitted-fielset-acudiente-nombres,div#__lpform_edit-submitted-fielset-acudiente-nombres-apellidos-mama {
@@ -898,11 +895,6 @@ body.front #first-time p, body.front h1.page-header {
             background-repeat: no-repeat;
             span.icon.glyphicon {
               display: none;
-              /* background-image: url(../img/terminal_icon_updload.png) !important;*/
-              /* background-size: 100% 100%;*/
-              /* background-repeat: no-repeat;*/
-              /* width: 17px;*/
-              /* height: 17px;*/
             }
             div {
               display: none;
@@ -1186,14 +1178,6 @@ body.front #first-time p, body.front h1.page-header {
         }
       }
       @media screen and (max-width: $breakpoint-miniphone) {
-        /* div.webform-component--autorizo-ser-contactado-por {*/
-        /*   div.form-checkboxes {*/
-        /*     div {*/
-        /*       label {*/
-        /*       }*/
-        /*     }*/
-        /*   }*/
-        /* }*/
         div.webform-component--acuerdo-ser-contacto {
           div.form-radios  {
             div {
@@ -1824,7 +1808,7 @@ div.webform-client-form-7 {
     }
   }
 }
-/*___________—*_*.. Termos modal dentro de modal   ..*_*..___________*/
+/*___________—*_*.. Terminos condiciones modal dentro de modal   ..*_*..___________*/
 div#myModal {
   .modal-content {
     z-index: 9999 !important;
@@ -1867,18 +1851,28 @@ div#myModal {
         }
       }
     }
-    .modal-body {
-      p {
-        /* background: snow !important;*/
-      }
-    }
     .modal-footer {
       display: none;
     }    
   }
-
 }
+/*___________—*_*.. Loading ..*_*..___________*/
 
+div#load_screen{
+  background: #000;
+  opacity: 1;
+  position: fixed;
+  z-index:99999999999999!important;
+  top: 0px;
+  width: 100%;
+  height: 1600px;
+  & > div#loading{
+    color:#FFF;
+    width:120px;
+    height:24px;
+    margin: 300px auto;
+  }
+}
 
 
 

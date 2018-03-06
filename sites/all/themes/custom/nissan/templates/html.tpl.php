@@ -70,6 +70,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 </head>
 <body<?php print $body_attributes; ?>>
+<div id="load_screen"> <div id="loading"><img src="sites/all/themes/custom/nissan/img/loading.gif" alt="loading"></div></div>
+
 <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -102,6 +104,7 @@
         },{scope: 'publish_actions'});
       }
     </script>
+
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
