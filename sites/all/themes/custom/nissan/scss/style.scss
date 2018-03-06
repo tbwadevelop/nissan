@@ -1019,6 +1019,11 @@ body.front #first-time p, body.front h1.page-header {
               input {
                 margin-left: 20px;
               }
+              @-moz-document url-prefix() {
+                input {
+                  margin-right: -20px;
+                } 
+              }
             }
           }
         }
@@ -1039,6 +1044,11 @@ body.front #first-time p, body.front h1.page-header {
                   right: 0px;
                   margin-left: 20px;
                 }
+                @-moz-document url-prefix() {
+                input {
+                  right: 20px;
+                } 
+              }
               }
             }
           }

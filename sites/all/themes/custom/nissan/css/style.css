@@ -965,6 +965,12 @@ body.front #first-time p, body.front h1.page-header {
   margin-left: 20px;
 }
 
+@-moz-document url-prefix() {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label input {
+    margin-right: -20px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes {
     display: block;
@@ -982,6 +988,11 @@ body.front #first-time p, body.front h1.page-header {
   #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label input {
     right: 0px;
     margin-left: 20px;
+  }
+  @-moz-document url-prefix() {
+    #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-a-traves-de div.form-checkboxes div label input {
+      right: 20px;
+    }
   }
 }
 
