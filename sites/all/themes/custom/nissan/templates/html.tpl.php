@@ -70,7 +70,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 </head>
 <body<?php print $body_attributes; ?>>
-<div id="load_screen"> <div id="loading"><img src="https://hechosdeemocion/sites/all/themes/custom/nissan/img/loading.gif" alt="loading"></div></div>
+<div id="load_screen"> <div id="loading"><img src="https://hechosdeemocion.com/sites/all/themes/custom/nissan/img/loading.gif" alt="loading"></div></div>
 
 <script>
       window.fbAsyncInit = function() {
