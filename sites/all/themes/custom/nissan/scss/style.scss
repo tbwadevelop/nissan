@@ -282,7 +282,7 @@ body.front.page-node {
               }
             }
             div.carousel-inner {
-              a.thumbnail{
+              a.thumbnail {
                 background-color: transparent;
                 padding: 0px;
                 div.vjs-controls-enabled {
@@ -359,6 +359,38 @@ body.front.page-node {
                 margin-top: -15px;
                 margin-bottom: 20px;
               }
+              div.social-networks {
+                position: absolute;
+                bottom: 16px;
+                right: 17px;
+                a {
+                  width: 30px;
+                  height: 30px;
+                  text-decoration: none;
+                  display: inline-block;
+                  &.facebook {
+                  background: url(../img/facebook.jpg);
+                  background-size: 100% 100%;
+                  background-repeat: no-repeat;
+                  }
+                  &.twitter {
+                    background: url(../img/twitter.jpg);
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                  }
+                  span {
+                    display: none;
+                  }
+                }
+              }
+              @media screen and (max-width: 990px) {
+                div.social-networks {
+                  position: absolute;
+                  bottom: 0%;
+                  a {
+                  }
+                }
+              }
             }
             a.left.carousel-control {
               background: url(../img/galery_home_prev.png);
@@ -392,6 +424,11 @@ body.front.page-node {
               height: 26px;
               top:40%;
               margin: 0px;
+            }
+            @media screen and (max-width: 990px) {
+              a.left.carousel-control, a.right.carousel-control {
+                display: none;
+              }
             }
           }
         }   

@@ -372,6 +372,42 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   margin-bottom: 20px;
 }
 
+body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner div.social-networks {
+  position: absolute;
+  bottom: 16px;
+  right: 17px;
+}
+
+body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner div.social-networks a {
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner div.social-networks a.facebook {
+  background: url(../img/facebook.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner div.social-networks a.twitter {
+  background: url(../img/twitter.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner div.social-networks a span {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel div.carousel-inner div.social-networks {
+    position: absolute;
+    bottom: 0%;
+  }
+}
+
 body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel a.left.carousel-control {
   background: url(../img/galery_home_prev.png);
   background-size: contain;
@@ -405,6 +441,12 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
   height: 26px;
   top: 40%;
   margin: 0px;
+}
+
+@media screen and (max-width: 990px) {
+  body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel a.left.carousel-control, body.front.page-node div.main-container .row section section#block-nissan-galeria div#Carousel a.right.carousel-control {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
