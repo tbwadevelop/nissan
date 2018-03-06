@@ -31,8 +31,8 @@
           module_load_include('inc', 'webform', 'includes/webform.submissions'); 
           $count = count($view->result); 
       ?>
-
-        <?php if($count != FALSE): ?>
+        <?php Global $user; ?>
+        <?php if($count != FALSE && $user->uid == true): ?>
           <div class="row">
                  <div class="col-md-12">
                       <div class="subtitulo nissan" style="text-align: center"> <p>Aquí están algunas de las jugadas más emocionantes hasta ahora.</p></div/>
