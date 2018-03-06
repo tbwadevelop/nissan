@@ -92,7 +92,7 @@
     </script>
       <script>
       // Only works after `FB.init` is called
-      function myFacebookLogin(vid-title,vid-url) {
+      function myFacebookLogin(vid_title,vid_url) {
           FB.login(function(){
           FB.api('me/videos/', 'post', { caption:vid-title ,file_url:'vid-url'}, function (res) {
                 if(!res || res.error) {

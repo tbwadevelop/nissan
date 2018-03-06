@@ -570,6 +570,7 @@ body.front.page-node div.main-container .row section section#block-nissan-galeri
 /*___________—*_*.. Fondo modal ..*_*..___________*/
 div#modalBackdrop {
   background-color: black !important;
+  overflow: hidden;
 }
 
 div#__lpform_edit-submitted-fielset-acudiente-nombres img, div#__lpform_edit-submitted-fielset-acudiente-nombres-apellidos-mama img {
@@ -790,6 +791,15 @@ body.front #first-time p, body.front h1.page-header {
   display: none;
 }
 
+@media screen and (max-width: 640px) {
+  #modalContent .modal-content .modal-body div.form-actions {
+    background-position: red;
+  }
+  #modalContent .modal-content .modal-body div.form-actions button.webform-next, #modalContent .modal-content .modal-body div.form-actions button.webform-previous {
+    padding: .4em 2.6em;
+  }
+}
+
 #modalContent .modal-content .modal-body div.webform-component--paso2 {
   text-align: center;
 }
@@ -858,12 +868,15 @@ body.front #first-time p, body.front h1.page-header {
 }
 
 #modalContent .modal-content .modal-body div.webform-component--informacion p {
-  padding-left: 10%;
-  padding-right: 10%;
-  font-size: 14px;
+  padding: 0px;
+  font-size: 12px;
   font-family: "Brand Regular";
   color: black;
   text-align: left;
+}
+
+#modalContent .modal-content .modal-body div.webform-component--informacion p a {
+  font-size: 12px;
 }
 
 #modalContent .modal-content .modal-body div.webform-component--especificaciones {
@@ -1737,4 +1750,10 @@ div#load_screen > div#loading {
   width: 120px;
   height: 24px;
   margin: 300px auto;
+}
+
+@media screen and (max-width: 768px) {
+  div#load_screen div#loading img {
+    width: 100%;
+  }
 }

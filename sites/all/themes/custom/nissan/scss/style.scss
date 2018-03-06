@@ -664,6 +664,7 @@ body.front.page-node {
 div#modalBackdrop {
   // opacity: 5 !important;
   background-color: $negro !important;
+  overflow: hidden;
 }
 div#__lpform_edit-submitted-fielset-acudiente-nombres,div#__lpform_edit-submitted-fielset-acudiente-nombres-apellidos-mama {
   img {
@@ -832,8 +833,8 @@ body.front #first-time p, body.front h1.page-header {
       }
       div.form-actions {
         text-align: center;
-          position: relative;
-          button {
+        position: relative;
+        button {
           border-radius: 0px;
           border-color: transparent;
           color: white;
@@ -857,7 +858,17 @@ body.front #first-time p, body.front h1.page-header {
           div {
             display: none;
           }
+        }
+      }
+      @media screen and (max-width: $breakpoint-miniphone) {
+        div.form-actions {
+          background-position: red;
+          button {
+            &.webform-next, &.webform-previous {
+              padding: .4em 2.6em;
+            }
           }
+        }
       }
       div.webform-component--paso2 {
         text-align: center;
@@ -925,12 +936,14 @@ body.front #first-time p, body.front h1.page-header {
       }
       div.webform-component--informacion {
         p {
-          padding-left: 10%;
-          padding-right: 10%;
-          font-size: 14px;
+          padding: 0px;
+          font-size: 12px;
           font-family: "Brand Regular";
           color: $negro;
           text-align: left;
+          a {
+            font-size: 12px;
+          }
         }
       }
       div.webform-component--especificaciones {
@@ -1873,7 +1886,15 @@ div#load_screen{
     margin: 300px auto;
   }
 }
-
+@media screen and (max-width: $breakpoint-tablet) {
+  div#load_screen {
+    div#loading {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
 
 
 
