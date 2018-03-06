@@ -1068,9 +1068,9 @@ body.front #first-time p, body.front h1.page-header {
       div.webform-component--autorizo-ser-contactado-por, div.webform-component--acuerdo-ser-contacto {
         div.form-checkboxes {
           div {
-          display: inline-flex;
-          justify-content: center;
-          padding-left: 24px;
+            display: inline-flex;
+            justify-content: center;
+            padding-left: 24px;
             label {
               display: flex;
               flex-direction: row-reverse;
@@ -1082,8 +1082,8 @@ body.front #first-time p, body.front h1.page-header {
               @-moz-document url-prefix() {
                 input {
                   margin-right: -20px;
-                } 
-              }
+                }
+              } 
             }
           }
         }
@@ -1101,11 +1101,10 @@ body.front #first-time p, body.front h1.page-header {
               font-family: "Brand Regular";
               input {
                 margin-left: 20px;
-
               }
               @-moz-document url-prefix() {
                 input {
-                  margin-right: -20px;
+                  margin-right: -20px !important;
                 } 
               }
             }
@@ -1154,7 +1153,7 @@ body.front #first-time p, body.front h1.page-header {
                 }
                 @-moz-document url-prefix() {
                   input {
-                    margin-right: 0px;
+                    margin-right: 0px !important;
                   } 
                 }
               }

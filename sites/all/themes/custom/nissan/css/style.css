@@ -1044,7 +1044,7 @@ body.front #first-time p, body.front h1.page-header {
 
 @-moz-document url-prefix() {
   #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label input {
-    margin-right: -20px;
+    margin-right: -20px !important;
   }
 }
 
@@ -1090,7 +1090,7 @@ body.front #first-time p, body.front h1.page-header {
   }
   @-moz-document url-prefix() {
     #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label input {
-      margin-right: 0px;
+      margin-right: 0px !important;
     }
   }
 }
