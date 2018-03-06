@@ -879,6 +879,11 @@ body.front #first-time p, body.front h1.page-header {
   font-size: 12px;
 }
 
+#modalContent .modal-content .modal-body div.webform-component--informacion p strong {
+  font-size: 12px;
+  font-weight: bold;
+}
+
 #modalContent .modal-content .modal-body div.webform-component--especificaciones {
   text-align: center;
   margin-bottom: 0px;
