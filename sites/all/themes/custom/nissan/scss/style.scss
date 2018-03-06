@@ -1079,6 +1079,11 @@ body.front #first-time p, body.front h1.page-header {
               input {
                 margin-left: 20px;
               }
+              @-moz-document url-prefix() {
+                input {
+                  margin-right: -20px;
+                } 
+              }
             }
           }
         }
@@ -1096,6 +1101,12 @@ body.front #first-time p, body.front h1.page-header {
               font-family: "Brand Regular";
               input {
                 margin-left: 20px;
+
+              }
+              @-moz-document url-prefix() {
+                input {
+                  margin-right: -20px;
+                } 
               }
             }
           }
@@ -1117,6 +1128,11 @@ body.front #first-time p, body.front h1.page-header {
                 input {
                   right: 0px;
                 }
+                @-moz-document url-prefix() {
+                  input {
+                    margin-right: 0px;
+                  } 
+                }
               }
             }
           }
@@ -1135,6 +1151,11 @@ body.front #first-time p, body.front h1.page-header {
                 padding: 0px;
                 input {
                   right: 0px;
+                }
+                @-moz-document url-prefix() {
+                  input {
+                    margin-right: 0px;
+                  } 
                 }
               }
             }
@@ -1232,6 +1253,11 @@ body.front #first-time p, body.front h1.page-header {
                 margin: 3px 0px 0px 25px;
                 display: flex;
               }
+              @-moz-document url-prefix() {
+                input {
+                  margin-right: -20px;
+                } 
+              }
             }
           }
         }
@@ -1251,6 +1277,12 @@ body.front #first-time p, body.front h1.page-header {
                 input {
                 right: 0px;
                 margin: 0px;
+                }
+                @-moz-document url-prefix() {
+                  input {
+                    margin-right: -20px;
+                    right: 20px;
+                  } 
                 }
               }
             }

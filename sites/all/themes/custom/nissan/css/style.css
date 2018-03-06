@@ -1019,6 +1019,12 @@ body.front #first-time p, body.front h1.page-header {
   margin-left: 20px;
 }
 
+@-moz-document url-prefix() {
+  #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label input, #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-checkboxes div label input {
+    margin-right: -20px;
+  }
+}
+
 #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div {
   display: inline-flex;
   justify-content: center;
@@ -1034,6 +1040,12 @@ body.front #first-time p, body.front h1.page-header {
 
 #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label input {
   margin-left: 20px;
+}
+
+@-moz-document url-prefix() {
+  #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label input {
+    margin-right: -20px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1054,6 +1066,11 @@ body.front #first-time p, body.front h1.page-header {
   #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label input {
     right: 0px;
   }
+  @-moz-document url-prefix() {
+    #modalContent .modal-content .modal-body div.webform-component--autorizo-ser-contactado-por div.form-checkboxes div label input {
+      margin-right: 0px;
+    }
+  }
   #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios {
     text-align: left;
     margin: 0px;
@@ -1070,6 +1087,11 @@ body.front #first-time p, body.front h1.page-header {
   }
   #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label input {
     right: 0px;
+  }
+  @-moz-document url-prefix() {
+    #modalContent .modal-content .modal-body div.webform-component--acuerdo-ser-contacto div.form-radios div label input {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -1149,6 +1171,12 @@ body.front #first-time p, body.front h1.page-header {
   display: flex;
 }
 
+@-moz-document url-prefix() {
+  #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label input {
+    margin-right: -20px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios {
     text-align: left;
@@ -1166,6 +1194,12 @@ body.front #first-time p, body.front h1.page-header {
   #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label input {
     right: 0px;
     margin: 0px;
+  }
+  @-moz-document url-prefix() {
+    #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-el-aviso-de-privacidad div.form-radios div label input {
+      margin-right: -20px;
+      right: 20px;
+    }
   }
   #modalContent .modal-content .modal-body div.webform-component--he-leido-y-acepto-los-terminos-y-condiciones div.form-radios {
     text-align: left;
