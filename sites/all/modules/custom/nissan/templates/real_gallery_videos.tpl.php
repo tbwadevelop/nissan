@@ -67,8 +67,8 @@
                                           <?php  if($key <= 2): ?>
                                               <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
                                               <div class="social-networks">
-                                                  <a class="facebook" href="#"><span>Facebook</span></a>
-                                                  <a class="twitter" href="#"><span>Twitter</span></a>
+                                                  <a class="facebook" name="<?php print($url); ?>" href="#"><span>Facebook</span></a>
+                                                  <a class="twitter" name="<?php print($url); ?>"  href="#"><span>Twitter</span></a>
                                               </div>    
                                               </div>
                                           <?php endif ?>                                      
@@ -83,8 +83,8 @@
                                            <?php  if($key >= 3 && $key <= 5): ?>
                                                <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
                                                   <div class="social-networks">
-                                                      <a class="facebook" href="#"><span>Facebook</span></a>
-                                                      <a class="twitter" href="#"><span>Twitter</span></a>
+                                                    <a class="facebook" name="<?php print($url); ?>" href="#"><span>Facebook</span></a>
+                                                    <a class="twitter" name="<?php print($url); ?>"  href="#"><span>Twitter</span></a>
                                                   </div> 
                                                </div>
                                            <?php endif ?>  
@@ -106,8 +106,8 @@
                                          <?php if(isset($start) && $key >= $start &&  $key <= $menor_mul): ?>
                                                <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante);?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
                                                   <div class="social-networks">
-                                                      <a class="facebook" href="#"><span>Facebook</span></a>
-                                                      <a class="twitter" href="#"><span>Twitter</span></a>
+                                                       <a class="facebook" name="<?php print($url); ?>" href="#"><span>Facebook</span></a>
+                                                       <a class="twitter" name="<?php print($url); ?>"  href="#"><span>Twitter</span></a>
                                                   </div>                                                   
                                                </div>
                                          <?php endif ?>
@@ -120,8 +120,8 @@
                                          <?php if(isset($multiplo) && $key >= $multiplo &&  $key <= $mayor_mul): ?>
                                                 <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante);?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
                                                   <div class="social-networks">
-                                                      <a class="facebook" href="#"><span>Facebook</span></a>
-                                                      <a class="twitter" href="#"><span>Twitter</span></a>
+                                                    <a class="facebook" name="<?php print($url); ?>" href="#"><span>Facebook</span></a>
+                                                    <a class="twitter" name="<?php print($url); ?>"  href="#"><span>Twitter</span></a>
                                                   </div>                                                   
                                                 </div>
                                          <?php endif ?>                                     
@@ -146,25 +146,12 @@
 </html>
 <?php 
 function rendervideo($url){
-
     $render = theme('videojs', array(
       'items' => array(
         array(
           'uri' => $url,
           'filemime' => 'video/mp4',
         ),
-        array(
-          'uri' => $url,
-          'filemime' => 'video/webm',
-        ), 
-        array(
-          'uri' => $url,
-          'filemime' => 'video/ogg',
-        ),
-        array(
-          'uri' => $url,
-          'filemime' => 'video/ogv',
-        ),        
       ),
       'player_id' => 'test-video',
       'posterimage_style' => 'thumbnail',
@@ -177,7 +164,6 @@ function rendervideo($url){
         'hidecontrols' => FALSE,
       ),
     ));
-
   return $render;
 }
 ?>
