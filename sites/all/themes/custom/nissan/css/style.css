@@ -1386,6 +1386,7 @@ footer div.info-footer div.redes_sociales div.red a.instagram {
     width: 100%;
   }
   footer div.info-footer div.nissan-colombia p {
+    margin-bottom: 10px;
     border-right: none;
   }
   footer div.info-footer div.nissan-colombia p a::before {
