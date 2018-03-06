@@ -65,7 +65,12 @@
                                       <div class="row">
                                         <?php endif ?>   
                                           <?php  if($key <= 2): ?>
-                                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> </div>
+                                              <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
+                                              <div class="social-networks">
+                                                  <a class="facebook" href="#">Facebook</a>
+                                                  <a class="twitter" href="#">Twitter</a>
+                                              </div>    
+                                              </div>
                                           <?php endif ?>                                      
                                               <?php  if($key == 3): ?>
                                       </div>
@@ -76,7 +81,12 @@
                                            <?php endif ?>
 
                                            <?php  if($key >= 3 && $key <= 5): ?>
-                                               <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> </div>
+                                               <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
+                                                  <div class="social-networks">
+                                                      <a class="facebook" href="#">Facebook</a>
+                                                      <a class="twitter" href="#">Twitter</a>
+                                                  </div> 
+                                               </div>
                                            <?php endif ?>  
                                 <!-- End  6 items sliders -->
 
@@ -94,7 +104,12 @@
                                       <div class="row">
                                          <?php endif  ?>
                                          <?php if(isset($start) && $key >= $start &&  $key <= $menor_mul): ?>
-                                               <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante);?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> </div>
+                                               <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante);?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
+                                                  <div class="social-networks">
+                                                      <a class="facebook" href="#">Facebook</a>
+                                                      <a class="twitter" href="#">Twitter</a>
+                                                  </div>                                                   
+                                               </div>
                                          <?php endif ?>
 
                                          <?php if(isset($multiplo) && $key == $multiplo): ?>
@@ -103,7 +118,12 @@
                                          <?php endif ?>
                                         
                                          <?php if(isset($multiplo) && $key >= $multiplo &&  $key <= $mayor_mul): ?>
-                                                <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante);?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> </div>
+                                                <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante);?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
+                                                  <div class="social-networks">
+                                                      <a class="facebook" href="#">Facebook</a>
+                                                      <a class="twitter" href="#">Twitter</a>
+                                                  </div>                                                   
+                                                </div>
                                          <?php endif ?>                                     
                                          <?php if(isset($top) && $key == $top): ?> 
                                       </div>  
