@@ -68,15 +68,9 @@
                                               <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
                                               <div class="social-networks">
                                                   <a class="facebook" name="<?php print($url);?>"><span>Facebook</span></a>
-                                                    <a class="twitter-share-button twitter"
-                                                      href="https://twitter.com/share"
-                                                      data-size="large"
-                                                      data-text="custom share text"
-                                                      data-url="https://hechosdeemocion.com/node/8"
-                                                      data-hashtags="example,demo"
-                                                      data-via="twitterdev"
-                                                      data-related="twitterapi,twitter">
-                                                    </a>
+                                                <a class="twitter-share-button twitter"
+                                                  href="https://twitter.com/intent/tweet?text=https://hechosdeemocion.com/node/8%20@NissanColombia">
+                                                </a>
                                               </div>    
                                               </div>
                                           <?php endif ?>                                      
@@ -92,15 +86,9 @@
                                                <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
                                                   <div class="social-networks">
                                                     <a class="facebook" name="<?php print($url);?>"><span>Facebook</span></a>
-                                                    <a class="twitter-share-button twitter"
-                                                      href="https://twitter.com/share"
-                                                      data-size="large"
-                                                      data-text="custom share text"
-                                                      data-url="https://hechosdeemocion.com/node/8"
-                                                      data-hashtags="example,demo"
-                                                      data-via="twitterdev"
-                                                      data-related="twitterapi,twitter">
-                                                    </a>
+                                                 <a class="twitter-share-button twitter"
+                                                  href="https://twitter.com/intent/tweet?text=https://hechosdeemocion.com/node/8%20@NissanColombia">
+                                                </a>
                                                   </div> 
                                                </div>
                                            <?php endif ?>  
@@ -124,13 +112,7 @@
                                                   <div class="social-networks">
                                                        <a class="facebook" name="<?php print($url); ?>"><span>Facebook</span></a>
                                                         <a class="twitter-share-button twitter"
-                                                          href="https://twitter.com/share"
-                                                          data-size="large"
-                                                          data-text="custom share text"
-                                                          data-url="https://hechosdeemocion.com/node/8"
-                                                          data-hashtags="example,demo"
-                                                          data-via="twitterdev"
-                                                          data-related="twitterapi,twitter">
+                                                          href="https://twitter.com/intent/tweet?text=https://hechosdeemocion.com/node/8%20@NissanColombia">
                                                         </a>
                                                   </div>                                                   
                                                </div>
@@ -146,13 +128,7 @@
                                                   <div class="social-networks">
                                                     <a class="facebook" name="<?php print($url);?>"><span>Facebook</span></a>
                                                     <a class="twitter-share-button twitter"
-                                                      href="https://twitter.com/share"
-                                                      data-size="large"
-                                                      data-text="custom share text"
-                                                      data-url="https://hechosdeemocion.com/node/8"
-                                                      data-hashtags="example,demo"
-                                                      data-via="twitterdev"
-                                                      data-related="twitterapi,twitter">
+                                                      href="https://twitter.com/intent/tweet?text=https://hechosdeemocion.com/node/8%20@NissanColombia">
                                                     </a>
                                                   </div>                                                   
                                                 </div>

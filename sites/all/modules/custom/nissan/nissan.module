@@ -70,11 +70,13 @@ function nissan_webform_submission_presave($node, &$submission) {
   if (isset($submission->file_usage['added_fids'][0])) {
        $file = file_load($submission->file_usage['added_fids'][0]);
        $ext = pathinfo($file->filename, PATHINFO_EXTENSION);
+       created_node_video($submission->file_usage['added_fids'][0]);
        if ($ext != 'mp4') {
               file_save($file);
               $file = file_load($submission->file_usage['added_fids'][0]);
               $path = str_replace(" ", "\\ ", drupal_realpath($file->uri));
               shell_exec("/usr/bin/ffmpeg  -i ".$path." -strict -2 ".$path.".mp4");
+            //  shell_exec("/usr/local/bin/ffmpeg  -i ".$path." -strict -2 ".$path.".mp4");
               $file->filename = $file->filename . '.mp4';
               $file->uri =  $file->uri.'.mp4';
               file_save($file);
@@ -120,3 +122,13 @@ function get_sids(){
    return $count;   
 }
 
+function created_node_video($file){
+  $node = entity_create('node', array('type' => 'videos_upload'));
+  $node->uid = TRUE;
+  $entity = entity_metadata_wrapper('node', $node);
+  $entity->title->set('Test node');
+  $entity->body->set(array('value' => "Example body"));
+  $entity->body->summary->set('Things that interest me');
+  $entity->field_video->file->set($file);
+  $entity->save();
+}
