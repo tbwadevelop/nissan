@@ -70,7 +70,7 @@
                                                   <a class="facebook" name="<?php print($url);?>"><span>Facebook</span></a>
                                                   <a class="twitter-share-button twitter" target="_blank"
                                                     href="https://twitter.com/intent/tweet?text=https://hechosdeemocion.com/twitter.html">
-                                                  Twitter</a>
+                                                  </a>
 
                                               </div>    
                                               </div>
@@ -89,7 +89,7 @@
                                                     <a class="facebook" name="<?php print($url);?>"><span>Facebook</span></a>
                                                      <a class="twitter-share-button twitter" target="_blank"
                                                           href="https://twitter.com/intent/tweet?text=https://hechosdeemocion.com/twitter.html">
-                                                        Twitter</a>
+                                                    </a>
                                                   </div> 
                                                </div>
                                            <?php endif ?>  
@@ -114,7 +114,6 @@
                                                        <a class="facebook" name="<?php print($url); ?>"><span>Facebook</span></a>
                                                         <a class="twitter-share-button twitter" target="_blank"
                                                                href="https://twitter.com/intent/tweet?text=https://hechosdeemocion.com/twitter.html">
-                                                               Twitter
                                                         </a>
                                                   </div>                                                   
                                                </div>
@@ -131,7 +130,6 @@
                                                     <a class="facebook" name="<?php print($url);?>"><span>Facebook</span></a>
                                                         <a class="twitter-share-button twitter" target="_blank"
                                                                href="https://twitter.com/intent/tweet?text=https://hechosdeemocion.com/twitter.html">
-                                                               Twitter
                                                         </a>                                                    
                                                   </div>                                                   
                                                 </div>
