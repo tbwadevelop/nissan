@@ -32,7 +32,7 @@
 				jQuery('.webform-component--terminos p button').appendTo('.form-item-submitted-he-leido-y-acepto-los-terminos-y-condiciones label');
 				jQuery( ".webform-client-form-7 .modal-header button" ).text("Skip");
 
-				jQuery('#block-nissan-galeria a').click(function(e){
+				jQuery('#block-nissan-galeria .facebook').click(function(e){
 					e.preventDefault();
 					myFacebookLogin("Nissa",jQuery(this).attr("name"));
 				});
