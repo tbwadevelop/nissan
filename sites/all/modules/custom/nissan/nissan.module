@@ -67,7 +67,7 @@ function nissan_init() {
  */
 
 function nissan_webform_submission_presave($node, &$submission) {
-  if (!empty($submission->data[2][0])) {
+  if (!empty($submission->data[2][0]) && empty($submission->sid)) {
        $file = file_load($submission->file_usage['added_fids'][0]);
        $ext = pathinfo($file->filename, PATHINFO_EXTENSION);
        if ($ext != 'mp4') {
@@ -84,7 +84,7 @@ function nissan_webform_submission_presave($node, &$submission) {
               $path_url = file_create_url($file->uri);
               created_node_video($path_url);   
         } 
-  }else{
+  }else if(empty($submission->sid)){
          ctools_include('ajax'); ctools_add_js('ajax-responder');
          $commands[] = ctools_ajax_command_redirect('gracias');
          print ajax_render($commands);
