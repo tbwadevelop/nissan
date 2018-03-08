@@ -78,11 +78,11 @@ function nissan_webform_submission_presave($node, &$submission) {
               $file->filename = $file->filename . '.mp4';
               $file->uri =  $file->uri.'.mp4';
               $path_url = file_create_url($file->uri);
-              created_node_video($path_url);
+              created_node_video($path_url,$node->webform['next_serial']);
               file_save($file);
         }else{
               $path_url = file_create_url($file->uri);
-              created_node_video($path_url);   
+              created_node_video($path_url,$node->webform['next_serial']);  
         } 
   }else if(empty($submission->sid)){
          ctools_include('ajax'); ctools_add_js('ajax-responder');
@@ -124,29 +124,16 @@ function get_sids(){
    return $count;   
 }
 
-function created_node_video($path_url){
-   $sid = '';
-   $result = db_select('webform_submitted_data', 'c')
-             ->condition('cid', 41, '=') 
-             ->fields('c')
-             ->orderBy("sid", "DESC")
-             ->range(0,1)
-              ->execute()
-             ->fetchAll();
-  
-
-    foreach ($result as $key => $value) {
-       $sid =  $value->sid;
-    }
+function created_node_video($path_url,$serial){
         $node = new stdClass();
-        $node->title = $sid+1;
+        $node->title = $serial;
         $node->type = "videos_upload";
         $node->language = LANGUAGE_NONE; 
         $node->uid = TRUE; 
         $node->status = TRUE; 
         $node->promote = FALSE; 
         $node->comment = TRUE;
-        $node->path['alias'] = $sid+1;
+        $node->path['alias'] = $serial;
         $node->metatags[LANGUAGE_NONE]['twitter:player']['value'] = $path_url;
         $node->metatags[LANGUAGE_NONE]['twitter:player:stream']['value'] = $path_url;
        return node_save($node);
