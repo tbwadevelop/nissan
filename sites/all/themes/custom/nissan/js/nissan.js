@@ -2,8 +2,15 @@
 	Drupal.behaviors.nissan = {
 		attach: function (context, settings) {
 			
-			$(".webform-next.button-primary.btn.btn-default.form-submit").attr('onclick', "ga('send', 'event', 'modal', 'click', 'Ir_registro');");
+			//analytics step 1
+			$("#webform-client-form-1 .webform-next.button-primary.btn.btn-default.form-submit").attr('onclick', "ga('send', 'event', 'modal', 'click', 'Ir_registro');");
+			
+			//Global analytics full steps
 			$(".close.ctools-close-modal.ctools-close-modal-processed").attr('onclick', "ga('send', 'event', 'modal', 'click', 'C_modal');");
+
+			//analytics step 2
+			$("#webform-client-form-1--2 .webform-next.button-primary.btn.btn-default.form-submit").attr('onclick', "ga('send', 'event', 'modal', 'click', 'R_ok');");
+
 			
 			$(window).load(function() {
 			    $("#load_screen").fadeOut(600, function() {
