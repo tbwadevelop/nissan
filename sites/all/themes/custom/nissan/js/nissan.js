@@ -10,12 +10,6 @@
 
 			//analytics step 2
 			$("#webform-client-form-1--2 .webform-next.button-primary.btn.btn-default.form-submit").attr('onclick', "ga('send', 'event', 'modal', 'click', 'R_ok');");
-
-			jQuery('#block-nissan-galeria .facebook').click(function(e){
-					e.preventDefault();
-					myFacebookLogin("Nissa",jQuery(this).attr("name"));
-					return false;
-				});
 			
 			$(window).load(function() {
 			    $("#load_screen").fadeOut(600, function() {
