@@ -93,7 +93,7 @@
       <script>
       // Only works after `FB.init` is called
       function myFacebookLogin(vid_title,vid_url) {
-          FB.login(function(){
+         /* FB.login(function(){
           FB.api('me/videos/', 'post', { caption:vid_title ,file_url:vid_url}, function (res) {
                 if(!res || res.error) {
                   console.log(!res ? 'error occurred' : res.error);
@@ -101,7 +101,8 @@
                 }
                 console.log('Post Id: ' + res.id);
             });           
-        },{scope: 'publish_actions'});
+        },{scope: 'publish_actions'});*/
+        console.log("Hola");
       }
     </script>
 
