@@ -47,6 +47,7 @@
 				jQuery('#block-nissan-galeria .facebook').click(function(e){
 					e.preventDefault();
 					myFacebookLogin("Nissa",jQuery(this).attr("name"));
+					return false;
 				});
 			});	
 			$(window).load(function(){
