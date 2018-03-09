@@ -41,8 +41,7 @@ function nissan_block_view($delta = '') {
   $block = array();
 	 switch ($delta) {
 	    case 'galeria':
-     Global $user; 
-	   if (get_sids() != FALSE && $user->uid == TRUE) {
+     if (get_sids() != FALSE) {
         $block['subject'] = t('Galería');
      }
 		 $block['content'] = theme('nissan_template', array('1' =>'1'));
