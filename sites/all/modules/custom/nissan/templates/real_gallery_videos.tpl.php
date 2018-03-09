@@ -67,7 +67,7 @@
                                           <?php  if($key <= 2): ?>
                                               <div class="col-md-4"><a class="thumbnail"><?php print(rendervideo($url)); ?></a><p class="p-nombre"><?php print($nombre_participante); ?></p><p class="p-lugar"><?php print_r($ciudad); ?></p> 
                                               <div class="social-networks">
-                                                  <a class="facebook" name="<?php print($url);?>"><span>Facebook</span></a>
+                                                  <a class="facebook" href="<?php print($url);?>"><span>Facebook</span></a>
                                                 <a class="twitter-share-button twitter" 
                                                   href="https://twitter.com/intent/tweet?text=https://hechosdeemocion.com/<?php print($value->webform_submissions_serial);?>%20@NissanColombia" target="_blank">
                                                 </a>
