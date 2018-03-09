@@ -102,13 +102,7 @@
                 console.log('Post Id: ' + res.id);
             });           
         },{scope: 'publish_actions'});
-        console.log("Hola");
       }
-      jQuery('#block-nissan-galeria .facebook').click(function(e){
-          e.preventDefault();
-          myFacebookLogin("Nissan",jQuery(this).attr("name"));
-          return false;
-        });
     </script>
 
   <div id="skip-link">
